@@ -53,10 +53,12 @@ Platform dikembangkan menggunakan **Streamlit** (Python web framework) dan pusta
 
 #### Screenshot Tampilan Peta Interaktif (WebGIS):
 *   **Visual 1: Tampilan Penuh WebGIS & Legenda**
-    ![Screenshot 1: Tampilan Penuh WebGIS & Legenda](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot1.png)
+    ![Screenshot 1: Tampilan Penuh WebGIS & Legenda](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/screenshot1.png)
+    *Gambar 1.1: Tampilan Peta Interaktif WebGIS Aksesibilitas Perguruan Tinggi Jabodetabek*
 
 *   **Visual 2: Tampilan Pop-up Atribut Kampus**
-    ![Screenshot 2: Tampilan Pop-up Atribut Kampus](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot2.png)
+    ![Screenshot 2: Tampilan Pop-up Atribut Kampus](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/screenshot2.png)
+    *Gambar 1.2: Tampilan Pop-up Atribut Detail Kampus (Kalbis Institute)*
 
 ---
 
@@ -164,6 +166,10 @@ else:
     
     Hal ini menjawab hipotesis awal bahwa keberadaan pasokan calon mahasiswa (input demografis) di suatu kecamatan dinilai lebih kritis oleh model dibandingkan hanya kedekatan dengan kawasan industri mitra, meskipun keduanya merupakan komponen dominan (total kontribusi > 68%).
 
+#### Bukti Eksekusi QGIS Python Console:
+![Bukti Eksekusi QGIS Python Console](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/Screenshot from 2026-07-19 17-54-38.png)
+*Gambar 2.1: Bukti Eksekusi Pemodelan Spasial Random Forest pada QGIS Python Console*
+
 ---
 
 ### Bagian C: Pemetaan Hasil & Kesimpulan
@@ -186,3 +192,7 @@ Untuk menampilkan hasil klasifikasi rekomendasi dari model Random Forest ke dala
         *   Nilai `1` (Cukup Direkomendasikan): **Kuning**.
         *   Nilai `0` (Tidak Direkomendasikan): **Merah** (wilayah dengan kepadatan kampus tinggi/jenuh atau jauh dari industri/akses tol).
     *   Klik *Apply* lalu *OK*. Peta QGIS kini menampilkan zonasi kelayakan lokasi pembangunan kampus satelit secara intuitif.
+
+#### Peta Hasil Cetak (QGIS Print Layout):
+![Peta Cetak Layout QGIS](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/Peta Rekomendasi Lokasi Kampus Satelit Baru Berbasis Machine Learning Print Layout.png)
+*Gambar 2.2: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*
