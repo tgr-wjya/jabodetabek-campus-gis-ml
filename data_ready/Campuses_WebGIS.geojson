@@ -1,0 +1,5485 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kalbis Institute",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6097,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1707.3,
+        "dist_tj": 200.3,
+        "osm_id": "4152444161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8768911,
+          -6.1784957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BSI SQUARE Kaliabang Bekasi",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5779,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3784.4,
+        "dist_tj": 4142.5,
+        "osm_id": "4240910820"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0153607,
+          -6.2063138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Satya Negara Indonesia (Kampus B USNI)",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 9873,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1091.2,
+        "dist_tj": 2495.2,
+        "osm_id": "4243820200"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0200002,
+          -6.2738302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indonesia International Institute for Life-Sciences",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6600,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1515.1,
+        "dist_tj": 371.1,
+        "osm_id": "4243842960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8784888,
+          -6.1791793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prasetiya Mulya Business School",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6648,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2703.2,
+        "dist_tj": 4446.9,
+        "osm_id": "4248073605"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6390609,
+          -6.3001358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Paripurna",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 7030,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 4371.8,
+        "dist_tj": 907.2,
+        "osm_id": "4248083886"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7441643,
+          -6.3251451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AkPar Nusantara",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11167,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3270.6,
+        "dist_tj": 2418.5,
+        "osm_id": "4248093447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7548195,
+          -6.3109409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AMIK BSI CIPUTAT",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2687,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3468.3,
+        "dist_tj": 2317.5,
+        "osm_id": "4248104604"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.750952,
+          -6.3111092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AMIK Wahana Mandiri",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 7982,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6485.6,
+        "dist_tj": 941.0,
+        "osm_id": "4248117167"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7574152,
+          -6.3452358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akademi Refraksi Optisi Gapopin",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3571,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3219.5,
+        "dist_tj": 3067.6,
+        "osm_id": "4248120154"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7150193,
+          -6.2631335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horizon University Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3323,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1955.0,
+        "dist_tj": 31511.0,
+        "osm_id": "4314046391"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.2922306,
+          -6.2893425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "International University Liaison Indonesia",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 2596,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2323.2,
+        "dist_tj": 2891.9,
+        "osm_id": "4721277185"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6528889,
+          -6.3034203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Pasca Sarjana USAHID",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 10838,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 247.6,
+        "dist_tj": 154.9,
+        "osm_id": "4867479035"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8196221,
+          -6.2099066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Agama Islam Al-Ghurabaa",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1608,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 784.1,
+        "dist_tj": 627.0,
+        "osm_id": "4883015190"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8922699,
+          -6.1991362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Podomoro University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3413,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1731.8,
+        "dist_tj": 236.7,
+        "osm_id": "5033660303"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7916374,
+          -6.1775616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UPI Kampus Daerah Purwakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1316,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1482.6,
+        "dist_tj": 45332.9,
+        "osm_id": "6709386157"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.4444492,
+          -6.5395426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AKBID KARYA BUNDA HUSADA",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 11874,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2338.4,
+        "dist_tj": 1364.7,
+        "osm_id": "6728911621"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6230419,
+          -6.1961206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BSI",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3885,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2611.7,
+        "dist_tj": 137.6,
+        "osm_id": "6728928568"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6102768,
+          -6.1861753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ST Bahasa Asing",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6324,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 991.7,
+        "dist_tj": 161.4,
+        "osm_id": "6728983357"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8668375,
+          -6.2231786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STKIP SURYA",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 6263,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 3672.5,
+        "dist_tj": 353.3,
+        "osm_id": "6728993856"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6185898,
+          -6.207347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AKBID KARYA HUSADA",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 4770,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2342.7,
+        "dist_tj": 1360.1,
+        "osm_id": "6732119606"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6229588,
+          -6.1961247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Kesatuan Bogor",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 7762,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1349.7,
+        "dist_tj": 713.7,
+        "osm_id": "7881032785"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7995498,
+          -6.60616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Binaniaga Bogor",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 5163,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2710.6,
+        "dist_tj": 2791.3,
+        "osm_id": "7884172985"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8073215,
+          -6.5762145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pintu Masuk/Keluar - STIKES Wijaya Husada Bogor",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 3502,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3099.1,
+        "dist_tj": 1994.9,
+        "osm_id": "7884195385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7664505,
+          -6.580369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Kesehatan Bogor Prodi Keperawatan & Kebidanan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1854,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1873.3,
+        "dist_tj": 1341.2,
+        "osm_id": "7887560686"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7789367,
+          -6.5821698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akademi Keperawatan PGI Cikini",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11587,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 899.8,
+        "dist_tj": 183.5,
+        "osm_id": "9577005317"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.841702,
+          -6.1903806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monash University, Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 5844,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2476.1,
+        "dist_tj": 3038.5,
+        "osm_id": "9577690630"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6518719,
+          -6.302458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matana University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3767,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7547.9,
+        "dist_tj": 2418.4,
+        "osm_id": "9684621887"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6246663,
+          -6.2448312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Tangerang",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2832,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1719.5,
+        "dist_tj": 667.1,
+        "osm_id": "9695795540"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.630898,
+          -6.1924843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Sampoerna",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11036,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 916.0,
+        "dist_tj": 131.9,
+        "osm_id": "9938310357"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8437139,
+          -6.2485855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Kartini Jakarta",
+        "status": "PTN",
+        "akreditasi": "C",
+        "mahasiswa": 5916,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1351.5,
+        "dist_tj": 92.6,
+        "osm_id": "10739471452"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7703622,
+          -6.2382146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Tri Bhakti",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4765,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1223.5,
+        "dist_tj": 752.1,
+        "osm_id": "11040050771"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9989462,
+          -6.2599928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus IPB Baranangsiang",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 10320,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1769.3,
+        "dist_tj": 565.4,
+        "osm_id": "11132298077"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8064598,
+          -6.6002451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Queensland University Jakarta Study Hub",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7803,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1067.8,
+        "dist_tj": 333.3,
+        "osm_id": "11523874224"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8236985,
+          -6.2304292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gunadarma Kampus F4",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6879,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3486.3,
+        "dist_tj": 3298.5,
+        "osm_id": "11773070141"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8632428,
+          -6.3737397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PLN Corporate Universiti",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 10407,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6468.8,
+        "dist_tj": 9486.3,
+        "osm_id": "11949981693"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8750375,
+          -6.656165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Paramadina",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3928,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7687.9,
+        "dist_tj": 18491.2,
+        "osm_id": "12809626863"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.155296,
+          -6.3357757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2327.3,
+        "dist_tj": 35887.1,
+        "osm_id": "13140709089"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.3360022,
+          -6.3310208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus Utama Institut Teknologi PLN (ITPLN)",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 6554,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 728.3,
+        "dist_tj": 1021.1,
+        "osm_id": "13167094252"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7263723,
+          -6.1682438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG)",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9213,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 372.4,
+        "dist_tj": 230.4,
+        "osm_id": "13293899237"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.645759,
+          -6.1719399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas bakrie",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 1842,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 162.0,
+        "dist_tj": 170.6,
+        "osm_id": "13717653379"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8332228,
+          -6.2205261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Faculty Economics and Business, UIN Syarif Hidayatullah",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 6089,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3136.1,
+        "dist_tj": 2484.1,
+        "osm_id": "13769211001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.756621,
+          -6.3109137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FKUI Departemen Patologi Anatomik",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 3315,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 789.0,
+        "dist_tj": 260.4,
+        "osm_id": "13949471301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8473739,
+          -6.1948049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Jayabaya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6889,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3320.6,
+        "dist_tj": 3148.5,
+        "osm_id": "119417286"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8610249,
+          -6.3536912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Yarsi",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3299,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2746.3,
+        "dist_tj": 136.0,
+        "osm_id": "119788128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8697744,
+          -6.1697082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas MH Thamrin",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5721,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 863.9,
+        "dist_tj": 390.4,
+        "osm_id": "119901543"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8747584,
+          -6.2876812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Borobudur",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 1163,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1175.0,
+        "dist_tj": 1361.3,
+        "osm_id": "120161323"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8977451,
+          -6.2440356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Budi Luhur",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9540,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 733.1,
+        "dist_tj": 150.9,
+        "osm_id": "120503960"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8532034,
+          -6.1993629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Persada Indonesia Fakultas Teknik UPI YAI",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 8825,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 760.0,
+        "dist_tj": 35.8,
+        "osm_id": "120510315"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8491505,
+          -6.1928055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas MH Thamrin Kampus AKA",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 7680,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2122.4,
+        "dist_tj": 225.0,
+        "osm_id": "122152189"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8175521,
+          -6.2404179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Pengembangan Manajemen Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11762,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 250.2,
+        "dist_tj": 93.3,
+        "osm_id": "134086210"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8548661,
+          -6.2574428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pakuan",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 15000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2344.9,
+        "dist_tj": 899.4,
+        "osm_id": "142494414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8117706,
+          -6.5996533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus IPB Baranangsiang",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 10320,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1831.6,
+        "dist_tj": 480.3,
+        "osm_id": "142494813"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8068818,
+          -6.6010898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Negeri Jakarta",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 28000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 363.6,
+        "dist_tj": 175.3,
+        "osm_id": "153318591"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8878987,
+          -6.1919309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut STIAMI",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 9972,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1304.5,
+        "dist_tj": 339.3,
+        "osm_id": "155114219"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8582787,
+          -6.1769802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus Kejaksaan",
+        "status": "PTN",
+        "akreditasi": "A",
+        "mahasiswa": 9783,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 840.4,
+        "dist_tj": 1140.4,
+        "osm_id": "155936716"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8918297,
+          -6.3110267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Pembina Rohani Islam Jakarta (IPRIJA)",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7263,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2266.3,
+        "dist_tj": 2110.1,
+        "osm_id": "155949278"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.885139,
+          -6.3442039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Darma Persada",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7683,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1556.3,
+        "dist_tj": 1510.6,
+        "osm_id": "155952116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9242072,
+          -6.2296379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Dirgantara Marsekal Suryadarma",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4945,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1858.1,
+        "dist_tj": 1540.9,
+        "osm_id": "155963030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.888143,
+          -6.2626433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Mercu Buana",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 25000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5474.9,
+        "dist_tj": 610.5,
+        "osm_id": "156922212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.739124,
+          -6.2096282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus Gunadarma",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3847,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2864.1,
+        "dist_tj": 1152.8,
+        "osm_id": "156928801"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7333604,
+          -6.1344656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Kedokteran Ukrida",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 11197,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2771.7,
+        "dist_tj": 1292.0,
+        "osm_id": "157205905"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7801037,
+          -6.1852206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Esa Unggul",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8216,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2814.2,
+        "dist_tj": 1156.7,
+        "osm_id": "157205932"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7788718,
+          -6.1857249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam At Tahiriyah",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 8393,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 294.7,
+        "dist_tj": 773.0,
+        "osm_id": "157355130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8599387,
+          -6.2241963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pasca Sarjana Universitas Brawijaya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6134,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 518.6,
+        "dist_tj": 92.1,
+        "osm_id": "157358528"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8334817,
+          -6.2059428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Negeri Jakarta Kampus D Psikologi",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 28000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 541.7,
+        "dist_tj": 67.8,
+        "osm_id": "157358552"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8335346,
+          -6.2057062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Krisanti Widya Mandiri",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 9720,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 538.6,
+        "dist_tj": 521.6,
+        "osm_id": "157360672"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8623388,
+          -6.2234848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BRI Corporate University",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 11714,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1986.0,
+        "dist_tj": 185.8,
+        "osm_id": "157363169"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.821825,
+          -6.3026686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Trilogi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2958,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 716.0,
+        "dist_tj": 435.5,
+        "osm_id": "157364898"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8490518,
+          -6.2530881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Nasional",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 6904,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 652.2,
+        "dist_tj": 236.2,
+        "osm_id": "157365910"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.839328,
+          -6.2812874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Negeri Jakarta",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 28000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1417.5,
+        "dist_tj": 278.2,
+        "osm_id": "157396411"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8786505,
+          -6.194796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pakuan Fakultas Teknik",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 15000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2109.9,
+        "dist_tj": 829.7,
+        "osm_id": "158830057"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8096988,
+          -6.5988343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Trisakti",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 22000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7156.3,
+        "dist_tj": 7093.5,
+        "osm_id": "161929875"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8556734,
+          -6.5648228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pamulang",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 4324,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5920.3,
+        "dist_tj": 1373.1,
+        "osm_id": "162216830"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7370504,
+          -6.3444838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UBS Business School",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5489,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 803.3,
+        "dist_tj": 70.5,
+        "osm_id": "166318524"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7961255,
+          -6.2855246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Multimedia Nusantara",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2864,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7818.6,
+        "dist_tj": 3931.0,
+        "osm_id": "166911619"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6182535,
+          -6.2577238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bina Sarana Informatika Bogor",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 4093,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1213.1,
+        "dist_tj": 1362.3,
+        "osm_id": "168096397"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.788264,
+          -6.5836106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 4652.2,
+        "dist_tj": 8369.7,
+        "osm_id": "168946827"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7598204,
+          -6.5207859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Swadharma",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 2925,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 6827.4,
+        "dist_tj": 236.1,
+        "osm_id": "174094685"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7510605,
+          -6.3462904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam 45",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 8000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1784.1,
+        "dist_tj": 166.9,
+        "osm_id": "227762673"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.006337,
+          -6.2578185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Binus University",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 8277,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 676.6,
+        "dist_tj": 355.8,
+        "osm_id": "228066447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7967702,
+          -6.2288858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Binus ASO School of Engineering",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 1808,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7350.6,
+        "dist_tj": 2109.9,
+        "osm_id": "230078479"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6576197,
+          -6.2407353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Mercubuana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11023,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1849.2,
+        "dist_tj": 128.3,
+        "osm_id": "235269697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8292462,
+          -6.2773676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Buddhi Dharma",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 7342,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1255.2,
+        "dist_tj": 972.9,
+        "osm_id": "239436618"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6266612,
+          -6.1869834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Terbuka",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3352,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6062.1,
+        "dist_tj": 1224.4,
+        "osm_id": "248297920"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.758684,
+          -6.3416203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Singaperbangsa Karawang",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 18000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2056.3,
+        "dist_tj": 33359.5,
+        "osm_id": "259015413"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.3063006,
+          -6.3226591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Ilmu Kesehatan UPN Veteran Jakarta Limo",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5880,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6289.5,
+        "dist_tj": 2308.9,
+        "osm_id": "300731819"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7752761,
+          -6.3542615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus Kesatuan",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 9979,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1394.9,
+        "dist_tj": 706.3,
+        "osm_id": "304211992"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7996907,
+          -6.6066043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pelita Harapan",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3719,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6169.2,
+        "dist_tj": 2210.0,
+        "osm_id": "345304755"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6118498,
+          -6.2289845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pembangunan Jaya",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 3073,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2621.8,
+        "dist_tj": 1885.0,
+        "osm_id": "355474656"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7107082,
+          -6.2732172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pradita University",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 10754,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7508.7,
+        "dist_tj": 4188.0,
+        "osm_id": "362682506"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6182379,
+          -6.2607071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pembangunan Nasional \"Veteran\" Jakarta",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 9532,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2601.2,
+        "dist_tj": 397.7,
+        "osm_id": "389845678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7944714,
+          -6.3158844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bina Sarana Informatika",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3829,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1672.7,
+        "dist_tj": 1562.3,
+        "osm_id": "398057808"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6872431,
+          -6.304607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Indonesia",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 47000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 630.1,
+        "dist_tj": 1136.9,
+        "osm_id": "401969868"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8260881,
+          -6.360529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma Kampus D",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 130.1,
+        "dist_tj": 231.2,
+        "osm_id": "401977088"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8331233,
+          -6.3685077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma Kampus E",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1276.9,
+        "dist_tj": 996.8,
+        "osm_id": "401977089"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.841318,
+          -6.3539296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus G Universitas Gunadarma",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1473.2,
+        "dist_tj": 1256.6,
+        "osm_id": "401977090"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8436279,
+          -6.3543513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus H Universitas Gunadarma",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1020.8,
+        "dist_tj": 534.4,
+        "osm_id": "401977091"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8372322,
+          -6.3529851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pusat Perdamaian dan Keamanan Indonesia",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 11780,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7195.6,
+        "dist_tj": 12033.9,
+        "osm_id": "403747311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8803644,
+          -6.5259575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Bisnis Nusantara",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 2734,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1109.3,
+        "dist_tj": 264.6,
+        "osm_id": "472363151"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8764471,
+          -6.2373439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Teknologi Tangerang Selatan",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3988,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 4962.0,
+        "dist_tj": 4911.2,
+        "osm_id": "478699890"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6565922,
+          -6.2745092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Insan Pembangunan Indonesia",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 2263,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 9344.4,
+        "dist_tj": 2878.0,
+        "osm_id": "479411327"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.5606189,
+          -6.2220905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Azzahra",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2167,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 880.3,
+        "dist_tj": 198.9,
+        "osm_id": "482149087"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8657489,
+          -6.2232616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Pasca Sarjana Uhamka",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 1857,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1913.9,
+        "dist_tj": 106.6,
+        "osm_id": "482154030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8306736,
+          -6.2734299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Ilmu Bahasa Asing",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 10330,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 993.2,
+        "dist_tj": 159.7,
+        "osm_id": "482178642"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8668387,
+          -6.2231933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Nahdlatul Ulama Jakarta",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5810,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 809.8,
+        "dist_tj": 363.6,
+        "osm_id": "482206249"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8510519,
+          -6.202934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Terbuka UPBJJ-UT Jakarta",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 844,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1420.4,
+        "dist_tj": 457.0,
+        "osm_id": "482397051"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.872578,
+          -6.2013793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BULOG Corporate University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10547,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 887.9,
+        "dist_tj": 121.0,
+        "osm_id": "483766180"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8293964,
+          -6.2358395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Katolik Indonesia Atmajaya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3164,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 498.5,
+        "dist_tj": 148.2,
+        "osm_id": "484635861"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8153017,
+          -6.2186732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Wiraswasta Indonesia",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 9923,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1131.3,
+        "dist_tj": 230.7,
+        "osm_id": "484636778"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8689498,
+          -6.2250585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Surapati",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3627,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 968.5,
+        "dist_tj": 826.0,
+        "osm_id": "484685063"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8643194,
+          -6.252196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pascasarjana Universitas Islam Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5272,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1546.1,
+        "dist_tj": 447.8,
+        "osm_id": "486475802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8700337,
+          -6.1971267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Bakrie",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6383,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 160.0,
+        "dist_tj": 169.1,
+        "osm_id": "486534447"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8331745,
+          -6.220507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Paramadina",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3928,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 620.6,
+        "dist_tj": 149.5,
+        "osm_id": "487569593"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8329836,
+          -6.2412187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Kristen Indonesia",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8926,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 367.8,
+        "dist_tj": 207.7,
+        "osm_id": "487604623"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8723169,
+          -6.2490491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bina Insani Campus",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 9178,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 890.3,
+        "dist_tj": 1165.9,
+        "osm_id": "488166536"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.994581,
+          -6.2598399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GS Fame Institute Of Business",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 10631,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 637.1,
+        "dist_tj": 210.4,
+        "osm_id": "489461849"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8890147,
+          -6.173571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Kedokteran UI Program D III Perumahsakitan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11146,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 119.9,
+        "dist_tj": 76.8,
+        "osm_id": "489532392"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8423602,
+          -6.1985829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pancasila Program Pasca Sarjana",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 14000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 637.0,
+        "dist_tj": 240.4,
+        "osm_id": "489532409"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8465602,
+          -6.2007958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus III Universitas Bung Karno",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6895,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1800.4,
+        "dist_tj": 165.9,
+        "osm_id": "489548598"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8147108,
+          -6.2390633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus B Universitas MH Thamrin",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 3505,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1487.3,
+        "dist_tj": 657.3,
+        "osm_id": "489766193"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8710191,
+          -6.2834366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Bung Karno",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 4068,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 162.6,
+        "dist_tj": 54.2,
+        "osm_id": "489779082"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8425441,
+          -6.1992548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "University of Persada Indonesia Y.A.I",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7965,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 868.2,
+        "dist_tj": 207.9,
+        "osm_id": "490014516"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8491827,
+          -6.1964157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas MH Thamrin",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5721,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 702.8,
+        "dist_tj": 138.9,
+        "osm_id": "490033442"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8501646,
+          -6.1934429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Indonesia",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 47000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 835.7,
+        "dist_tj": 205.9,
+        "osm_id": "491242369"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.847439,
+          -6.1941342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Kesenian Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10781,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 953.2,
+        "dist_tj": 82.7,
+        "osm_id": "491244202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8408756,
+          -6.188172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam Jakarta",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 6074,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1440.3,
+        "dist_tj": 557.8,
+        "osm_id": "491494439"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8690059,
+          -6.1972595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Krisnadwipayana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3604,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1684.1,
+        "dist_tj": 165.8,
+        "osm_id": "492499531"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.808715,
+          -6.1706421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Agama Islam Jamiat Kheir",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11337,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 746.3,
+        "dist_tj": 272.7,
+        "osm_id": "492944987"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8154806,
+          -6.1906584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10529,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2429.3,
+        "dist_tj": 478.1,
+        "osm_id": "492989002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8719445,
+          -6.1726579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Master of Management Faculty of Economy and Business UGM",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 2982,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 770.9,
+        "dist_tj": 60.3,
+        "osm_id": "495427385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8447363,
+          -6.2148092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Prof Dr Moestopo",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2983,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 749.4,
+        "dist_tj": 431.7,
+        "osm_id": "496025653"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7960818,
+          -6.2289148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Prof. Dr. Hamka",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 5062,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1482.5,
+        "dist_tj": 446.9,
+        "osm_id": "496795716"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8719032,
+          -6.3031395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Brawijaya Pasca Sarjana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9717,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1225.6,
+        "dist_tj": 368.4,
+        "osm_id": "496808649"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8195757,
+          -6.1765126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Borobudur",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 1163,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1197.4,
+        "dist_tj": 51.2,
+        "osm_id": "496832557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8803644,
+          -6.1924521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Ibnu Chaldun Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1114,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1458.3,
+        "dist_tj": 282.7,
+        "osm_id": "496832701"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8780059,
+          -6.1918202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Prof. Dr. Hamka Fakultas Farmasi dan Sains",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7137,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 803.0,
+        "dist_tj": 412.7,
+        "osm_id": "499764975"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9288906,
+          -6.2200583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Sains dan Tehnologi Nasional",
+        "status": "PTN",
+        "akreditasi": "C",
+        "mahasiswa": 4796,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2190.8,
+        "dist_tj": 488.4,
+        "osm_id": "499800552"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8130657,
+          -6.3539713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pancasila",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 14000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 164.0,
+        "dist_tj": 133.2,
+        "osm_id": "499800667"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8328297,
+          -6.3397212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Ilmu Ekonomi Swadaya",
+        "status": "PTN",
+        "akreditasi": "A",
+        "mahasiswa": 1392,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2301.9,
+        "dist_tj": 2503.9,
+        "osm_id": "500968929"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9078426,
+          -6.2490377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut PTIQ Jakarta",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8993,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 609.4,
+        "dist_tj": 282.9,
+        "osm_id": "501973571"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.771599,
+          -6.2936575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Perguruan Tinggi Ilmu Qur'an",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2765,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 412.8,
+        "dist_tj": 78.4,
+        "osm_id": "501973582"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7717306,
+          -6.2911849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Indraprasta PGRI (Pusat Laboratorium)",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4513,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1380.4,
+        "dist_tj": 1091.2,
+        "osm_id": "502278114"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8498558,
+          -6.3019842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Tama Jagakarsa",
+        "status": "PTN",
+        "akreditasi": "A",
+        "mahasiswa": 6490,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 658.7,
+        "dist_tj": 98.7,
+        "osm_id": "502278171"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8407607,
+          -6.3023675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut STIAMI Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6543,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1447.2,
+        "dist_tj": 1243.2,
+        "osm_id": "502278178"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8512485,
+          -6.3035953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Indraprasta",
+        "status": "PTN",
+        "akreditasi": "C",
+        "mahasiswa": 4531,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1385.1,
+        "dist_tj": 1155.0,
+        "osm_id": "502278468"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8504707,
+          -6.3031466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Ibnu Chaldun Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1114,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1476.5,
+        "dist_tj": 307.5,
+        "osm_id": "504664444"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8778468,
+          -6.1916365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Jayabaya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6889,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1607.3,
+        "dist_tj": 340.0,
+        "osm_id": "505010318"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.877449,
+          -6.1796298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Teknologi Budi Utomo",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 9137,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 413.6,
+        "dist_tj": 415.9,
+        "osm_id": "506658479"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9398946,
+          -6.2213869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Hukum Universitas Suryakancana Cianjur",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 1424,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2058.0,
+        "dist_tj": 1501.3,
+        "osm_id": "508855811"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.1417162,
+          -6.8060133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Sains dan Teknologi Al-Kamal",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4045,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 3094.6,
+        "dist_tj": 466.2,
+        "osm_id": "509126805"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7602028,
+          -6.1866639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Respati Indonesia",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 4566,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1787.7,
+        "dist_tj": 2277.2,
+        "osm_id": "509361583"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9009909,
+          -6.3163412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas BINUS (Bina Nusantara) Kampus Anggrek",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 8133,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1898.4,
+        "dist_tj": 1342.0,
+        "osm_id": "509530238"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7811301,
+          -6.2020061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIKES Tarumanegara",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 4733,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2729.5,
+        "dist_tj": 88.7,
+        "osm_id": "509782563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8171126,
+          -6.2933495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Nasional Sekolah Pascasarjana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1036,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2293.3,
+        "dist_tj": 150.9,
+        "osm_id": "509834697"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8205975,
+          -6.2984096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Prof. Dr. Hamka",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 5062,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2053.1,
+        "dist_tj": 148.1,
+        "osm_id": "510637106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8663176,
+          -6.3053128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Nahdlatul Ulama Indonesia",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 9444,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2405.9,
+        "dist_tj": 458.7,
+        "osm_id": "511374655"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7657445,
+          -6.1821135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam Internasional Indonesia",
+        "status": "PTN",
+        "akreditasi": "A",
+        "mahasiswa": 7570,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 4058.1,
+        "dist_tj": 3826.7,
+        "osm_id": "511944479"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8622585,
+          -6.3899161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Respati Indonesia (Kampus B)",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 10614,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1578.7,
+        "dist_tj": 2311.0,
+        "osm_id": "512018103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9001085,
+          -6.319055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Prasetiya Mulya",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 10879,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 388.3,
+        "dist_tj": 665.6,
+        "osm_id": "512193816"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7891055,
+          -6.2914367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Prof. Dr. Hamka Pascasarjana",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 5563,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 825.3,
+        "dist_tj": 159.0,
+        "osm_id": "512603734"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7880397,
+          -6.242264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Teknik Uhamka",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 11808,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1236.5,
+        "dist_tj": 146.0,
+        "osm_id": "512761931"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8735297,
+          -6.3068817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Indraprasta PGRI",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 4582,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2087.1,
+        "dist_tj": 1009.1,
+        "osm_id": "512762576"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8618451,
+          -6.2952519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Komplek IISIP Jakarta",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 4112,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 827.9,
+        "dist_tj": 111.7,
+        "osm_id": "513522241"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8339284,
+          -6.3228603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Budi Luhur",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9540,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 3907.5,
+        "dist_tj": 212.1,
+        "osm_id": "514725818"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7473265,
+          -6.2345891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Tarumanagara Kampus II",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 16000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 891.0,
+        "dist_tj": 313.9,
+        "osm_id": "515222143"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7862703,
+          -6.169365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tanri Abeng University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3055,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2522.7,
+        "dist_tj": 825.1,
+        "osm_id": "516528259"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7608916,
+          -6.2300724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Prof Dr. Moestopo Lab. Terpadu",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 10372,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2549.8,
+        "dist_tj": 962.1,
+        "osm_id": "516528314"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7610748,
+          -6.228841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Prof. Dr. Hamka (UHAMKA)",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3039,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 863.9,
+        "dist_tj": 357.6,
+        "osm_id": "517607429"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7909538,
+          -6.2475299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus Ukrida",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 4964,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1333.2,
+        "dist_tj": 1090.5,
+        "osm_id": "517855537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8940114,
+          -6.1581048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Satyagama",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 7923,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1935.4,
+        "dist_tj": 170.6,
+        "osm_id": "518276476"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7308092,
+          -6.1435455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Tarumanagara Kampus 1",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 16000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 766.7,
+        "dist_tj": 249.2,
+        "osm_id": "518483233"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7903958,
+          -6.168923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Trisakti Kampus A",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 22000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 643.5,
+        "dist_tj": 130.9,
+        "osm_id": "518483243"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.790207,
+          -6.167823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Trisakti School of Management",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 22000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 770.7,
+        "dist_tj": 364.9,
+        "osm_id": "518483263"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7937496,
+          -6.1676382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fakultas Kedokteran Universitas Trisakti",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 22000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 979.0,
+        "dist_tj": 91.2,
+        "osm_id": "518483265"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7968574,
+          -6.1671091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FKG Universitas Moestopo (Beragama)",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 11409,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2961.9,
+        "dist_tj": 95.5,
+        "osm_id": "519262197"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7650612,
+          -6.2593099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Terbuka",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3352,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3459.2,
+        "dist_tj": 3856.0,
+        "osm_id": "519822947"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7959828,
+          -6.5616448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Ibnu Khaldun",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3792,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3321.8,
+        "dist_tj": 4016.7,
+        "osm_id": "519822953"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7928993,
+          -6.5597313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Satya Negara Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3773,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 532.9,
+        "dist_tj": 67.4,
+        "osm_id": "520201822"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7834886,
+          -6.2419531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Persada Indonesia YAI",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 2878,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2446.1,
+        "dist_tj": 691.9,
+        "osm_id": "521454891"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.775711,
+          -6.2611985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Matha'ulanwar",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 1338,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 970.4,
+        "dist_tj": 870.2,
+        "osm_id": "521856846"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7794521,
+          -6.1567829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Meteorologi Klimatologi dan Geofisika",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 8568,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1396.6,
+        "dist_tj": 705.2,
+        "osm_id": "527414851"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7489262,
+          -6.2647863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Atmajaya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10604,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2287.7,
+        "dist_tj": 176.6,
+        "osm_id": "527731906"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7933991,
+          -6.1254164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Bhayangkara Jaya",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 3510,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 244.6,
+        "dist_tj": 152.8,
+        "osm_id": "528643940"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7982382,
+          -6.2538595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMJ Fakultas Ilmu Pendidikan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10061,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1222.9,
+        "dist_tj": 839.8,
+        "osm_id": "534424261"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7688952,
+          -6.2985337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMJ Fakultas Agama Islam",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3206,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1240.2,
+        "dist_tj": 810.9,
+        "osm_id": "534427688"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7672956,
+          -6.2974783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMJ Fakultas Hukum",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 11246,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1298.4,
+        "dist_tj": 896.1,
+        "osm_id": "534429533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7678161,
+          -6.298606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1208.9,
+        "dist_tj": 747.3,
+        "osm_id": "534432028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7663832,
+          -6.2960759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1228.7,
+        "dist_tj": 762.7,
+        "osm_id": "534432029"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.766065,
+          -6.2959562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Ilmu Al-Quran Jakarta",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 11315,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2884.4,
+        "dist_tj": 2434.8,
+        "osm_id": "534499158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.756438,
+          -6.3076491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIN",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4179,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3295.2,
+        "dist_tj": 2378.2,
+        "osm_id": "534502943"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7549446,
+          -6.3113574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Ahmad Dahlan Jakarta",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 2690,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1235.4,
+        "dist_tj": 771.3,
+        "osm_id": "540151432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7661055,
+          -6.296109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIN Fakultas Adab dan Humaniora",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 9339,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3441.7,
+        "dist_tj": 2172.1,
+        "osm_id": "540190015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7553575,
+          -6.3134548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Guna Dharma",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10584,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6330.6,
+        "dist_tj": 2405.2,
+        "osm_id": "541301018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6161078,
+          -6.2319638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pelita Bangsa",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5923,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6023.6,
+        "dist_tj": 19299.2,
+        "osm_id": "549604154"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.1692849,
+          -6.3241425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "President University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10526,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1910.4,
+        "dist_tj": 18149.1,
+        "osm_id": "549604385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.1706572,
+          -6.2854355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Binus University Alam Sutera",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 11738,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5356.0,
+        "dist_tj": 1186.4,
+        "osm_id": "552932188"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6493176,
+          -6.2235311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus 3 BSD Universitas Katolik Indonesia Atma Jaya",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 6345,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1028.6,
+        "dist_tj": 2900.8,
+        "osm_id": "562002610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6499047,
+          -6.3202148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas BINUS (Bina Nusantara) Kampus Kijang",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1041,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1855.3,
+        "dist_tj": 1119.9,
+        "osm_id": "623686889"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7880028,
+          -6.1939165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PPI CENTER",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5626,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 10932.7,
+        "dist_tj": 7619.6,
+        "osm_id": "657174648"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.5207975,
+          -6.2432275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Kristen Krida Wacana (UKRIDA) Kampus Tanjung Duren",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10726,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1167.2,
+        "dist_tj": 519.7,
+        "osm_id": "662237522"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7885361,
+          -6.1725336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pamulang Viktor",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5944,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 3871.6,
+        "dist_tj": 356.6,
+        "osm_id": "687400645"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.691721,
+          -6.3462361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Teknologi Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3757,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2899.9,
+        "dist_tj": 291.5,
+        "osm_id": "687400650"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6752867,
+          -6.3445117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7022,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7507.2,
+        "dist_tj": 13461.1,
+        "osm_id": "702180503"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.4684601,
+          -6.2597705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam As-Syafiiyah",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9568,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2030.2,
+        "dist_tj": 3288.0,
+        "osm_id": "706554415"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9100935,
+          -6.2620753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BSI Jatiwaringin",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2227,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2021.7,
+        "dist_tj": 3434.9,
+        "osm_id": "706566172"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9106245,
+          -6.2636282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma Kampus J1",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1061.4,
+        "dist_tj": 3522.9,
+        "osm_id": "778724431"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9707346,
+          -6.2487004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nissi Bintaro Campus",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 8144,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 652.1,
+        "dist_tj": 2841.0,
+        "osm_id": "797757524"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7254152,
+          -6.2840182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus IPB Cilibende",
+        "status": "PTN",
+        "akreditasi": "A",
+        "mahasiswa": 7173,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1868.7,
+        "dist_tj": 1734.3,
+        "osm_id": "829047062"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8070274,
+          -6.5896878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STABN Sriwijaya",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 9352,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2329.6,
+        "dist_tj": 4344.7,
+        "osm_id": "846954888"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6389274,
+          -6.3035523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Keuangan Negara STAN",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 8014,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1801.0,
+        "dist_tj": 2201.2,
+        "osm_id": "877465306"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.732062,
+          -6.2664137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1729.5,
+        "dist_tj": 350.2,
+        "osm_id": "880824522"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7958726,
+          -6.1814061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Mercu Buana",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 25000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 437.8,
+        "dist_tj": 76.8,
+        "osm_id": "892906248"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.836515,
+          -6.1856915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas BINUS (Bina Nusantara) Kampus Syahdan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 8270,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1558.5,
+        "dist_tj": 1608.7,
+        "osm_id": "901009301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.785442,
+          -6.200216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas 17 Agustus 1945 Jakarta",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3668,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1030.5,
+        "dist_tj": 767.4,
+        "osm_id": "905707247"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8620119,
+          -6.1321157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Putra Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 10252,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1536.2,
+        "dist_tj": 1532.0,
+        "osm_id": "915800175"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.144321,
+          -6.8108085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Jakarta",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 2356,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1445.2,
+        "dist_tj": 440.3,
+        "osm_id": "926456346"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8790434,
+          -6.1794962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 622.7,
+        "dist_tj": 117.8,
+        "osm_id": "928043532"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8520524,
+          -6.197052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Sahid Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11734,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 871.5,
+        "dist_tj": 71.0,
+        "osm_id": "931278808"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8437366,
+          -6.236244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Krisnadwipayana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3604,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2331.1,
+        "dist_tj": 3148.4,
+        "osm_id": "933294240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.907605,
+          -6.2633103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Al Azhar",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4300,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 397.5,
+        "dist_tj": 158.6,
+        "osm_id": "933701720"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.799309,
+          -6.2352851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Islam Syekh Yusuf Tangerang",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1124,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1499.5,
+        "dist_tj": 192.1,
+        "osm_id": "934252095"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6365713,
+          -6.1897435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pertamina",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5709,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1188.2,
+        "dist_tj": 231.1,
+        "osm_id": "946805003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7889024,
+          -6.2285805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Enjiniriing Pertanian Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1130,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2004.2,
+        "dist_tj": 4406.2,
+        "osm_id": "966234871"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6376117,
+          -6.3067721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Negeri Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5377,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 878.6,
+        "dist_tj": 1005.4,
+        "osm_id": "972544080"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8245905,
+          -6.3716852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Nusa Bangsa",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 891,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3581.6,
+        "dist_tj": 4638.8,
+        "osm_id": "983876279"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7765744,
+          -6.552337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Bhayangkara Jakarta Raya",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3696,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1858.4,
+        "dist_tj": 2160.3,
+        "osm_id": "1013665631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.0094108,
+          -6.2232403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Kepemerintahan dan Kebijakan Publik",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 7139,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7411.8,
+        "dist_tj": 12244.3,
+        "osm_id": "1014410733"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8876804,
+          -6.5306628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Muhammadiyah Tangerang",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2832,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 574.4,
+        "dist_tj": 199.4,
+        "osm_id": "1016777950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6334901,
+          -6.171997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Multimedia Nusantara",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 7889,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7134.3,
+        "dist_tj": 4383.5,
+        "osm_id": "1031359767"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6195636,
+          -6.2638269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakarta Global University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 9069,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1912.8,
+        "dist_tj": 5348.7,
+        "osm_id": "1062769746"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8276288,
+          -6.4185315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Buana Perjuangan Karawang",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4616,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2098.3,
+        "dist_tj": 32803.1,
+        "osm_id": "1105027926"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.3013159,
+          -6.3240195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus IPB Taman Kencana",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2083,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1350.2,
+        "dist_tj": 1378.0,
+        "osm_id": "1107793576"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8008976,
+          -6.5874727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kampus IPB Gunung Gede",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5238,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1953.3,
+        "dist_tj": 1907.3,
+        "osm_id": "1107793577"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8071723,
+          -6.5877427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Pertanian Bogor",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 30000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 8542.3,
+        "dist_tj": 7352.2,
+        "osm_id": "1107793578"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7241016,
+          -6.55529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stikes Widya Dharma Husada Tangerang Selatan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2170,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5886.9,
+        "dist_tj": 1325.0,
+        "osm_id": "1115921953"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7376747,
+          -6.3438164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sekolah Tinggi Sandi Negara (STSN)",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 2710,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 14696.6,
+        "dist_tj": 12154.7,
+        "osm_id": "1151551126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6672763,
+          -6.4567407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Teknologi Sains Bandung",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 5569,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2506.1,
+        "dist_tj": 21369.9,
+        "osm_id": "1174542402"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.198745,
+          -6.3545349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Brawijaya Kampus 4",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 2324,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 1177.8,
+        "dist_tj": 32.3,
+        "osm_id": "1189282091"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8478271,
+          -6.2271902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma J6 Cikunir",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 643.7,
+        "dist_tj": 4836.0,
+        "osm_id": "1205355318"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9592346,
+          -6.2588971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Bunda Mulia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1201,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 339.5,
+        "dist_tj": 753.1,
+        "osm_id": "1218554819"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8180515,
+          -6.1305569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Esa Unggul",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8216,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6435.4,
+        "dist_tj": 780.2,
+        "osm_id": "1230248638"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9723287,
+          -6.158497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pembangunan Jaya",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 3073,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 570.8,
+        "dist_tj": 2925.4,
+        "osm_id": "1233391375"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7255993,
+          -6.292329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perbanas Institute",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 1807,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 607.9,
+        "dist_tj": 246.7,
+        "osm_id": "1271094728"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8286474,
+          -6.2174496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Binus University Bekasi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11426,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1841.5,
+        "dist_tj": 2394.0,
+        "osm_id": "1274570644"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9998072,
+          -6.2196001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakarta International University",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 3742,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2364.2,
+        "dist_tj": 21042.3,
+        "osm_id": "1284455344"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.198356,
+          -6.3591564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Tazkia",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 11205,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5807.4,
+        "dist_tj": 4543.8,
+        "osm_id": "1286213322"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7426772,
+          -6.5732097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Digital Boash Indonesia",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 4800,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6659.0,
+        "dist_tj": 7501.8,
+        "osm_id": "1287082555"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7408645,
+          -6.5374704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2705.3,
+        "dist_tj": 4646.4,
+        "osm_id": "1292388125"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7999078,
+          -6.5551723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Esa Unggul",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8216,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 8099.2,
+        "dist_tj": 9666.0,
+        "osm_id": "1307883214"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.5262404,
+          -6.2729405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Paramadina",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 3928,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2359.1,
+        "dist_tj": 2779.2,
+        "osm_id": "1316349688"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9061077,
+          -6.3150699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma Kampus J2",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1604.6,
+        "dist_tj": 2959.1,
+        "osm_id": "1328292310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.9755918,
+          -6.2471029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Singaperbangsa Karawang (UNSIKA) 2",
+        "status": "PTN",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 18000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3939.0,
+        "dist_tj": 36509.0,
+        "osm_id": "1341441926"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.3358153,
+          -6.3036723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Pertanian Bogor",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 30000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7183.7,
+        "dist_tj": 5992.4,
+        "osm_id": "1377730635"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7343557,
+          -6.5620963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Raharja",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 7854,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 2070.7,
+        "dist_tj": 344.9,
+        "osm_id": "1385346613"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6344715,
+          -6.1955368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Negeri Jakarta Kampus PGSD",
+        "status": "PTN",
+        "akreditasi": "Unggul",
+        "mahasiswa": 28000,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 446.6,
+        "dist_tj": 466.9,
+        "osm_id": "1389325159"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8254063,
+          -6.2106483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Cendekia Abditama",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 2592,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 5922.2,
+        "dist_tj": 1995.7,
+        "osm_id": "1425487799"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.616828,
+          -6.2283272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Gunadarma Kampus K",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 35000,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6302.6,
+        "dist_tj": 2371.5,
+        "osm_id": "1425487808"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6157712,
+          -6.2316014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pelita Harapan",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 3719,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6644.5,
+        "dist_tj": 3020.9,
+        "osm_id": "1425487862"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.5964891,
+          -6.2254146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pondok Pesantren Darunnajah 2",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 11565,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 10707.6,
+        "dist_tj": 21320.6,
+        "osm_id": "1426768296"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.511558,
+          -6.4510753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Telkom University",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4721,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 770.8,
+        "dist_tj": 132.4,
+        "osm_id": "1427562571"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7505167,
+          -6.1551858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perguruan Tinggi",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5677,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1718.0,
+        "dist_tj": 672.1,
+        "osm_id": "1444078575"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6308549,
+          -6.1924671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Santo Borromeus",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 10241,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3439.3,
+        "dist_tj": 38517.9,
+        "osm_id": "1449899641"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.4755206,
+          -6.8648306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Maranatha",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 2132,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 4599.6,
+        "dist_tj": 37781.1,
+        "osm_id": "1449910164"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.4676644,
+          -6.8718243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PPG UIN Syarif Hidayatullah",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 1944,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 8189.4,
+        "dist_tj": 4416.9,
+        "osm_id": "1460254409"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7452461,
+          -6.3869865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institut Kesehatan Hermina",
+        "status": "PTS",
+        "akreditasi": "Unggul",
+        "mahasiswa": 8405,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 900.9,
+        "dist_tj": 416.7,
+        "osm_id": "1497572335"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8644351,
+          -6.2205323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "STIE Indonesia Jakarta - Kampus A",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 6402,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 807.8,
+        "dist_tj": 224.6,
+        "osm_id": "1498797631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8839334,
+          -6.1912456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Ichsan Satya",
+        "status": "PTS",
+        "akreditasi": "C",
+        "mahasiswa": 9785,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1043.7,
+        "dist_tj": 791.1,
+        "osm_id": "1534700678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7050358,
+          -6.2912699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Kejuangan 45 Jakarta",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 4868,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 2857.6,
+        "dist_tj": 1438.2,
+        "osm_id": "7548053"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7380849,
+          -6.1344494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Mpu Tantular",
+        "status": "PTN",
+        "akreditasi": "Baik",
+        "mahasiswa": 5997,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 1365.9,
+        "dist_tj": 644.0,
+        "osm_id": "12615537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8763682,
+          -6.2257008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UIN Syarif Hidayatullah",
+        "status": "PTS",
+        "akreditasi": "A",
+        "mahasiswa": 2173,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 3041.2,
+        "dist_tj": 2594.3,
+        "osm_id": "14372716"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7563592,
+          -6.3095397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politeknik Pembangunan Pertanian",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 5025,
+        "kategori": "Transit-Oriented",
+        "dist_stat": 764.1,
+        "dist_tj": 928.8,
+        "osm_id": "18874309"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.787882,
+          -6.6041424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitas Pertahanan Republik Indonesia",
+        "status": "PTS",
+        "akreditasi": "Baik Sekali",
+        "mahasiswa": 8302,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 6959.1,
+        "dist_tj": 12157.2,
+        "osm_id": "20039463"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.878446,
+          -6.5227124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pusat Pengembangan Strategi dan Diplomasi Kebahasaan",
+        "status": "PTS",
+        "akreditasi": "Baik",
+        "mahasiswa": 8635,
+        "kategori": "Transit-Isolated",
+        "dist_stat": 7234.5,
+        "dist_tj": 12027.2,
+        "osm_id": "20039464"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8809415,
+          -6.5265863
+        ]
+      }
+    }
+  ]
+}

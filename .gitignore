@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local Claude settings & logs
+CLAUDE.local.md
+.agents/
+.codex/
+
+# Raw spatial data & caches (large files)
+data_raw/
+data_projected/
+geocode_cache.json
+
+# Exclude large shapefile binaries from web deployment if desired, 
+# but keep geojsons for Streamlit.
+# (Uncomment the line below if you only want the WebGIS files on GitHub)
+# data_ready/*.shp
+# data_ready/*.shx
+# data_ready/*.dbf
+# data_ready/*.prj
