@@ -50,6 +50,7 @@ Platform dikembangkan menggunakan **Streamlit** (Python web framework) dan pusta
     *   *Stasiun*: Titik Biru.
     *   *Halte TransJakarta*: Titik Ungu.
 5.  **Hosting Publik**: Tautan aktif WebGIS: [https://uas-gis-e504.streamlit.app/](https://uas-gis-e504.streamlit.app/)
+6.  **Repositori GitHub**: Seluruh berkas kode sumber WebGIS, data Shapefile, dan script pemrosesan di-host secara privat di: [https://github.com/tgr-wjya/uas-gis-e504](https://github.com/tgr-wjya/uas-gis-e504)
 
 #### Screenshot Tampilan Peta Interaktif (WebGIS):
 *   **Visual 1: Tampilan Penuh WebGIS & Legenda**
@@ -80,6 +81,10 @@ Sebelum melatih model Random Forest, data atribut poligon kecamatan diperkaya de
     3.  `toll_pct`: Rasio panjang jalan tol terhadap luas kecamatan (m/m²).
     4.  `sma_grad`: Jumlah lulusan/siswa SMA (proxy angka sekolah).
     5.  `area_km2`: Luas total wilayah kecamatan (km²).
+
+#### Bukti Eksekusi Prosedur Feature Engineering di QGIS Console:
+![Bukti Eksekusi Prosedur Feature Engineering di QGIS Console](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/Screenshot from 2026-07-19 18-51-45.png)
+*Gambar 2.1: Bukti Eksekusi Script Pemrosesan Variabel Spasial di QGIS Python Console*
 
 ---
 
@@ -168,7 +173,7 @@ else:
 
 #### Bukti Eksekusi QGIS Python Console:
 ![Bukti Eksekusi QGIS Python Console](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/Screenshot from 2026-07-19 17-54-38.png)
-*Gambar 2.1: Bukti Eksekusi Pemodelan Spasial Random Forest pada QGIS Python Console*
+*Gambar 2.2: Bukti Eksekusi Pemodelan Spasial Random Forest pada QGIS Python Console*
 
 ---
 
@@ -195,4 +200,4 @@ Untuk menampilkan hasil klasifikasi rekomendasi dari model Random Forest ke dala
 
 #### Peta Hasil Cetak (QGIS Print Layout):
 ![Peta Cetak Layout QGIS](/home/tgrwjya/Documents/Uni/Semester 6/DATA/GIS/UAS/screenshot/Peta Rekomendasi Lokasi Kampus Satelit Baru Berbasis Machine Learning Print Layout.png)
-*Gambar 2.2: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*
+*Gambar 2.3: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*

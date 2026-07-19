@@ -54,6 +54,7 @@ Klasifikasi kesesuaian wilayah kecamatan untuk pembangunan kampus satelit baru m
 │   ├── kecamatan_predictions.csv      # Hasil prediksi klasifikasi model ML
 │   └── kecamatan_predictions_qgis.csv # Tabel prediksi hasil run script QGIS
 ├── app.py                             # Script aplikasi dashboard Streamlit WebGIS
+├── calculate_spatial_features_qgis.py # Script Feature Engineering untuk dijalankan di QGIS Python Console
 ├── train_qgis.py                      # Script Random Forest untuk dijalankan di QGIS Python Console
 ├── requirements.txt                   # Daftar dependensi modul python untuk Streamlit Cloud
 ├── Laporan_UAS_GIS_E504.md            # Draf laporan akademik (Markdown)
@@ -63,6 +64,15 @@ Klasifikasi kesesuaian wilayah kecamatan untuk pembangunan kampus satelit baru m
 ├── README.md                          # Informasi umum repositori (file ini)
 └── .gitignore                         # Konfigurasi pengecualian file pelacakan Git
 ```
+
+---
+
+## Petunjuk Penggunaan calculate_spatial_features_qgis.py di QGIS
+Jika Anda ingin menghitung ulang seluruh variabel spasial (jarak kawasan industri, kepadatan kampus, dan persentase tol) dari awal menggunakan Python alih-alih menu GUI QGIS:
+1.  Buka project **Project/UAS.qgz** di QGIS dan pastikan keempat layer spasial (`Kecamatan_Jabodetabek`, `Kawasan_Industri_Jabodetabek`, `Akses_Jalan_Tol`, `Sebaran_Kampus_Eksisting`) dimuat.
+2.  Buka **Python Console** di QGIS (`Ctrl + Alt + P`).
+3.  Buka berkas `calculate_spatial_features_qgis.py` di dalam editor QGIS tersebut.
+4.  Klik tombol hijau **Run Script** (Play). Atribut spasial pada tabel layer `Kecamatan_Jabodetabek` akan dihitung dan diperbarui secara otomatis.
 
 ---
 
