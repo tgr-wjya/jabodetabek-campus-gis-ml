@@ -19,4 +19,8 @@ geocode_cache.json
 # data_ready/*.shp
 # data_ready/*.shx
 # data_ready/*.dbf
-# data_ready/*.prj
+# Temporary logs
+logs-*.txt
+
+# Office Lock files
+.~lock.*

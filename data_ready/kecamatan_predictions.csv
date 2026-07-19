@@ -1,0 +1,300 @@
+KODE_KEC,KECAMATAN,KAB_KOTA,PROVINSI,dist_ind,camp_dens,toll_pct,sma_grad,area_km2,Label_Reko,Pred_Reko
+32.15.17,Telagasari,Karawang,Jawa Barat,16070.72,0.0,0.0,1784,52.1865,0,0
+32.15.18,Rawamerta,Karawang,Jawa Barat,15251.61,0.0,0.0,4754,50.3682,2,2
+32.15.16,Tirtamulya,Karawang,Jawa Barat,8541.63,0.0,0.0,3927,46.5707,2,2
+32.15.19,Lemahabang,Karawang,Jawa Barat,14591.32,0.0,0.0,1510,53.4926,0,1
+32.15.10,Pedes,Karawang,Jawa Barat,30916.98,0.0,0.0,764,66.1092,0,0
+32.15.13,Cikampek,Karawang,Jawa Barat,108.77,0.0,0.000676,1641,36.3744,2,2
+32.15.14,Jatisari,Karawang,Jawa Barat,11379.49,0.0,0.0,2193,55.4005,1,1
+32.15.11,Cibuaya,Karawang,Jawa Barat,35689.16,0.0,0.0,1339,118.3198,0,0
+32.15.12,Pakisjaya,Karawang,Jawa Barat,18105.27,0.0,0.0,875,68.4199,0,0
+32.15.28,Tegalwaru,Karawang,Jawa Barat,12988.72,0.0,0.0,1240,105.7801,0,0
+32.15.29,Purwasari,Karawang,Jawa Barat,5788.8,0.0,0.000222,1838,32.1846,1,1
+32.15.26,Karawang Timur,Karawang,Jawa Barat,8122.64,0.0329,0.0,3122,30.3989,1,1
+32.15.27,Telukjambe Barat,Karawang,Jawa Barat,1144.49,0.0,0.000355,2809,70.9669,2,2
+32.15.20,Tempuran,Karawang,Jawa Barat,24047.77,0.0,0.0,3695,93.6615,1,1
+32.15.21,Majalaya,Karawang,Jawa Barat,10058.75,0.0298,0.0,1177,33.5735,0,0
+32.15.24,Banyusari,Karawang,Jawa Barat,16755.56,0.0,0.0,3720,55.5215,1,1
+32.15.25,Kota Baru,Karawang,Jawa Barat,5567.49,0.0,0.0,685,33.344,0,0
+32.15.22,Jayakerta,Karawang,Jawa Barat,25596.49,0.0,0.0,1843,43.5371,0,0
+32.15.23,Cilamaya Kulon,Karawang,Jawa Barat,23368.43,0.0,0.0,2500,68.4034,0,0
+32.15.30,Cilebar,Karawang,Jawa Barat,28467.26,0.0,0.0,1211,72.001,0,0
+32.15.06,Rengasdengklok,Karawang,Jawa Barat,20121.04,0.0,0.0,3635,37.7123,1,1
+32.15.07,Kutawaluya,Karawang,Jawa Barat,21118.76,0.0,0.0,2205,54.647,0,0
+32.15.04,Ciampel,Karawang,Jawa Barat,2693.2,0.0,0.0,1067,117.1987,1,0
+32.15.05,Klari,Karawang,Jawa Barat,4662.31,0.0,0.000235,3079,73.7169,2,1
+32.15.08,Batujaya,Karawang,Jawa Barat,23428.87,0.0,0.0,2117,75.2426,0,0
+32.15.09,Tirtajaya,Karawang,Jawa Barat,30234.6,0.0,0.0,1667,105.4823,0,0
+32.15.02,Pangkalan,Karawang,Jawa Barat,6951.35,0.0,0.0,1379,99.7333,1,1
+32.15.03,Telukjambe Timur,Karawang,Jawa Barat,1982.4,0.0423,0.000296,4353,47.246,2,2
+32.15.01,Karawang Barat,Karawang,Jawa Barat,9516.45,0.0253,0.0,2325,39.5499,1,1
+36.02.04,Cipanas,Lebak,Banten,28375.76,0.0,0.0,1948,65.8369,0,0
+36.02.05,Muncang,Lebak,Banten,32168.47,0.0,0.0,3048,86.3123,0,0
+36.02.02,Panggarangan,Lebak,Banten,62233.11,0.0,0.0,2471,180.8423,0,0
+36.02.03,Bayah,Lebak,Banten,69409.02,0.0,0.0,2933,135.0583,0,0
+36.02.11,Cimarga,Lebak,Banten,27458.61,0.0,0.0,1557,185.0588,0,0
+36.02.12,Sajira,Lebak,Banten,21862.68,0.0,0.0,1728,112.4203,0,0
+36.02.13,Maja,Lebak,Banten,11123.09,0.0,0.0,4058,77.377,2,2
+36.02.14,Rangkasbitung,Lebak,Banten,15156.56,0.0,0.0,948,73.9264,0,0
+31.73.07,Pal Merah,Kota Administrasi Jakarta Barat,DKI Jakarta,13051.42,0.4072,0.001218,3140,7.3678,2,2
+31.73.08,Kembangan,Kota Administrasi Jakarta Barat,DKI Jakarta,16637.74,0.0401,0.001199,4532,24.928,2,2
+31.73.05,Kebon Jeruk,Kota Administrasi Jakarta Barat,DKI Jakarta,15997.45,0.2832,0.000334,2218,17.6559,1,1
+31.73.06,Kalideres,Kota Administrasi Jakarta Barat,DKI Jakarta,19397.01,0.0,0.000157,4970,28.9779,2,2
+36.74.03,Pondok Aren,Kota Tangerang Selatan,Banten,8374.99,0.1343,0.000386,2669,29.7944,1,2
+36.74.04,Ciputat,Kota Tangerang Selatan,Banten,6111.27,0.2183,0.001063,4811,22.901,2,2
+36.74.01,Serpong,Kota Tangerang Selatan,Banten,2622.67,0.0703,0.000392,3887,28.4659,2,2
+36.74.02,Serpong Utara,Kota Tangerang Selatan,Banten,9191.24,0.0902,0.000368,2142,22.1669,1,1
+36.74.07,Setu,Kota Tangerang Selatan,Banten,1240.69,0.0594,0.0,3778,16.8271,2,2
+36.74.05,Ciputat Timur,Kota Tangerang Selatan,Banten,9335.15,0.7332,0.000251,3532,16.3658,1,1
+36.74.06,Pamulang,Kota Tangerang Selatan,Banten,6698.74,0.1764,0.000114,4662,28.3523,2,2
+31.73.03,Taman Sari,Kota Administrasi Jakarta Barat,DKI Jakarta,11923.24,0.0,0.0,2381,4.497,1,1
+31.73.04,Tambora,Kota Administrasi Jakarta Barat,DKI Jakarta,13426.9,0.0,0.0,4231,5.415,2,2
+31.73.01,Cengkareng,Kota Administrasi Jakarta Barat,DKI Jakarta,20226.91,0.1944,0.000467,4345,25.7191,2,2
+31.73.02,Grogol Petamburan,Kota Administrasi Jakarta Barat,DKI Jakarta,14579.41,0.7385,0.001216,4384,10.8326,2,2
+32.02.05,Cisolok,Sukabumi,Jawa Barat,59152.46,0.0,0.0,798,173.5795,0,0
+32.02.03,Cikakak,Sukabumi,Jawa Barat,55109.89,0.0,0.0,1719,113.591,0,0
+32.02.06,Cikidang,Sukabumi,Jawa Barat,47751.51,0.0,0.0,930,155.5906,0,0
+31.01.02,Kepulauan Seribu Selatan,Administrasi Kepulauan Seribu,DKI Jakarta,32264.66,0.0,0.0,2103,4.0173,0,0
+32.02.15,Parakansalak,Sukabumi,Jawa Barat,34580.72,0.0,0.0,2341,38.0826,0,0
+32.02.16,Cicurug,Sukabumi,Jawa Barat,28732.36,0.0,0.0,2358,46.5552,0,0
+32.02.13,Parungkuda,Sukabumi,Jawa Barat,37513.41,0.0,0.0,3381,25.869,0,0
+32.02.14,Bojonggenteng,Sukabumi,Jawa Barat,38005.29,0.0,0.0,1762,17.3206,0,0
+32.02.19,Kabandungan,Sukabumi,Jawa Barat,41337.12,0.0,0.0,1968,136.7743,0,0
+32.02.17,Cidahu,Sukabumi,Jawa Barat,30686.99,0.0,0.0,1780,34.5809,0,0
+32.02.18,Kalapanunggal,Sukabumi,Jawa Barat,38865.79,0.0,0.0,1912,49.0898,0,0
+32.02.11,Cibadak,Sukabumi,Jawa Barat,43031.23,0.0,0.0,2085,64.0307,0,0
+32.02.12,Nagrak,Sukabumi,Jawa Barat,36061.07,0.0,0.0,1108,69.0354,0,0
+32.72.01,Gunungpuyuh,Kota Sukabumi,Jawa Barat,43795.05,0.0,0.0,4214,5.136,0,0
+32.02.28,Cicantayan,Sukabumi,Jawa Barat,44831.49,0.0,0.0,4026,36.2045,0,0
+32.02.29,Cisaat,Sukabumi,Jawa Barat,42797.64,0.0,0.0,2153,22.901,0,0
+32.02.36,Sukalarang,Sukabumi,Jawa Barat,44154.42,0.0,0.0,1384,30.715,0,0
+32.02.30,Kadudampit,Sukabumi,Jawa Barat,35391.56,0.0,0.0,1254,69.6266,0,0
+32.02.33,Sukaraja,Sukabumi,Jawa Barat,42435.17,0.0,0.0,4006,41.6933,0,0
+32.02.31,Caringin,Sukabumi,Jawa Barat,36961.56,0.0,0.0,4336,36.8923,1,0
+32.02.32,Sukabumi,Sukabumi,Jawa Barat,39151.78,0.0,0.0,2944,30.4478,0,0
+32.02.47,Ciambar,Sukabumi,Jawa Barat,32713.28,0.0,0.0,3405,61.3429,1,1
+32.71.01,Bogor Selatan,Kota Bogor,Jawa Barat,14806.53,0.0,0.000214,4018,30.5021,2,2
+32.75.08,Pondokgede,Kota Bekasi,Jawa Barat,7950.38,0.1721,0.000763,2567,17.4325,2,2
+32.75.09,Jatiasih,Kota Bekasi,Jawa Barat,12705.56,0.0,0.000346,3143,24.2618,2,2
+32.75.06,Medansatria,Kota Bekasi,Jawa Barat,7786.85,0.0,0.0,3347,13.2144,1,1
+32.75.07,Bantargebang,Kota Bekasi,Jawa Barat,9443.32,0.0,0.0,4608,19.2435,2,2
+32.75.11,Mustikajaya,Kota Bekasi,Jawa Barat,7457.12,0.0,0.0,3042,24.7567,1,1
+32.75.12,Pondokmelati,Kota Bekasi,Jawa Barat,12321.01,0.0,0.00033,2573,11.0157,1,1
+32.75.10,Jatisampurna,Kota Bekasi,Jawa Barat,12185.71,0.0,0.000214,1951,20.1933,1,1
+36.02.19,Cibeber,Lebak,Banten,52231.21,0.0,0.0,1024,394.4699,0,0
+36.02.22,Sobang,Lebak,Banten,39874.37,0.0,0.0,2904,109.6352,0,0
+36.02.23,Curug Bitung,Lebak,Banten,14910.57,0.0,0.0,1334,87.5444,0,0
+36.02.20,Cilograng,Lebak,Banten,68475.9,0.0,0.0,4446,102.3866,0,0
+36.02.25,Lebakgedong,Lebak,Banten,36047.41,0.0,0.0,3240,90.4105,0,0
+36.71.08,Periuk,Kota Tangerang,Banten,6745.67,0.0,0.0,3328,11.4631,2,1
+36.71.09,Cibodas,Kota Tangerang,Banten,8203.39,0.0,0.000441,3382,8.9794,2,2
+36.71.06,Ciledug,Kota Tangerang,Banten,11058.75,0.0,0.0,5236,8.6226,2,2
+36.71.07,Karawaci,Kota Tangerang,Banten,9238.14,0.3796,0.0,2298,13.1723,1,1
+36.71.01,Tangerang,Kota Tangerang,Banten,11791.25,0.394,0.000335,4503,15.2265,2,2
+36.71.04,Benda,Kota Tangerang,Banten,15516.47,0.0,0.000762,3565,25.0438,2,2
+36.71.05,Cipondoh,Kota Tangerang,Banten,16450.83,0.0,0.000128,4387,17.6913,2,2
+36.71.02,Jatiuwung,Kota Tangerang,Banten,4953.87,0.0,0.0,3528,14.5228,2,2
+36.71.03,Batuceper,Kota Tangerang,Banten,15153.32,0.0,0.000454,3452,8.5269,2,2
+36.71.11,Pinang,Kota Tangerang,Banten,13308.65,0.0449,0.001485,3671,22.2708,2,2
+36.71.12,Karang Tengah,Kota Tangerang,Banten,14214.72,0.0,0.000636,2768,10.1531,2,2
+36.71.10,Neglasari,Kota Tangerang,Banten,11335.43,0.0,0.0,5001,14.1791,2,2
+36.71.13,Larangan,Kota Tangerang,Banten,12152.83,0.0,0.0,4471,8.5005,2,2
+32.03.31,Haurwangi,Cianjur,Jawa Barat,31074.33,0.0,0.0,2604,45.9747,0,0
+32.71.04,Bogor Barat,Kota Bogor,Jawa Barat,11659.78,0.1716,0.0,4875,23.3155,2,2
+32.71.05,Bogor Utara,Kota Bogor,Jawa Barat,7078.97,0.0551,0.000345,2219,18.1374,1,1
+32.71.02,Bogor Timur,Kota Bogor,Jawa Barat,11843.51,0.0,9.3e-05,3887,10.464,2,2
+32.71.03,Bogor Tengah,Kota Bogor,Jawa Barat,10448.36,1.1952,0.0,2159,8.3667,0,0
+32.71.06,Tanah Sareal,Kota Bogor,Jawa Barat,8347.36,0.1942,0.000675,3993,20.6001,2,2
+32.75.01,Bekasi Timur,Kota Bekasi,Jawa Barat,8378.72,0.0683,0.000382,3079,14.6353,2,2
+32.75.04,Bekasi Selatan,Kota Bekasi,Jawa Barat,9675.04,0.0633,0.001474,5622,15.8065,2,2
+32.75.05,Rawalumbu,Kota Bekasi,Jawa Barat,10921.53,0.1187,0.000339,3857,16.8531,2,2
+32.75.02,Bekasi Barat,Kota Bekasi,Jawa Barat,6674.94,0.1342,0.001355,3645,14.8995,2,2
+32.75.03,Bekasi Utara,Kota Bekasi,Jawa Barat,10351.49,0.1442,0.0,2674,20.8053,1,1
+31.74.01,Tebet,Kota Administrasi Jakarta Selatan,DKI Jakarta,7646.77,0.5348,0.000334,4303,9.3498,2,2
+31.74.04,Pasar Minggu,Kota Administrasi Jakarta Selatan,DKI Jakarta,13754.41,0.2313,0.000423,3077,21.6196,1,1
+31.74.05,Kebayoran Lama,Kota Administrasi Jakarta Selatan,DKI Jakarta,14631.8,0.2099,0.000199,2258,19.0592,1,1
+31.74.02,Setiabudi,Kota Administrasi Jakarta Selatan,DKI Jakarta,9491.69,1.0086,0.000392,2043,8.9234,1,1
+31.74.03,Mampang Prapatan,Kota Administrasi Jakarta Selatan,DKI Jakarta,11784.83,0.2517,0.000326,3221,7.9459,1,1
+31.74.08,Pancoran,Kota Administrasi Jakarta Selatan,DKI Jakarta,9900.04,0.4509,0.000353,2522,8.8707,1,1
+31.74.09,Jagakarsa,Kota Administrasi Jakarta Selatan,DKI Jakarta,15846.14,0.2792,0.000235,4003,25.0693,2,2
+31.74.06,Cilandak,Kota Administrasi Jakarta Selatan,DKI Jakarta,13473.01,0.2254,0.00079,2915,17.7491,2,2
+31.74.07,Kebayoran Baru,Kota Administrasi Jakarta Selatan,DKI Jakarta,13363.81,0.3939,7.3e-05,3584,12.6929,1,2
+31.74.10,Pesanggrahan,Kota Administrasi Jakarta Selatan,DKI Jakarta,12844.17,0.2964,0.001425,3919,13.4939,2,2
+31.71.01,Gambir,Kota Administrasi Jakarta Pusat,DKI Jakarta,10967.48,0.2664,0.0,4779,7.5089,2,2
+31.71.02,Sawah Besar,Kota Administrasi Jakarta Pusat,DKI Jakarta,10175.09,0.0,0.0,2805,5.3586,1,1
+31.71.05,Cempaka Putih,Kota Administrasi Jakarta Pusat,DKI Jakarta,5390.73,0.4286,0.000939,5867,4.6664,2,2
+31.71.06,Menteng,Kota Administrasi Jakarta Pusat,DKI Jakarta,8637.9,1.0813,0.0,2800,6.4739,0,0
+31.71.03,Kemayoran,Kota Administrasi Jakarta Pusat,DKI Jakarta,7529.86,0.0,7.3e-05,4403,7.1682,2,2
+31.71.04,Senen,Kota Administrasi Jakarta Pusat,DKI Jakarta,7636.37,1.6089,0.0,3396,4.3507,0,0
+32.03.05,Ciranjang,Cianjur,Jawa Barat,29369.22,0.0,0.0,3160,34.2522,1,1
+31.71.07,Tanah Abang,Kota Administrasi Jakarta Pusat,DKI Jakarta,11519.14,0.3981,0.000491,4921,10.0479,2,2
+32.03.06,Bojongpicung,Cianjur,Jawa Barat,37606.15,0.0,0.0,2447,89.0148,0,0
+31.71.08,Johar Baru,Kota Administrasi Jakarta Pusat,DKI Jakarta,6762.69,0.4223,0.0,1945,2.3682,1,1
+32.03.03,Cibeber,Cianjur,Jawa Barat,49163.53,0.0,0.0,2568,125.5767,0,0
+32.03.04,Cilaku,Cianjur,Jawa Barat,42789.56,0.0,0.0,3009,53.1969,0,0
+32.03.09,Sukaluyu,Cianjur,Jawa Barat,34546.17,0.0,0.0,1431,47.0647,0,0
+32.03.07,Karangtengah,Cianjur,Jawa Barat,34940.31,0.0,0.0,3143,48.4838,0,0
+32.03.08,Mande,Cianjur,Jawa Barat,30962.87,0.0,0.0,1696,92.6644,0,0
+32.03.01,Cianjur,Cianjur,Jawa Barat,40838.85,0.075,0.0,3945,26.6804,0,0
+32.03.02,Warungkondang,Cianjur,Jawa Barat,44311.61,0.0,0.0,2984,45.7201,0,0
+32.03.12,Cikalongkulon,Cianjur,Jawa Barat,25361.92,0.0,0.0,3253,145.1066,1,1
+32.03.13,Sukaresmi,Cianjur,Jawa Barat,33746.67,0.0,0.0,2478,96.5489,0,0
+32.03.10,Pacet,Cianjur,Jawa Barat,32692.8,0.0,0.0,2850,41.5788,0,0
+32.03.11,Cugenang,Cianjur,Jawa Barat,39049.66,0.0,0.0,2444,76.2908,0,0
+32.03.27,Gekbrong,Cianjur,Jawa Barat,44574.56,0.0,0.0,2518,49.029,0,0
+32.03.28,Cipanas,Cianjur,Jawa Barat,28154.08,0.0,0.0,953,68.0799,0,0
+32.16.21,Serang Baru,Bekasi,Jawa Barat,5331.04,0.0,0.0,2974,57.0894,1,1
+32.16.22,Cibarusah,Bekasi,Jawa Barat,8967.51,0.0,0.0,3914,42.1953,2,2
+32.16.20,Cikarang Pusat,Bekasi,Jawa Barat,1052.89,0.0375,0.000399,2325,53.3517,2,2
+32.16.23,Bojongmangu,Bekasi,Jawa Barat,4907.34,0.0,0.0,1766,54.7216,1,1
+36.03.29,Sindang Jaya,Tangerang,Banten,4116.98,0.0,0.0,1526,40.5973,1,1
+36.03.32,Gunung Kaler,Tangerang,Banten,10149.98,0.0,0.0,2564,33.6655,1,1
+36.03.33,Mekar Baru,Tangerang,Banten,14022.21,0.0,0.0,1925,28.0816,1,1
+36.03.30,Sepatan Timur,Tangerang,Banten,10501.76,0.0,0.0,2858,18.6433,1,1
+36.03.31,Solear,Tangerang,Banten,2658.16,0.0,0.0,1560,32.6234,1,1
+36.03.01,Balaraja,Tangerang,Banten,7546.28,0.0,0.000303,1922,30.5372,1,1
+36.03.02,Jayanti,Tangerang,Banten,8995.51,0.0,0.000183,3339,24.7632,2,1
+36.03.05,Cisoka,Tangerang,Banten,6214.74,0.0,0.0,3400,33.3071,2,2
+36.03.06,Kresek,Tangerang,Banten,9921.53,0.0,0.00015,2194,28.1899,1,1
+36.03.03,Tigaraksa,Tangerang,Banten,4249.57,0.0181,4.8e-05,1343,55.1771,1,1
+36.03.04,Jambe,Tangerang,Banten,3458.91,0.0,0.0,3242,28.1195,2,2
+36.03.09,Kemiri,Tangerang,Banten,12815.54,0.0,0.0,3320,35.8605,1,1
+36.03.07,Kronjo,Tangerang,Banten,16309.6,0.0,0.0,1990,45.0103,1,1
+36.03.08,Mauk,Tangerang,Banten,13521.85,0.0,0.0,2578,42.8546,1,1
+36.03.12,Pasar Kemis,Tangerang,Banten,3029.79,0.0,0.0,3226,31.6779,2,2
+36.03.13,Teluknaga,Tangerang,Banten,19826.69,0.0,0.0,1329,49.2305,0,0
+36.03.10,Sukadiri,Tangerang,Banten,12424.06,0.0,0.0,2728,26.4802,1,1
+36.03.11,Rajeg,Tangerang,Banten,7484.37,0.0,0.0,3782,51.2232,2,2
+36.03.16,Sepatan,Tangerang,Banten,8445.96,0.0,0.0,3286,19.0236,1,1
+36.03.17,Curug,Tangerang,Banten,3317.48,0.0328,0.000264,3354,30.52,2,2
+36.03.14,Kosambi,Tangerang,Banten,19916.97,0.0,0.0,1770,37.2707,0,0
+36.03.15,Pakuhaji,Tangerang,Banten,15403.97,0.0,0.0,1135,51.999,0,0
+36.03.18,Cikupa,Tangerang,Banten,1135.7,0.022,0.000415,2674,45.3554,2,2
+36.03.19,Panongan,Tangerang,Banten,2800.25,0.0278,0.0,2422,35.956,1,1
+36.03.23,Cisauk,Tangerang,Banten,5438.49,0.1012,8.7e-05,3099,29.6378,1,1
+36.03.22,Pagedangan,Tangerang,Banten,7993.75,0.0774,0.000228,2905,51.6844,1,1
+36.03.27,Sukamulya,Tangerang,Banten,9859.07,0.0,0.0,1933,26.5367,1,1
+36.03.28,Kelapa Dua,Tangerang,Banten,7957.75,0.3191,0.000164,1406,25.0691,1,1
+36.03.20,Legok,Tangerang,Banten,7109.94,0.0,0.0,3183,38.5606,1,1
+31.72.02,Tanjung Priok,Kota Administrasi Jakarta Utara,DKI Jakarta,6345.09,0.0444,0.000822,4596,22.5006,2,2
+31.72.03,Koja,Kota Administrasi Jakarta Utara,DKI Jakarta,3725.08,0.0,0.000663,3597,11.6622,2,2
+31.72.01,Penjaringan,Kota Administrasi Jakarta Utara,DKI Jakarta,18774.56,0.0248,0.001273,2083,40.2781,2,2
+31.72.06,Kelapa Gading,Kota Administrasi Jakarta Utara,DKI Jakarta,3687.88,0.0629,0.000898,5088,15.9105,2,2
+31.72.04,Cilincing,Kota Administrasi Jakarta Utara,DKI Jakarta,2333.31,0.0,0.000338,2993,43.575,2,2
+31.72.05,Pademangan,Kota Administrasi Jakarta Utara,DKI Jakarta,10405.94,0.0755,0.000883,2094,13.2405,2,2
+32.01.09,Sukamakmur,Bogor,Jawa Barat,18131.86,0.0,0.0,761,182.0776,0,0
+32.01.14,Leuwiliang,Bogor,Jawa Barat,30313.48,0.0,0.0,3750,92.2684,1,1
+32.01.15,Ciampea,Bogor,Jawa Barat,18458.86,0.0,0.0,2876,33.9772,1,1
+32.01.12,Kemang,Bogor,Jawa Barat,13427.07,0.0301,7e-06,1850,33.1833,1,1
+32.01.13,Bojong Gede,Bogor,Jawa Barat,8185.63,0.0,0.0,2637,27.477,1,1
+32.01.18,Rumpin,Bogor,Jawa Barat,14772.97,0.0,0.0,1901,139.0909,1,1
+32.01.19,Jasinga,Bogor,Jawa Barat,19114.79,0.0,0.0,2161,137.5125,1,1
+32.01.16,Cibungbulang,Bogor,Jawa Barat,22408.33,0.0,0.0,1381,37.6978,0,0
+32.01.17,Pamijahan,Bogor,Jawa Barat,29065.52,0.0,0.0,1913,125.1737,0,0
+32.01.10,Parung,Bogor,Jawa Barat,11656.44,0.0,0.0,3937,27.7361,2,2
+32.01.11,Gunung Sindur,Bogor,Jawa Barat,5835.98,0.0,0.0,3460,48.4477,2,2
+32.01.25,Cisarua,Bogor,Jawa Barat,22885.85,0.0,0.0,3802,71.0651,1,1
+32.01.26,Megamendung,Bogor,Jawa Barat,17576.94,0.0158,0.0,1531,63.4439,0,0
+32.01.23,Tenjo,Bogor,Jawa Barat,8036.63,0.0,0.0,1035,83.025,0,0
+32.01.24,Ciawi,Bogor,Jawa Barat,21623.99,0.0,9.9e-05,2122,47.0706,1,1
+32.01.29,Ciomas,Bogor,Jawa Barat,14467.39,0.0,0.0,2999,17.9609,1,1
+32.01.27,Caringin,Bogor,Jawa Barat,24266.53,0.0,8e-05,1912,77.9097,0,0
+32.01.28,Cijeruk,Bogor,Jawa Barat,20213.86,0.0,0.0,2764,47.9993,1,1
+32.01.21,Nanggung,Bogor,Jawa Barat,39051.48,0.0,0.0,2902,158.1417,0,0
+32.01.22,Cigudeg,Bogor,Jawa Barat,22763.52,0.0056,0.0,3172,179.1608,1,1
+32.01.20,Parung Panjang,Bogor,Jawa Barat,11009.26,0.0,0.0,1432,70.9705,1,1
+32.01.36,Tanjungsari,Bogor,Jawa Barat,24406.74,0.0,0.0,4007,147.356,1,1
+32.01.37,Tajurhalang,Bogor,Jawa Barat,11830.14,0.0,0.0,2257,31.7487,1,1
+32.01.34,Ranca Bungur,Bogor,Jawa Barat,15633.33,0.0431,0.0,2627,23.1936,1,1
+32.01.35,Sukajaya,Bogor,Jawa Barat,35852.87,0.0,0.0,3931,166.2197,1,1
+32.01.38,Cigombong,Bogor,Jawa Barat,25710.94,0.0,0.00031,979,46.5463,0,0
+32.01.39,Leuwisadeng,Bogor,Jawa Barat,28261.64,0.0,0.0,2239,35.9542,0,0
+32.01.32,Klapanunggal,Bogor,Jawa Barat,5350.56,0.0,0.0,2342,95.8936,1,1
+32.01.33,Ciseeng,Bogor,Jawa Barat,13339.29,0.025,0.0,960,40.0016,0,0
+32.01.30,Dramaga,Bogor,Jawa Barat,15934.7,0.0785,0.0,1753,25.4864,0,1
+32.01.31,Tamansari,Bogor,Jawa Barat,19542.85,0.0,0.0,2976,39.2966,1,1
+32.01.40,Tenjolaya,Bogor,Jawa Barat,22163.93,0.0,0.0,2485,36.311,1,0
+32.01.03,Citeureup,Bogor,Jawa Barat,4228.03,0.0577,0.000184,1921,69.3328,1,1
+32.01.04,Sukaraja,Bogor,Jawa Barat,7007.07,0.0,0.000397,3560,43.8706,2,2
+32.01.01,Cibinong,Bogor,Jawa Barat,4294.16,0.0,0.0,1656,46.6523,1,1
+32.01.02,Gunung Putri,Bogor,Jawa Barat,8071.86,0.0,0.000171,1422,60.9432,1,1
+32.01.07,Cileungsi,Bogor,Jawa Barat,11843.35,0.0,0.0,1451,70.1613,0,0
+32.01.08,Cariu,Bogor,Jawa Barat,15470.03,0.0,0.0,3315,84.8605,1,1
+32.01.05,Babakan Madang,Bogor,Jawa Barat,9716.77,0.0109,0.000119,617,91.6179,0,0
+32.01.06,Jonggol,Bogor,Jawa Barat,15445.53,0.0,0.0,1579,135.4179,0,0
+32.16.07,Cibitung,Bekasi,Jawa Barat,3339.12,0.0,0.000316,2050,45.3083,1,1
+32.16.08,Cikarang Barat,Bekasi,Jawa Barat,839.67,0.0,0.000702,3717,54.9923,2,2
+32.16.05,Tambun Utara,Bekasi,Jawa Barat,8620.68,0.0,0.000262,2335,35.4683,1,1
+32.16.06,Tambun Selatan,Bekasi,Jawa Barat,4199.16,0.024,0.000688,2344,41.6042,2,2
+32.16.09,Cikarang Utara,Bekasi,Jawa Barat,1831.62,0.0248,0.000208,3583,40.3089,2,2
+32.16.03,Sukawangi,Bekasi,Jawa Barat,11736.5,0.0,9.9e-05,2834,69.3022,1,1
+32.16.04,Tambelang,Bekasi,Jawa Barat,11492.63,0.0,0.0,1138,35.973,0,0
+32.16.01,Tarumajaya,Bekasi,Jawa Barat,3340.82,0.0176,0.000156,2247,56.8452,1,1
+32.16.02,Babelan,Bekasi,Jawa Barat,6229.71,0.0,0.000109,842,64.3918,1,1
+32.16.18,Setu,Bekasi,Jawa Barat,5147.56,0.0,0.0,1947,59.1251,1,1
+32.16.19,Cikarang Selatan,Bekasi,Jawa Barat,474.15,0.0378,0.000401,3485,52.9766,2,2
+32.16.16,Cabangbungin,Bekasi,Jawa Barat,16480.36,0.0,0.0,3961,49.8786,1,1
+32.16.17,Muaragembong,Bekasi,Jawa Barat,12055.89,0.0,0.0,2975,127.8412,1,1
+32.16.10,Karang Bahagia,Bekasi,Jawa Barat,9185.96,0.0,0.0,1642,46.5205,1,1
+32.16.11,Cikarang Timur,Bekasi,Jawa Barat,5451.7,0.0,0.0,683,52.0659,0,0
+32.16.14,Sukakarya,Bekasi,Jawa Barat,16455.74,0.0,0.0,2555,47.8887,1,1
+32.16.15,Sukatani,Bekasi,Jawa Barat,10749.22,0.0,0.0,2377,38.2175,1,1
+32.16.12,Kedung Waringin,Bekasi,Jawa Barat,10741.99,0.0,0.0,3887,30.9443,2,2
+32.16.13,Pebayuran,Bekasi,Jawa Barat,17604.8,0.0,0.0,1449,94.7518,0,0
+32.76.01,Pancoran Mas,Kota Depok,Jawa Barat,14512.71,0.0,0.000129,3582,18.0502,1,2
+32.76.02,Cimanggis,Kota Depok,Jawa Barat,12527.07,0.2295,0.000794,2452,21.783,2,2
+32.76.05,Sukmajaya,Kota Depok,Jawa Barat,11082.94,0.1151,0.000356,2526,17.3706,1,1
+32.76.06,Beji,Kota Depok,Jawa Barat,14884.05,0.205,0.000359,4113,14.6317,2,2
+32.76.03,Sawangan,Kota Depok,Jawa Barat,12298.98,0.0,0.0,3997,26.0853,2,2
+32.76.04,Limo,Kota Depok,Jawa Barat,11844.37,0.0841,0.000708,2879,11.8956,2,2
+32.76.09,Cinere,Kota Depok,Jawa Barat,12200.58,0.0949,0.000657,3541,10.5339,2,2
+32.76.07,Cipayung,Kota Depok,Jawa Barat,11289.64,0.0,0.0,3473,11.3669,1,1
+32.76.08,Cilodong,Kota Depok,Jawa Barat,9129.86,0.0,0.0,2437,15.3823,1,1
+32.76.10,Tapos,Kota Depok,Jawa Barat,6794.37,0.0,0.000335,4552,33.4389,2,2
+32.76.11,Bojongsari,Kota Depok,Jawa Barat,9228.03,0.0515,0.0,3513,19.4079,1,1
+32.17.08,Padalarang,Bandung Barat,Jawa Barat,28290.41,0.0383,0.000169,3220,52.2593,1,1
+32.17.09,Batujajar,Bandung Barat,Jawa Barat,35479.61,0.0,0.0,3374,31.7087,0,0
+32.17.06,Ngamprah,Bandung Barat,Jawa Barat,28967.66,0.0,0.000316,1652,32.5934,0,0
+32.17.07,Cipatat,Bandung Barat,Jawa Barat,26491.31,0.0,3.8e-05,2967,121.7808,1,1
+32.17.04,Cikalongwetan,Bandung Barat,Jawa Barat,16957.74,0.0,0.000154,2394,114.31,1,1
+32.17.05,Cipeundeuy,Bandung Barat,Jawa Barat,19969.55,0.0,0.0,2560,106.9901,1,1
+32.17.03,Cisarua,Bandung Barat,Jawa Barat,26576.49,0.0,0.0,3861,52.6158,1,1
+32.17.12,Cipongkor,Bandung Barat,Jawa Barat,39713.59,0.0,0.0,1925,83.4462,0,0
+32.17.16,Saguling,Bandung Barat,Jawa Barat,32916.79,0.0,0.0,2769,48.4449,0,0
+32.14.05,Sukatani,Purwakarta,Jawa Barat,4391.04,0.0,0.000185,2408,102.4888,1,1
+32.14.06,Darangdan,Purwakarta,Jawa Barat,11245.48,0.0,0.000179,1493,64.8706,1,1
+32.14.03,Jatiluhur,Purwakarta,Jawa Barat,3774.4,0.0,0.000188,1670,46.4743,1,1
+32.14.04,Plered,Purwakarta,Jawa Barat,7606.31,0.0,0.0,1830,31.4483,1,1
+32.14.07,Maniis,Purwakarta,Jawa Barat,16796.92,0.0,0.0,1587,64.0911,0,0
+32.14.08,Tegalwaru,Purwakarta,Jawa Barat,10634.27,0.0,0.0,2372,69.3046,1,1
+32.14.01,Purwakarta,Purwakarta,Jawa Barat,4012.54,0.0404,0.000124,2774,24.7465,1,1
+32.14.02,Campaka,Purwakarta,Jawa Barat,7854.15,0.0,0.000209,4425,54.3813,2,2
+32.14.16,Pondoksalam,Purwakarta,Jawa Barat,8347.42,0.0,0.0,2152,40.5456,1,1
+32.14.15,Sukasari,Purwakarta,Jawa Barat,13929.51,0.0,0.0,2582,123.0031,1,1
+32.14.12,Babakancikao,Purwakarta,Jawa Barat,424.52,0.0,0.000323,1744,47.6748,1,1
+32.14.13,Bungursari,Purwakarta,Jawa Barat,3291.96,0.0,0.000227,4140,47.0587,2,2
+32.14.10,Pasawahan,Purwakarta,Jawa Barat,6662.05,0.0,0.0,2357,30.5919,1,1
+32.14.11,Bojong,Purwakarta,Jawa Barat,15947.3,0.0,0.0,2401,73.6769,1,1
+31.75.01,Matraman,Kota Administrasi Jakarta Timur,DKI Jakarta,5416.15,0.6174,0.000701,3703,4.8588,2,2
+31.75.02,Pulogadung,Kota Administrasi Jakarta Timur,DKI Jakarta,2765.05,0.8049,0.000207,3665,14.9091,1,2
+31.75.05,Pasar Rebo,Kota Administrasi Jakarta Timur,DKI Jakarta,15379.56,0.0802,0.000113,3037,12.4753,1,1
+31.75.06,Cakung,Kota Administrasi Jakarta Timur,DKI Jakarta,3273.97,0.0,0.000559,5114,41.2778,2,2
+31.75.03,Jatinegara,Kota Administrasi Jakarta Timur,DKI Jakarta,5042.68,0.6764,0.001431,3963,10.3484,2,2
+31.75.04,Kramatjati,Kota Administrasi Jakarta Timur,DKI Jakarta,10041.34,0.3059,0.00081,4244,13.0746,2,2
+31.75.09,Ciracas,Kota Administrasi Jakarta Timur,DKI Jakarta,15394.25,0.2374,0.000939,4810,16.8498,2,2
+31.75.07,Duren Sawit,Kota Administrasi Jakarta Timur,DKI Jakarta,3775.23,0.1359,0.000385,5314,22.0794,2,2
+31.75.08,Makasar,Kota Administrasi Jakarta Timur,DKI Jakarta,7821.37,0.1394,0.001275,4352,21.5256,2,2
+31.75.10,Cipayung,Kota Administrasi Jakarta Timur,DKI Jakarta,13997.74,0.1443,0.000721,3201,27.7272,2,2
+36.04.13,Tirtayasa,Serang,Banten,19981.53,0.0,0.0,3001,59.6791,1,1
+36.04.14,Tanara,Serang,Banten,17419.85,0.0,0.0,2117,47.2017,1,1
+36.04.11,Kragilan,Serang,Banten,5281.77,0.0,0.000299,3233,38.0371,2,2
+36.04.12,Pontang,Serang,Banten,17304.11,0.0,0.0,1907,60.3728,0,0
+36.04.17,Carenang,Serang,Banten,8917.46,0.0,0.0,2011,29.0636,1,1
+36.04.18,Binuang,Serang,Banten,5272.35,0.0,0.0,1184,28.7162,1,1
+36.04.15,Cikande,Serang,Banten,4711.91,0.0,0.00025,2088,49.0392,1,1
+36.04.16,Kibin,Serang,Banten,789.31,0.0,0.000247,1191,30.5701,1,1
+36.04.24,Pamarayan,Serang,Banten,6195.13,0.0,0.0,1161,45.0081,1,1
+36.04.25,Kopo,Serang,Banten,8001.46,0.0,0.0,4253,36.506,2,2
+36.04.26,Jawilan,Serang,Banten,7673.92,0.0,0.0,2294,44.9347,1,1
+36.04.35,Lebak Wangi,Serang,Banten,11002.25,0.0,0.0,1682,34.7308,1,1
+36.04.34,Bandung,Serang,Banten,1190.25,0.0,0.0,3108,25.7786,2,2
