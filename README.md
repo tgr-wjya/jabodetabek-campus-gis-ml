@@ -14,7 +14,7 @@ Repository ini berisi seluruh berkas proyek Ujian Akhir Semester (UAS) mata kuli
 ## 1. Soal 1: WebGIS Dashboard Aksesibilitas Kampus
 Visualisasi dan analisis aksesibilitas multimoda transportasi massal (KRL/MRT/LRT dan TransJakarta) terhadap lokasi perguruan tinggi eksisting di Jabodetabek.
 
-*   **Aplikasi Live**: [https://uas-gis-e504.streamlit.app/](https://uas-gis-e504.streamlit.app/)
+*   **Aplikasi Live**: [https://uas-gis-e504-jgvdz7rzslwkmhm6dlugek.streamlit.app/](https://uas-gis-e504-jgvdz7rzslwkmhm6dlugek.streamlit.app/)
 *   **Kategori Aksesibilitas**:
     *   *Transit-Oriented* (Akses Baik): Kampus berjarak <= 1.000 meter dari stasiun kereta ATAU <= 500 meter dari halte TransJakarta.
     *   *Transit-Isolated* (Akses Buruk): Kampus di luar jangkauan kedua moda tersebut.

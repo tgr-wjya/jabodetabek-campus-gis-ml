@@ -26,7 +26,7 @@
       "properties": {
         "name": "BSI SQUARE Kaliabang Bekasi",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5779,
         "kategori": "Transit-Isolated",
         "dist_stat": 3784.4,
@@ -106,7 +106,7 @@
       "properties": {
         "name": "STIE Paripurna",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 7030,
         "kategori": "Transit-Isolated",
         "dist_stat": 4371.8,
@@ -226,7 +226,7 @@
       "properties": {
         "name": "International University Liaison Indonesia",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 2596,
         "kategori": "Transit-Isolated",
         "dist_stat": 2323.2,
@@ -246,7 +246,7 @@
       "properties": {
         "name": "Sekolah Pasca Sarjana USAHID",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 10838,
         "kategori": "Transit-Oriented",
         "dist_stat": 247.6,
@@ -406,7 +406,7 @@
       "properties": {
         "name": "AKBID KARYA HUSADA",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 4770,
         "kategori": "Transit-Isolated",
         "dist_stat": 2342.7,
@@ -564,7 +564,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Muhammadiyah Tangerang",
+        "name": "Universitas Muhammadiyah Tangerang – Kampus Cipondoh",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 2832,
@@ -606,7 +606,7 @@
       "properties": {
         "name": "Politeknik Kartini Jakarta",
         "status": "PTN",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5916,
         "kategori": "Transit-Oriented",
         "dist_stat": 1351.5,
@@ -638,26 +638,6 @@
         "coordinates": [
           106.9989462,
           -6.2599928
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kampus IPB Baranangsiang",
-        "status": "PTS",
-        "akreditasi": "Baik Sekali",
-        "mahasiswa": 10320,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 1769.3,
-        "dist_tj": 565.4,
-        "osm_id": "11132298077"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.8064598,
-          -6.6002451
         ]
       }
     },
@@ -706,7 +686,7 @@
       "properties": {
         "name": "PLN Corporate Universiti",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 10407,
         "kategori": "Transit-Isolated",
         "dist_stat": 6468.8,
@@ -724,27 +704,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Paramadina",
-        "status": "PTS",
-        "akreditasi": "Baik",
-        "mahasiswa": 3928,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 7687.9,
-        "dist_tj": 18491.2,
-        "osm_id": "12809626863"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.155296,
-          -6.3357757
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Perguruan Tinggi",
+        "name": "Perguruan Tinggi – Cikarang Timur (Tidak Teridentifikasi)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 5677,
@@ -806,7 +766,7 @@
       "properties": {
         "name": "Universitas bakrie",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 1842,
         "kategori": "Transit-Oriented",
         "dist_stat": 162.0,
@@ -864,7 +824,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Jayabaya",
+        "name": "Universitas Jayabaya – Kampus Cimanggis (C)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 6889,
@@ -886,7 +846,7 @@
       "properties": {
         "name": "Universitas Yarsi",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3299,
         "kategori": "Transit-Oriented",
         "dist_stat": 2746.3,
@@ -904,9 +864,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas MH Thamrin",
+        "name": "Universitas MH Thamrin – Kampus Kramat Jati (Pusat)",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5721,
         "kategori": "Transit-Oriented",
         "dist_stat": 863.9,
@@ -924,7 +884,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Borobudur",
+        "name": "Universitas Borobudur – Kampus Kalimalang (A)",
         "status": "PTN",
         "akreditasi": "Baik Sekali",
         "mahasiswa": 1163,
@@ -944,7 +904,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Budi Luhur",
+        "name": "Universitas Budi Luhur – Kampus Pusat (Jakarta Barat)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 9540,
@@ -966,7 +926,7 @@
       "properties": {
         "name": "Universitas Persada Indonesia Fakultas Teknik UPI YAI",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 8825,
         "kategori": "Transit-Oriented",
         "dist_stat": 760.0,
@@ -986,7 +946,7 @@
       "properties": {
         "name": "Universitas MH Thamrin Kampus AKA",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 7680,
         "kategori": "Transit-Oriented",
         "dist_stat": 2122.4,
@@ -1064,7 +1024,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Negeri Jakarta",
+        "name": "Universitas Negeri Jakarta – Kampus A (Rawamangun Muka)",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 28000,
@@ -1086,7 +1046,7 @@
       "properties": {
         "name": "Institut STIAMI",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 9972,
         "kategori": "Transit-Oriented",
         "dist_stat": 1304.5,
@@ -1106,7 +1066,7 @@
       "properties": {
         "name": "Kampus Kejaksaan",
         "status": "PTN",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 9783,
         "kategori": "Transit-Oriented",
         "dist_stat": 840.4,
@@ -1184,7 +1144,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Mercu Buana",
+        "name": "Universitas Mercu Buana – Kampus Meruya (A)",
         "status": "PTS",
         "akreditasi": "Unggul",
         "mahasiswa": 25000,
@@ -1226,7 +1186,7 @@
       "properties": {
         "name": "Fakultas Kedokteran Ukrida",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 11197,
         "kategori": "Transit-Isolated",
         "dist_stat": 2771.7,
@@ -1244,7 +1204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Esa Unggul",
+        "name": "Universitas Esa Unggul – Kampus Jakarta (Kebon Jeruk)",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 8216,
@@ -1386,7 +1346,7 @@
       "properties": {
         "name": "Universitas Nasional",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 6904,
         "kategori": "Transit-Oriented",
         "dist_stat": 652.2,
@@ -1404,7 +1364,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Negeri Jakarta",
+        "name": "Universitas Negeri Jakarta – Kampus B (Pemuda/FIKK)",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 28000,
@@ -1446,7 +1406,7 @@
       "properties": {
         "name": "Universitas Trisakti",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 22000,
         "kategori": "Transit-Isolated",
         "dist_stat": 7156.3,
@@ -1466,7 +1426,7 @@
       "properties": {
         "name": "Universitas Pamulang",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 4324,
         "kategori": "Transit-Isolated",
         "dist_stat": 5920.3,
@@ -1486,7 +1446,7 @@
       "properties": {
         "name": "UBS Business School",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5489,
         "kategori": "Transit-Oriented",
         "dist_stat": 803.3,
@@ -1544,7 +1504,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
+        "name": "Universitas Ibn Khaldun Bogor (Diperkirakan)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 5677,
@@ -1566,7 +1526,7 @@
       "properties": {
         "name": "Politeknik Swadharma",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 2925,
         "kategori": "Transit-Oriented",
         "dist_stat": 6827.4,
@@ -1606,7 +1566,7 @@
       "properties": {
         "name": "Binus University",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 8277,
         "kategori": "Transit-Oriented",
         "dist_stat": 676.6,
@@ -1626,7 +1586,7 @@
       "properties": {
         "name": "Binus ASO School of Engineering",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 1808,
         "kategori": "Transit-Isolated",
         "dist_stat": 7350.6,
@@ -1644,7 +1604,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Mercubuana",
+        "name": "Universitas Mercu Buana – Kampus Warung Buncit (C)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 11023,
@@ -1684,7 +1644,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Terbuka",
+        "name": "Universitas Terbuka – Kampus Pusat (Pondok Cabe)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 3352,
@@ -1764,9 +1724,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Pelita Harapan",
+        "name": "Universitas Pelita Harapan – Kampus Lippo Village (Karawaci)",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3719,
         "kategori": "Transit-Isolated",
         "dist_stat": 6169.2,
@@ -1784,29 +1744,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Pembangunan Jaya",
-        "status": "PTS",
-        "akreditasi": "Unggul",
-        "mahasiswa": 3073,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 2621.8,
-        "dist_tj": 1885.0,
-        "osm_id": "355474656"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.7107082,
-          -6.2732172
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Pradita University",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 10754,
         "kategori": "Transit-Isolated",
         "dist_stat": 7508.7,
@@ -1826,7 +1766,7 @@
       "properties": {
         "name": "Universitas Pembangunan Nasional \"Veteran\" Jakarta",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 9532,
         "kategori": "Transit-Oriented",
         "dist_stat": 2601.2,
@@ -1864,7 +1804,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Indonesia",
+        "name": "Universitas Indonesia – Kampus Depok",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 47000,
@@ -1986,7 +1926,7 @@
       "properties": {
         "name": "Institut Bisnis Nusantara",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 2734,
         "kategori": "Transit-Oriented",
         "dist_stat": 1109.3,
@@ -2006,7 +1946,7 @@
       "properties": {
         "name": "Institut Teknologi Tangerang Selatan",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3988,
         "kategori": "Transit-Isolated",
         "dist_stat": 4962.0,
@@ -2106,7 +2046,7 @@
       "properties": {
         "name": "Universitas Nahdlatul Ulama Jakarta",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5810,
         "kategori": "Transit-Oriented",
         "dist_stat": 809.8,
@@ -2206,7 +2146,7 @@
       "properties": {
         "name": "Universitas Surapati",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3627,
         "kategori": "Transit-Oriented",
         "dist_stat": 968.5,
@@ -2264,7 +2204,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Paramadina",
+        "name": "Universitas Paramadina – Kampus Gatot Subroto",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 3928,
@@ -2426,7 +2366,7 @@
       "properties": {
         "name": "Universitas Bung Karno",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 4068,
         "kategori": "Transit-Oriented",
         "dist_stat": 162.6,
@@ -2464,9 +2404,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas MH Thamrin",
+        "name": "Universitas MH Thamrin – Kampus Salemba",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5721,
         "kategori": "Transit-Oriented",
         "dist_stat": 702.8,
@@ -2484,7 +2424,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Indonesia",
+        "name": "Universitas Indonesia – Kampus Salemba",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 47000,
@@ -2526,7 +2466,7 @@
       "properties": {
         "name": "Universitas Islam Jakarta",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 6074,
         "kategori": "Transit-Isolated",
         "dist_stat": 1440.3,
@@ -2538,26 +2478,6 @@
         "coordinates": [
           106.8690059,
           -6.1972595
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Universitas Krisnadwipayana",
-        "status": "PTS",
-        "akreditasi": "Baik",
-        "mahasiswa": 3604,
-        "kategori": "Transit-Oriented",
-        "dist_stat": 1684.1,
-        "dist_tj": 165.8,
-        "osm_id": "492499531"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.808715,
-          -6.1706421
         ]
       }
     },
@@ -2644,7 +2564,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Muhammadiyah Prof. Dr. Hamka",
+        "name": "UHAMKA – Kampus Ciracas (B/FKIP)",
         "status": "PTS",
         "akreditasi": "Baik Sekali",
         "mahasiswa": 5062,
@@ -2684,7 +2604,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Borobudur",
+        "name": "Universitas Borobudur – Kampus Rawamangun (C)",
         "status": "PTN",
         "akreditasi": "Baik Sekali",
         "mahasiswa": 1163,
@@ -2698,26 +2618,6 @@
         "coordinates": [
           106.8803644,
           -6.1924521
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Universitas Ibnu Chaldun Jakarta",
-        "status": "PTS",
-        "akreditasi": "Baik",
-        "mahasiswa": 1114,
-        "kategori": "Transit-Oriented",
-        "dist_stat": 1458.3,
-        "dist_tj": 282.7,
-        "osm_id": "496832701"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.8780059,
-          -6.1918202
         ]
       }
     },
@@ -2746,7 +2646,7 @@
       "properties": {
         "name": "Institut Sains dan Tehnologi Nasional",
         "status": "PTN",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 4796,
         "kategori": "Transit-Oriented",
         "dist_stat": 2190.8,
@@ -2786,7 +2686,7 @@
       "properties": {
         "name": "Sekolah Tinggi Ilmu Ekonomi Swadaya",
         "status": "PTN",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 1392,
         "kategori": "Transit-Isolated",
         "dist_stat": 2301.9,
@@ -2866,7 +2766,7 @@
       "properties": {
         "name": "Universitas Tama Jagakarsa",
         "status": "PTN",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 6490,
         "kategori": "Transit-Oriented",
         "dist_stat": 658.7,
@@ -2906,7 +2806,7 @@
       "properties": {
         "name": "Universitas Indraprasta",
         "status": "PTN",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 4531,
         "kategori": "Transit-Isolated",
         "dist_stat": 1385.1,
@@ -2944,7 +2844,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Jayabaya",
+        "name": "Universitas Jayabaya – Kampus Pulomas (A)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 6889,
@@ -2986,7 +2886,7 @@
       "properties": {
         "name": "Fakultas Hukum Universitas Suryakancana Cianjur",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 1424,
         "kategori": "Transit-Isolated",
         "dist_stat": 2058.0,
@@ -3046,7 +2946,7 @@
       "properties": {
         "name": "Universitas BINUS (Bina Nusantara) Kampus Anggrek",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 8133,
         "kategori": "Transit-Isolated",
         "dist_stat": 1898.4,
@@ -3104,7 +3004,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Muhammadiyah Prof. Dr. Hamka",
+        "name": "UHAMKA – Kampus Rambutan (F)",
         "status": "PTS",
         "akreditasi": "Baik Sekali",
         "mahasiswa": 5062,
@@ -3126,7 +3026,7 @@
       "properties": {
         "name": "Universitas Nahdlatul Ulama Indonesia",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 9444,
         "kategori": "Transit-Oriented",
         "dist_stat": 2405.9,
@@ -3146,7 +3046,7 @@
       "properties": {
         "name": "Universitas Islam Internasional Indonesia",
         "status": "PTN",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 7570,
         "kategori": "Transit-Isolated",
         "dist_stat": 4058.1,
@@ -3186,7 +3086,7 @@
       "properties": {
         "name": "Universitas Prasetiya Mulya",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 10879,
         "kategori": "Transit-Oriented",
         "dist_stat": 388.3,
@@ -3284,7 +3184,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Budi Luhur",
+        "name": "Universitas Budi Luhur – Kampus Ciledug (Petukangan)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 9540,
@@ -3406,7 +3306,7 @@
       "properties": {
         "name": "Universitas Satyagama",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 7923,
         "kategori": "Transit-Oriented",
         "dist_stat": 1935.4,
@@ -3446,7 +3346,7 @@
       "properties": {
         "name": "Universitas Trisakti Kampus A",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 22000,
         "kategori": "Transit-Oriented",
         "dist_stat": 643.5,
@@ -3466,7 +3366,7 @@
       "properties": {
         "name": "Universitas Trisakti School of Management",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 22000,
         "kategori": "Transit-Oriented",
         "dist_stat": 770.7,
@@ -3486,7 +3386,7 @@
       "properties": {
         "name": "Fakultas Kedokteran Universitas Trisakti",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 22000,
         "kategori": "Transit-Oriented",
         "dist_stat": 979.0,
@@ -3524,7 +3424,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Terbuka",
+        "name": "Universitas Terbuka – UPBJJ Bogor",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 3352,
@@ -3586,7 +3486,7 @@
       "properties": {
         "name": "Universitas Persada Indonesia YAI",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 2878,
         "kategori": "Transit-Isolated",
         "dist_stat": 2446.1,
@@ -3606,7 +3506,7 @@
       "properties": {
         "name": "Universitas Matha'ulanwar",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 1338,
         "kategori": "Transit-Oriented",
         "dist_stat": 970.4,
@@ -3706,7 +3606,7 @@
       "properties": {
         "name": "UMJ Fakultas Agama Islam",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3206,
         "kategori": "Transit-Isolated",
         "dist_stat": 1240.2,
@@ -3726,7 +3626,7 @@
       "properties": {
         "name": "UMJ Fakultas Hukum",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 11246,
         "kategori": "Transit-Isolated",
         "dist_stat": 1298.4,
@@ -3744,7 +3644,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
+        "name": "Universitas Satya Negara Indonesia (USNI)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 5677,
@@ -3764,29 +3664,9 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
-        "status": "PTS",
-        "akreditasi": "Baik",
-        "mahasiswa": 5677,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 1228.7,
-        "dist_tj": 762.7,
-        "osm_id": "534432029"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.766065,
-          -6.2959562
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Institut Ilmu Al-Quran Jakarta",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 11315,
         "kategori": "Transit-Isolated",
         "dist_stat": 2884.4,
@@ -3826,7 +3706,7 @@
       "properties": {
         "name": "STIE Ahmad Dahlan Jakarta",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 2690,
         "kategori": "Transit-Isolated",
         "dist_stat": 1235.4,
@@ -3926,7 +3806,7 @@
       "properties": {
         "name": "Binus University Alam Sutera",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 11738,
         "kategori": "Transit-Isolated",
         "dist_stat": 5356.0,
@@ -4166,7 +4046,7 @@
       "properties": {
         "name": "Kampus IPB Cilibende",
         "status": "PTN",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 7173,
         "kategori": "Transit-Isolated",
         "dist_stat": 1868.7,
@@ -4224,7 +4104,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
+        "name": "Universitas Tarumanagara (UNTAR)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 5677,
@@ -4244,7 +4124,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Mercu Buana",
+        "name": "Universitas Mercu Buana – Kampus Menteng (B)",
         "status": "PTS",
         "akreditasi": "Unggul",
         "mahasiswa": 25000,
@@ -4286,7 +4166,7 @@
       "properties": {
         "name": "Universitas 17 Agustus 1945 Jakarta",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 3668,
         "kategori": "Transit-Isolated",
         "dist_stat": 1030.5,
@@ -4446,7 +4326,7 @@
       "properties": {
         "name": "Universitas Pertamina",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5709,
         "kategori": "Transit-Oriented",
         "dist_stat": 1188.2,
@@ -4564,7 +4444,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Muhammadiyah Tangerang",
+        "name": "Universitas Muhammadiyah Tangerang – Kampus Cikokol (Pusat)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 2832,
@@ -4586,7 +4466,7 @@
       "properties": {
         "name": "Politeknik Multimedia Nusantara",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 7889,
         "kategori": "Transit-Isolated",
         "dist_stat": 7134.3,
@@ -4684,7 +4564,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Institut Pertanian Bogor",
+        "name": "Institut Pertanian Bogor – Kampus Darmaga",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 30000,
@@ -4746,7 +4626,7 @@
       "properties": {
         "name": "Institut Teknologi Sains Bandung",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 5569,
         "kategori": "Transit-Isolated",
         "dist_stat": 2506.1,
@@ -4824,7 +4704,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Esa Unggul",
+        "name": "Universitas Esa Unggul – Kampus Bekasi",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 8216,
@@ -4946,7 +4826,7 @@
       "properties": {
         "name": "Politeknik Digital Boash Indonesia",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 4800,
         "kategori": "Transit-Isolated",
         "dist_stat": 6659.0,
@@ -4964,7 +4844,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
+        "name": "Universitas Ibn Khaldun Bogor – Kampus Kedung Badak (Diperkirakan)",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 5677,
@@ -4984,7 +4864,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Esa Unggul",
+        "name": "Universitas Esa Unggul – Kampus Tangerang (Citra Raya)",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 8216,
@@ -5004,7 +4884,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Universitas Paramadina",
+        "name": "Universitas Paramadina – Kampus Cipayung",
         "status": "PTS",
         "akreditasi": "Baik",
         "mahasiswa": 3928,
@@ -5064,7 +4944,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Institut Pertanian Bogor",
+        "name": "Institut Pertanian Bogor – Kampus Gunung Gede",
         "status": "PTN",
         "akreditasi": "Unggul",
         "mahasiswa": 30000,
@@ -5126,7 +5006,7 @@
       "properties": {
         "name": "Universitas Cendekia Abditama",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 2592,
         "kategori": "Transit-Isolated",
         "dist_stat": 5922.2,
@@ -5158,26 +5038,6 @@
         "coordinates": [
           106.6157712,
           -6.2316014
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Universitas Pelita Harapan",
-        "status": "PTS",
-        "akreditasi": "A",
-        "mahasiswa": 3719,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 6644.5,
-        "dist_tj": 3020.9,
-        "osm_id": "1425487862"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.5964891,
-          -6.2254146
         ]
       }
     },
@@ -5224,26 +5084,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Perguruan Tinggi",
-        "status": "PTS",
-        "akreditasi": "Baik",
-        "mahasiswa": 5677,
-        "kategori": "Transit-Isolated",
-        "dist_stat": 1718.0,
-        "dist_tj": 672.1,
-        "osm_id": "1444078575"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.6308549,
-          -6.1924671
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Universitas Santo Borromeus",
         "status": "PTN",
         "akreditasi": "Baik",
@@ -5266,7 +5106,7 @@
       "properties": {
         "name": "Universitas Maranatha",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 2132,
         "kategori": "Transit-Isolated",
         "dist_stat": 4599.6,
@@ -5346,7 +5186,7 @@
       "properties": {
         "name": "Universitas Ichsan Satya",
         "status": "PTS",
-        "akreditasi": "C",
+        "akreditasi": "Baik",
         "mahasiswa": 9785,
         "kategori": "Transit-Isolated",
         "dist_stat": 1043.7,
@@ -5406,7 +5246,7 @@
       "properties": {
         "name": "UIN Syarif Hidayatullah",
         "status": "PTS",
-        "akreditasi": "A",
+        "akreditasi": "Unggul",
         "mahasiswa": 2173,
         "kategori": "Transit-Isolated",
         "dist_stat": 3041.2,

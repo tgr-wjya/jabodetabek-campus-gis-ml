@@ -20,7 +20,9 @@ from qgis.core import (
     QgsField,
     QgsFeature,
     QgsGeometry,
-    QgsPointXY
+    QgsPointXY,
+    QgsCoordinateTransform,
+    QgsCoordinateReferenceSystem
 )
 from PyQt5.QtCore import QVariant
 
@@ -46,6 +48,20 @@ def main():
     kam_layer = kam_layers[0]
     
     print("Loaded all layers successfully. Preparing attributes...")
+
+    # 1b. Build coordinate transforms — reproject all overlay layers into
+    #     the kecamatan layer's CRS before any spatial operation.
+    #     Without this, contains() and intersects() silently return zero
+    #     when layers have different CRS (e.g. WGS84 vs UTM48S).
+    kec_crs = kec_layer.crs()
+    ctx     = QgsProject.instance().transformContext()
+    ind_xform = QgsCoordinateTransform(ind_layer.crs(), kec_crs, ctx)
+    tol_xform = QgsCoordinateTransform(tol_layer.crs(), kec_crs, ctx)
+    kam_xform = QgsCoordinateTransform(kam_layer.crs(), kec_crs, ctx)
+    print(f"Kecamatan CRS : {kec_crs.authid()}")
+    print(f"Campus CRS    : {kam_layer.crs().authid()} -> reprojecting to kecamatan CRS")
+    print(f"Toll CRS      : {tol_layer.crs().authid()} -> reprojecting to kecamatan CRS")
+    print(f"Industry CRS  : {ind_layer.crs().authid()} -> reprojecting to kecamatan CRS")
     
     # 2. Add fields to Kecamatan layer if they don't exist
     required_fields = {
@@ -67,27 +83,31 @@ def main():
     kec_layer.updateFields()
     fields = kec_layer.fields() # Refresh fields representation
     
-    # 3. Cache target geometries for faster execution
-    print("Caching overlay geometries...")
+    # 3. Cache target geometries — reprojected into kecamatan CRS
+    print("Caching overlay geometries (reprojecting into kecamatan CRS)...")
+
     # Industrial Centroids
     ind_centroids = []
     for f in ind_layer.getFeatures():
         geom = f.geometry()
         if not geom.isNull():
+            geom.transform(ind_xform)
             ind_centroids.append(geom.centroid())
-            
+
     # Toll Lines
     tol_lines = []
     for f in tol_layer.getFeatures():
         geom = f.geometry()
         if not geom.isNull():
+            geom.transform(tol_xform)
             tol_lines.append(geom)
-            
+
     # Campus Points
     kam_points = []
     for f in kam_layer.getFeatures():
         geom = f.geometry()
         if not geom.isNull():
+            geom.transform(kam_xform)
             kam_points.append(geom.asPoint())
             
     print(f"Cached {len(ind_centroids)} industrial centroids, {len(tol_lines)} toll segments, and {len(kam_points)} campus nodes.")
