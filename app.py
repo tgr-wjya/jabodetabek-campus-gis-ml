@@ -64,6 +64,22 @@ st.markdown("""
         font-size: 24px;
         font-weight: 700;
     }
+    .main .block-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+    div[data-testid="stCustomComponentV1"] {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
