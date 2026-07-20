@@ -91,28 +91,98 @@ Platform dikembangkan menggunakan **Streamlit** (Python web framework) dan pusta
 
 ## SOAL 2: Sistem Rekomendasi Lokasi Pembangunan Kampus Satelit Berbasis Machine Learning (Random Forest)
 
-### Bagian A: Spatial Feature Engineering di QGIS
+### Bagian A: Spatial Feature Engineering di QGIS (Metodologi & Bukti Eksekusi GUI)
 
-Sebelum melatih model Random Forest, data atribut poligon kecamatan diperkaya dengan variabel spasial menggunakan perangkat analisis QGIS:
+Sebelum melatih model Machine Learning Random Forest, data atribut poligon kecamatan diperkaya dengan variabel spasial menggunakan perangkat analisis QGIS Desktop. Berikut adalah rincian metodologis, parameter alat (*tool parameters*), serta bukti visual eksekusi (*proof of execution*) untuk masing-masing prosedur:
 
-1.  **Jarak ke Kawasan Industri Terdekat (`dist_ind`)**:
-    *   *Langkah Kerja*: Poligon kawasan industri (`Kawasan_Industri_Jabodetabek.shp`) dikonversi menjadi titik centroid menggunakan tool **Centroids** (di bawah *Vector Geometry*). Jarak antara centroid kecamatan ke centroid industri terdekat dihitung menggunakan tool **Distance to nearest hub (points)** dari toolbox QGIS Processing, menghasilkan kolom jarak dalam satuan meter.
-2.  **Kepadatan Kampus Eksisting (`camp_dens`)**:
-    *   *Langkah Kerja*: Jumlah kampus eksisting di setiap kecamatan dihitung menggunakan tool **Count points in polygon** dengan layer input poligon kecamatan dan layer input titik kampus (`Sebaran_Kampus_Eksisting.shp`). Kolom jumlah titik yang dihasilkan kemudian dibagi dengan luas area kecamatan (diambil dari `$area / 1000000` menggunakan Field Calculator untuk mendapatkan luas dalam km²), menghasilkan kepadatan per km².
-3.  **Persentase Akses Tol (`toll_pct`)**:
-    *   *Langkah Kerja*: Jaringan jalan tol (`Akses_Jalan_Tol.shp`) dipotong berdasarkan batas kecamatan menggunakan tool **Intersection**. Panjang segmen tol hasil pemotongan dihitung menggunakan fungsi `$length` di Field Calculator. Persentase akses tol dihitung dengan membagi panjang total jalan tol di dalam kecamatan dengan luas area kecamatan (satuan meter/meter persegi).
-4.  **5 Variabel Independen (Fitur) Final**:
-    1.  `dist_ind`: Jarak ke kawasan industri terdekat (meter).
-    2.  `camp_dens`: Kepadatan kampus eksisting (jumlah/km²).
-    3.  `toll_pct`: Rasio panjang jalan tol terhadap luas kecamatan (m/m²).
-    4.  `sma_grad`: Jumlah lulusan/siswa SMA (proxy angka sekolah).
-5.  **Perbaikan Transformasi Sistem Koordinat (CRS Reprojection Fix)**:
-    *   *Permasalahan*: Sebelumnya, variabel `camp_dens` dan `toll_pct` bernilai 0% karena adanya *CRS mismatch* antara layer poligon kecamatan (UTM Zone 48S - EPSG:32748) dengan layer overlay WGS84 (EPSG:4326).
-    *   *Solusi*: Menambahkan fungsi `QgsCoordinateTransform` (atau `pyproj.Transformer`) pada script pemrosesan untuk mentransformasi seluruh geometri overlay (titik kampus, garis tol, dan centroid industri) ke dalam sistem koordinat proyeksi kecamatan (EPSG:32748) sebelum melakukan analisis spasial (`contains`, `intersects`, `distance`). Hal ini mengembalikan fungsi fitur `camp_dens` (4.09%) dan `toll_pct` (17.29%) sehingga berkontribusi aktif dalam klasifikasi model.
+#### 1. Jarak ke Kawasan Industri Terdekat (`dist_ind`)
+*   **Tujuan Spasial**: Mengukur tingkat kedekatan geografis pusat kecamatan terhadap kawasan industri terdekat sebagai proxy keselarasan program studi Vokasi/Mitra Industri.
+*   **Prosedur & Parameter Kerja di QGIS**:
+    1.  **Ekstraksi Centroid Poligon**:
+        *   Poligon kawasan industri (`Kawasan_Industri_Jabodetabek.shp`) dan poligon kecamatan (`Kecamatan_Jabodetabek.shp`) masing-masing dikonversi menjadi titik pusat massa (*centroid*) menggunakan menu **Vector -> Geometry Tools -> Centroids...** dengan parameter `ALL_PARTS = False`.
+        *   *Bukti Eksekusi*:
+            *   ![Ekstraksi Centroid Kawasan Industri](screenshot/proof/To_Centroid.png)  
+                *Gambar 2.1a: Ekstraksi Titik Centroid dari Layer Poligon Kawasan Industri*
+            *   ![Ekstraksi Centroid Kecamatan](screenshot/proof/To_Centroid_Kecamatan_Jabodetabek.png)  
+                *Gambar 2.1b: Ekstraksi Titik Centroid dari Layer Poligon Kecamatan*
+    2.  **Kalkulasi Jarak Hub Terdekat (*Distance to Nearest Hub*)**:
+        *   Tool: **Vector analysis -> Distance to nearest hub (points)** dari QGIS Processing Toolbox.
+        *   *Source points layer*: `Centroids Kecamatan` (titik asal).
+        *   *Destination hubs layer*: `Centroids Kawasan Industri` (titik tujuan).
+        *   *Hub layer attribute ID*: **`NAMOBJ`** (atau `ID_KI`, yaitu atribut nama/ID unik dari layer hub tujuan).
+        *   *Measurement unit*: **Meters** (menghasilkan jarak Euclidean presisi dalam satuan meter).
+        *   *Bukti Eksekusi*:
+            *   ![Eksekusi Distance to Nearest Hub](screenshot/proof/Distance-to-nearest-hub-points.png)  
+                *Gambar 2.1c: Log Eksekusi Algoritma Distance to Nearest Hub (Points) pada QGIS Processing Toolbox*
+    3.  **Struktur Atribut Hasil**: Algoritma menghasilkan dua kolom baru pada tabel atribut layer output: **`HubName`** (nama/ID kawasan industri terdekat) dan **`HubDist`** (jarak presisi dalam meter / `dist_ind`).
+        *   *Bukti Atribut*:
+            *   ![Tabel Atribut HubName dan HubDist](screenshot/proof/Hub-name_And_Hub-Dist.png)  
+                *Gambar 2.1d: Tabel Atribut Output Memperlihatkan Kolom Identitas Hub (`HubName`) dan Jarak Presisi Meter (`HubDist`)*
 
-#### Bukti Eksekusi Prosedur Feature Engineering di QGIS Console:
+#### 2. Kepadatan Kampus Eksisting (`camp_dens`)
+*   **Tujuan Spasial**: Menghitung tingkat kejenuhan atau konsentrasi perguruan tinggi eksisting di setiap wilayah kecamatan untuk menghindari kanibalisasi lokasi.
+*   **Prosedur & Parameter Kerja di QGIS**:
+    1.  **Penghitungan Titik dalam Poligon (*Count Points in Polygon*)**:
+        *   Tool: **Vector -> Analysis Tools -> Count points in polygon...**
+        *   *Polygons*: `Kecamatan_Jabodetabek.shp`
+        *   *Points*: `Sebaran_Kampus_Eksisting.shp`
+        *   *Count field name*: `NUMPOINTS` (menyimpan agregat jumlah kampus per poligon).
+        *   *Bukti Eksekusi*:
+            *   ![Eksekusi Count Points in Polygon](screenshot/proof/Count-points-in-polygon.png)  
+                *Gambar 2.2a: Log Eksekusi Algoritma Count Points in Polygon*
+    2.  **Kalkulasi Luas dan Kepadatan via Field Calculator**:
+        *   Pada Attribute Table, buka **Field Calculator** (`Ctrl + I`):
+        *   *Langkah A (Luas km²)*: Membuat kolom `area_km2` dengan ekspresi `$area / 1000000`.
+            *   ![Kalkulasi Luas KM2](screenshot/proof/Luas_Km.png)  
+                *Gambar 2.2b: Jendela Field Calculator untuk Penghitungan Luas Wilayah (`area_km2`)*
+        *   *Langkah B (Kepadatan Kampus per km²)*: Memperbarui kolom `camp_dens` dengan ekspresi `"NUMPOINTS" / "area_km2"`.
+            *   ![Kalkulasi Kepadatan Kampus](screenshot/proof/Kepadatan-Per-KM.png)  
+                *Gambar 2.2c: Jendela Field Calculator untuk Penghitungan Kepadatan Kampus (`camp_dens`)*
+
+#### 3. Persentase Akses Jalan Tol (`toll_pct`)
+*   **Tujuan Spasial**: Menilai tingkat kerapatan dan ketersediaan infrastruktur transportasi jalan bebas hambatan di wilayah kecamatan.
+*   **Prosedur & Parameter Kerja di QGIS**:
+    1.  **Pemotongan Garis Tol per Batas Kecamatan (*Intersection*)**:
+        *   Tool: **Vector -> Geoprocessing Tools -> Intersection...**
+        *   *Input layer*: `Akses_Jalan_Tol.shp` (Line)
+        *   *Overlay layer*: `Kecamatan_Jabodetabek.shp` (Polygon)
+        *   *Bukti Eksekusi*:
+            *   ![Eksekusi Intersection Jalan Tol](screenshot/proof/Intersection.png)  
+                *Gambar 2.3a: Log Eksekusi Algoritma Intersection Garis Tol terhadap Poligon Kecamatan*
+    2.  **Kalkulasi Panjang Segmen Tol Terpotong**:
+        *   Pada layer hasil Intersection, buka **Field Calculator** (`Ctrl + I`) untuk membuat kolom `toll_len_m` dengan ekspresi `$length`.
+        *   *Bukti Eksekusi*:
+            *   ![Kalkulasi Panjang Segmen Tol](screenshot/proof/Intersection_Field_Calculator.png)  
+                *Gambar 2.3b: Penghitungan Panjang Segmen Tol Terpotong (`toll_len_m`) via Field Calculator*
+    3.  **Agregasi Statistik per Kecamatan (*Statistics by Categories*)**:
+        *   Tool: **Vector analysis -> Statistics by categories** dari Processing Toolbox.
+        *   *Input vector layer*: Layer hasil Intersection tol.
+        *   *Field to calculate statistics on*: `toll_len_m`
+        *   *Field with category values*: `KODE_KEC` (mengagregasi total panjang tol per kode kecamatan).
+        *   *Bukti Eksekusi*:
+            *   ![Eksekusi Statistics by Categories](screenshot/proof/Statistics-by-categories.png)  
+                *Gambar 2.3c: Log Eksekusi Statistics by Categories Mengagregasi Total Panjang Tol per Kecamatan*
+    4.  **Join Tabel & Kalkulasi Persentase Akses Tol (`toll_pct`)**:
+        *   Pada Properties layer `Kecamatan_Jabodetabek`, gabungkan tabel statistik hasil agregasi menggunakan tab **Joins** berdasarkan key `KODE_KEC`.
+        *   *Bukti Join*:
+            *   ![Join Tabel Statistik ke Layer Kecamatan](screenshot/proof/Joins_from-statistics-to-category.png)  
+                *Gambar 2.3d: Konfigurasi Join Tabel Statistik Panjang Tol ke Layer Spasial Utama Kecamatan*
+        *   Buka Field Calculator pada layer kecamatan untuk menghitung rasio persentase: `toll_pct` = `"sum_toll_len" / $area`.
+
+#### 4. 5 Variabel Independen (Fitur) Final
+1.  `dist_ind`: Jarak ke kawasan industri terdekat (meter).
+2.  `camp_dens`: Kepadatan kampus eksisting (jumlah/km²).
+3.  `toll_pct`: Rasio panjang jalan tol terhadap luas kecamatan (m/m²).
+4.  `sma_grad`: Jumlah lulusan/siswa SMA (proxy angka sekolah).
+5.  `area_km2`: Luas total wilayah kecamatan (km²).
+
+#### 5. Perbaikan Transformasi Sistem Koordinat (CRS Reprojection Fix)
+*   *Permasalahan*: Sebelumnya, variabel `camp_dens` dan `toll_pct` bernilai 0% karena adanya *CRS mismatch* antara layer poligon kecamatan (UTM Zone 48S - EPSG:32748) dengan layer overlay WGS84 (EPSG:4326).
+*   *Solusi*: Menambahkan fungsi `QgsCoordinateTransform` (atau `pyproj.Transformer`) pada script pemrosesan untuk mentransformasi seluruh geometri overlay (titik kampus, garis tol, dan centroid industri) ke dalam sistem koordinat proyeksi kecamatan (EPSG:32748) sebelum melakukan analisis spasial (`contains`, `intersects`, `distance`). Hal ini mengembalikan fungsi fitur `camp_dens` (4.09%) dan `toll_pct` (17.29%) sehingga berkontribusi aktif dalam klasifikasi model.
+
+#### Bukti Eksekusi Script Pemrosesan Otomatis di QGIS Console:
 ![Bukti Eksekusi Prosedur Feature Engineering di QGIS Console](screenshot/QGIS/Screenshot from 2026-07-19 17-55-34.png)
-*Gambar 2.1: Bukti Eksekusi Script Pemrosesan Variabel Spasial di QGIS Python Console*
+*Gambar 2.4: Bukti Eksekusi Script Pemrosesan Variabel Spasial Otomatis pada QGIS Python Console*
 
 ---
 
