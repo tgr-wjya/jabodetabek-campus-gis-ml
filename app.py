@@ -83,21 +83,27 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Helper function to load geojson
-@st.cache_data
-def load_geojson(path):
+import os
+
+# Helper function to load geojson (auto-invalidates cache when file changes)
+@st.cache_data(ttl=30)
+def load_geojson(path, mtime=None):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+def get_geojson(path):
+    mtime = os.path.getmtime(path) if os.path.exists(path) else 0
+    return load_geojson(path, mtime)
+
 # Load data layers
 try:
-    kec_data = load_geojson("data_ready/Kecamatan_Batas_Kecil.geojson")
+    kec_data = get_geojson("data_ready/Kecamatan_Batas_Kecil.geojson")
 except Exception:
     kec_data = None
 
-camp_data = load_geojson("data_ready/Campuses_WebGIS.geojson")
-stat_data = load_geojson("data_ready/Stations_WebGIS.geojson")
-tj_data   = load_geojson("data_ready/Halte_TransJakarta.geojson")
+camp_data = get_geojson("data_ready/Campuses_WebGIS.geojson")
+stat_data = get_geojson("data_ready/Stations_WebGIS.geojson")
+tj_data   = get_geojson("data_ready/Halte_TransJakarta.geojson")
 
 # Sidebar Controls
 st.sidebar.markdown("<h2 style='color:#1E3A8A;'>Filter Kontrol</h2>", unsafe_allow_html=True)
