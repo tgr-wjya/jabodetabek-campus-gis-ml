@@ -262,12 +262,23 @@ if show_kec and kec_data:
         kec_data,
         name="Batas Kecamatan",
         style_function=lambda x: {
-            "fillColor": "#F3F4F6",
-            "color":     "#9CA3AF",
-            "weight":    0.8,
-            "fillOpacity": 0.3
+            "fillColor": "#3B82F6",
+            "color":     "#2563EB",
+            "weight":    1.2,
+            "fillOpacity": 0.12,
+            "dashArray": "4, 4"
         },
-        tooltip=folium.GeoJsonTooltip(fields=["KECAMATAN", "KAB_KOTA"], aliases=["Kecamatan:", "Kab/Kota:"])
+        highlight_function=lambda x: {
+            "fillColor": "#2563EB",
+            "color":     "#1D4ED8",
+            "weight":    2.5,
+            "fillOpacity": 0.35
+        },
+        tooltip=folium.GeoJsonTooltip(
+            fields=["KECAMATAN", "KAB_KOTA", "sma_grad", "area_km2"],
+            aliases=["Kecamatan:", "Kab/Kota:", "Lulusan SMA:", "Luas Wilayah (km²):"],
+            style="background-color: #1E293B; color: #F8FAFC; font-family: sans-serif; font-size: 12px; padding: 8px; border-radius: 4px;"
+        )
     ).add_to(m)
 
 # 2. Buffer Layers (Radius 1000m for rail stations)
@@ -463,17 +474,98 @@ m.get_root().add_child(_LegendOverlay())
 # F4: Full-width map render (no column split)
 st_folium(m, use_container_width=True, height=620, returned_objects=[])
 
-# Analysis text below map
-st.markdown(f"""
+def generate_dynamic_analysis(df_filtered, df_all, selected_status, selected_kategori, selected_campus):
+    # Tier 1: Specific Campus Search Selected
+    if selected_campus != "-- Semua --":
+        match = df_all[df_all["name"] == selected_campus]
+        if not match.empty:
+            r = match.iloc[0]
+            kat = r["kategori"]
+            status_full = "Perguruan Tinggi Negeri (PTN)" if r["status"] == "PTN" else "Perguruan Tinggi Swasta (PTS)"
+            stat_dist = r["dist_stat"]
+            tj_dist   = r["dist_tj"]
+            
+            if kat == "Transit-Oriented":
+                nearest_desc = f"stasiun kereta ({stat_dist:.0f} m)" if stat_dist <= 1000 else f"halte TransJakarta ({tj_dist:.0f} m)"
+                analysis_body = (
+                    f"Kampus ini tergolong <em>Transit-Oriented</em> karena berada dalam jangkauan berjalan kaki "
+                    f"atau akses mudah ke {nearest_desc}. Integrasi ini memberikan efisiensi mobilitas tinggi "
+                    f"bagi <strong>{r['mahasiswa']:,} mahasiswa</strong> aktif."
+                )
+            else:
+                analysis_body = (
+                    f"Kampus ini berstatus <em>Transit-Isolated</em> dengan jarak <strong>{stat_dist:,.0f} m</strong> "
+                    f"ke stasiun kereta terdekat dan <strong>{tj_dist:,.0f} m</strong> ke halte TransJakarta. "
+                    f"Diperlukan fasilitas feeder angkutan umum langsung untuk melayani <strong>{r['mahasiswa']:,} mahasiswa</strong> di lokasi ini."
+                )
+            
+            return f"""
+            <div class='analysis-card'>
+                <strong style='font-size:16px; display:block; margin-bottom:6px;'>Analisis Spasial: {r['name']}</strong>
+                <div>Status: {status_full} | Akreditasi: {r['akreditasi']} | Pop. Mahasiswa: {r['mahasiswa']:,} orang</div>
+                <hr style='border:0; border-top:1px solid #334155; margin:8px 0;'>
+                {analysis_body}
+            </div>
+            """
+    
+    total = len(df_filtered)
+    if total == 0:
+        return "<div class='analysis-card'>Tidak ada data kampus yang memenuhi kriteria filter aktif.</div>"
+        
+    oriented_cnt = len(df_filtered[df_filtered["kategori"] == "Transit-Oriented"])
+    isolated_cnt = len(df_filtered[df_filtered["kategori"] == "Transit-Isolated"])
+    oriented_pct = (oriented_cnt / total) * 100
+    isolated_pct = (isolated_cnt / total) * 100
+    total_students = df_filtered["mahasiswa"].sum()
+    isolated_students = df_filtered[df_filtered["kategori"] == "Transit-Isolated"]["mahasiswa"].sum()
+    
+    # Tier 2: Status Filter (PTN / PTS)
+    if selected_status == "PTN Only":
+        return f"""
+        <div class='analysis-card'>
+            <strong style='font-size:16px; display:block; margin-bottom:6px;'>Analisis Kelompok Perguruan Tinggi Negeri (PTN)</strong>
+            Dari total <strong>{total} kampus PTN</strong> di Jabodetabek & Karawang, sebanyak <strong>{oriented_cnt} kampus ({oriented_pct:.1f}%)</strong> berstatus <em>Transit-Oriented</em> dan <strong>{isolated_cnt} kampus ({isolated_pct:.1f}%)</strong> berstatus <em>Transit-Isolated</em>.
+            Kampus utama PTN (seperti UI Depok dan UNJ Rawamangun) terintegrasi langsung dengan koridor utama rel KRL, sedangkan kampus vokasi/satelit di kawasan pinggiran masih membutuhkan rute feeder tambahan untuk <strong>{isolated_students:,} mahasiswa</strong>.
+        </div>
+        """
+    elif selected_status == "PTS Only":
+        return f"""
+        <div class='analysis-card'>
+            <strong style='font-size:16px; display:block; margin-bottom:6px;'>Analisis Kelompok Perguruan Tinggi Swasta (PTS)</strong>
+            Sektor swasta mendominasi lanskap perguruan tinggi dengan <strong>{total} kampus</strong> dan total <strong>{total_students:,} mahasiswa</strong>.
+            Sebanyak <strong>{isolated_cnt} kampus PTS ({isolated_pct:.1f}%)</strong> tergolong <em>Transit-Isolated</em>, yang berdampak pada <strong>{isolated_students:,} mahasiswa</strong>. Ekspansi kampus PTS di kawasan penyangga (Tangerang, Bekasi, Karawang) yang jauh dari jalur rel menjadi penggerak utama ketergantungan pada kendaraan pribadi.
+        </div>
+        """
+        
+    # Tier 3: Kategori Filter
+    if selected_kategori == "Transit-Oriented":
+        return f"""
+        <div class='analysis-card'>
+            <strong style='font-size:16px; display:block; margin-bottom:6px;'>Analisis Kelompok Transit-Oriented (Akses Baik)</strong>
+            Terdapat <strong>{oriented_cnt} kampus ({oriented_pct:.1f}%)</strong> yang berada dalam radius pelayanan langsung angkutan massal (<= 1.000m dari stasiun kereta atau <= 500m dari halte TransJakarta).
+            Kelompok ini melayani <strong>{total_students:,} mahasiswa</strong> dengan tingkat aksesibilitas multimoda yang optimal.
+        </div>
+        """
+    elif selected_kategori == "Transit-Isolated":
+        return f"""
+        <div class='analysis-card'>
+            <strong style='font-size:16px; display:block; margin-bottom:6px;'>Analisis Kelompok Transit-Isolated (Akses Terbatas)</strong>
+            Terdapat <strong>{isolated_cnt} kampus ({isolated_pct:.1f}%)</strong> yang berada di luar radius akses langsung stasiun maupun halte feeder.
+            Kondisi ini berdampak langsung pada <strong>{isolated_students:,} mahasiswa</strong>, mengindikasikan prioritas tinggi untuk intervensi integrasi rute bus pengumpan regional.
+        </div>
+        """
+        
+    # Tier 4: Neutral Default Overview
+    return f"""
     <div class='analysis-card'>
-        Berdasarkan klasifikasi radius pelayanan transportasi, terdapat
-        <strong>{isolated_count} kampus ({isolated_pct:.1f}%)</strong> yang berstatus
-        <em>Transit-Isolated</em>. Kampus-kampus ini berada lebih dari 1.000 meter dari stasiun KRL/MRT/LRT
-        dan lebih dari 500 meter dari halte TransJakarta. Hal ini berdampak langsung pada
-        <strong>{isolated_students:,} mahasiswa</strong> yang berkuliah di lokasi-lokasi tersebut, sehingga
-        mereka sangat bergantung pada angkutan informal atau kendaraan pribadi.
+        <strong style='font-size:16px; display:block; margin-bottom:6px;'>Ringkasan Integrasi Aksesibilitas Transportasi Massal</strong>
+        Pemetaan mencakup <strong>{total} perguruan tinggi</strong> di wilayah Jabodetabek dan Karawang dengan total <strong>{total_students:,} mahasiswa</strong>.
+        Hasil evaluasi menunjukkan <strong>{oriented_cnt} kampus ({oriented_pct:.1f}%)</strong> memiliki aksesibilitas <em>Transit-Oriented</em>, sementara <strong>{isolated_cnt} kampus ({isolated_pct:.1f}%)</strong> tergolong <em>Transit-Isolated</em>. Gunakan filter kontrol di sidebar untuk mengeksplorasi rincian menurut status kelembagaan maupun nama kampus spesifik.
     </div>
-""", unsafe_allow_html=True)
+    """
+
+# Analysis text below map (Dynamic rendering)
+st.markdown(generate_dynamic_analysis(filtered_df, df_camp, selected_status, selected_kategori, selected_campus), unsafe_allow_html=True)
 
 # F5: Filtered campus data table
 if total_filtered > 0:
