@@ -18,22 +18,62 @@ st.markdown("""
     <style>
     .main-header {
         font-family: 'Outfit', sans-serif;
-        color: #1E3A8A;
+        color: #2563EB;
+        font-size: 28px;
         font-weight: 700;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
     .sub-header {
         font-family: 'Inter', sans-serif;
-        color: #4B5563;
+        color: #64748B;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        line-height: 1.5;
     }
-    .context-block {
+    .context-card {
+        background-color: #1E293B;
+        border: 1px solid #334155;
+        border-left: 4px solid #3B82F6;
+        border-radius: 8px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        color: #F8FAFC !important;
         font-family: 'Inter', sans-serif;
-        color: #374151;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.6;
-        margin-bottom: 6px;
+    }
+    .context-card strong {
+        color: #60A5FA !important;
+    }
+    .analysis-card {
+        background-color: #1E293B;
+        border: 1px solid #334155;
+        border-left: 5px solid #EF4444;
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-top: 18px;
+        margin-bottom: 15px;
+        color: #F8FAFC !important;
+        font-size: 15px;
+        line-height: 1.7;
+        font-family: 'Inter', sans-serif;
+    }
+    .analysis-card strong {
+        color: #60A5FA !important;
+        font-weight: 700;
+    }
+    .analysis-card em {
+        color: #F87171 !important;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .sidebar-title {
+        font-family: 'Outfit', sans-serif;
+        color: #3B82F6;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .source-line {
         font-family: 'Inter', sans-serif;
@@ -106,7 +146,7 @@ stat_data = get_geojson("data_ready/Stations_WebGIS.geojson")
 tj_data   = get_geojson("data_ready/Halte_TransJakarta.geojson")
 
 # Sidebar Controls
-st.sidebar.markdown("<h2 style='color:#1E3A8A;'>Filter Kontrol</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<div class='sidebar-title'>Filter Kontrol</div>", unsafe_allow_html=True)
 
 # Filter 1: Status Kampus
 status_options = ["Semua", "PTN Only", "PTS Only"]
@@ -117,7 +157,7 @@ kategori_options = ["Semua", "Transit-Oriented", "Transit-Isolated"]
 selected_kategori = st.sidebar.selectbox("Kategori Aksesibilitas", kategori_options)
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("<h3 style='color:#1E3A8A;'>Tampilan Layer</h3>", unsafe_allow_html=True)
+st.sidebar.markdown("<div class='sidebar-title'>Tampilan Layer</div>", unsafe_allow_html=True)
 
 show_kec     = st.sidebar.checkbox("Batas Kecamatan (Background)", value=True)
 show_stat    = st.sidebar.checkbox("Stasiun KRL/MRT/LRT (Simpul Utama)", value=True)
@@ -166,7 +206,7 @@ isolated_students = filtered_df[filtered_df["kategori"] == "Transit-Isolated"]["
 
 # F2: Campus search — built from filtered results
 st.sidebar.markdown("---")
-st.sidebar.markdown("<h3 style='color:#1E3A8A;'>Cari Kampus</h3>", unsafe_allow_html=True)
+st.sidebar.markdown("<div class='sidebar-title'>Cari Kampus</div>", unsafe_allow_html=True)
 campus_names    = ["-- Semua --"] + sorted(filtered_df["name"].tolist())
 selected_campus = st.sidebar.selectbox("Pilih Kampus", campus_names)
 
@@ -191,12 +231,12 @@ st.markdown("<p class='sub-header'>Sistem informasi geografis berbasis web untuk
 
 # F3: Context block + data source citation
 st.markdown("""
-    <p class='context-block'>
+    <div class='context-card'>
     Peta ini mengklasifikasikan perguruan tinggi di wilayah Jabodetabek ke dalam dua kategori aksesibilitas:
     <strong>Transit-Oriented</strong> (dalam radius 1.000 m dari stasiun KRL/MRT/LRT atau 500 m dari halte TransJakarta)
     dan <strong>Transit-Isolated</strong> (di luar radius tersebut). Klasifikasi ini digunakan untuk mengidentifikasi
     kampus yang membutuhkan intervensi kebijakan transportasi feeder.
-    </p>
+    </div>
 """, unsafe_allow_html=True)
 st.markdown("<p class='source-line'>Sumber data: BPS, OpenStreetMap / GTFS TransJakarta & KAI Commuter, survei data kampus mandiri.</p>", unsafe_allow_html=True)
 
@@ -423,9 +463,9 @@ m.get_root().add_child(_LegendOverlay())
 # F4: Full-width map render (no column split)
 st_folium(m, use_container_width=True, height=620, returned_objects=[])
 
-# Analysis text below map (moved from right column)
+# Analysis text below map
 st.markdown(f"""
-    <div style='font-size:13px; line-height:1.6; color:#374151; margin-top:16px;'>
+    <div class='analysis-card'>
         Berdasarkan klasifikasi radius pelayanan transportasi, terdapat
         <strong>{isolated_count} kampus ({isolated_pct:.1f}%)</strong> yang berstatus
         <em>Transit-Isolated</em>. Kampus-kampus ini berada lebih dari 1.000 meter dari stasiun KRL/MRT/LRT
