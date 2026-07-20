@@ -33,35 +33,59 @@ Klasifikasi aksesibilitas perguruan tinggi dianalisis secara spasial dalam siste
 
 ### 4. Hasil Analisis Spasial & Sanitasi Data (Data Pruning)
 Dari hasil pembersihan, penggabungan, dan validasi data spasial (*data pruning & disambiguation*), dataset disanitasi dari 274 entri awal menjadi **266 perguruan tinggi tervalidasi**:
-1.  **Sanitasi & Pembersihan Duplikasi**: Menghapus 8 entri duplikat/invalid (seperti node duplikat IPB Baranangsiang, Ibnu Chaldun, UPJ, Universitas Raharja, dan UPH Lippo Village), memulihkan entri generik *"Perguruan Tinggi"* menjadi entitas resmi (seperti USNI, UNTAR, Ibn Khaldun Bogor, dll.), serta melakukan *disambiguation* nama kampus multi-lokasi (seperti *Universitas Mercu Buana – Kampus Meruya / Menteng / Warung Buncit*, *UNJ Kampus A/B*, *Esa Unggul*, *UI Depok/Salemba*, dll.).
+1.  **Sanitasi & Pembersihan Duplikasi**: Menghapus 8 entri duplikat/invalid (seperti node duplikat IPB Baranangsiang, Ibnu Chaldun, UPJ, Universitas Raharja, dan UPH Lippo Village), memulihkan entri generik *"Perguruan Tinggi"* menjadi entitas resmi (seperti USNI, UNTAR, Ibn Khaldun Bogor, dll.), serta melakukan *disambiguation* nama kampus multi-lokasi (seperti *Universitas Mercu Buana – Kampus Meruya / Menteng / Warung Buncit*, *UNJ Kampus A/B/C/D*, *Esa Unggul*, *UI Depok/Salemba*, dll.).
 2.  **Normalisasi Akreditasi**: Mengonversi 63 entri skala akreditasi lama (A/B/C) menjadi standar nasional terbaru BAN-PT (*Unggul / Baik Sekali / Baik*).
-3.  **Transit-Oriented**: **128 Kampus (48.1%)**. Kampus-kampus ini memiliki integrasi multimoda yang baik (<= 1.000m stasiun atau <= 500m halte TransJakarta).
-4.  **Transit-Isolated**: **138 Kampus (51.9%)**.
-5.  **Estimasi Mahasiswa Terdampak**: Teridentifikasi sekitar **1.126.456 mahasiswa** berkuliah di kampus *Transit-Isolated*, di mana sebagian besar terpusat di kawasan penyangga (Bekasi, Tangerang, Depok, dan Karawang) yang membutuhkan intervensi angkutan pengumpan (*feeder*).
+3.  **Klasifikasi Keseluruhan**:
+    *   **Transit-Oriented**: **128 Kampus (48.1%)** dengan total **1.170.840 mahasiswa**.
+    *   **Transit-Isolated**: **138 Kampus (51.9%)** dengan total **1.126.456 mahasiswa**.
+4.  **Analisis Segmentasi Kelembagaan (PTN vs PTS)**:
+    *   **Perguruan Tinggi Negeri (PTN — 41 Kampus / 513.346 Mahasiswa)**: Sebanyak **19 kampus PTN (46.3%)** berstatus *Transit-Oriented* dan **22 kampus PTN (53.7%)** berstatus *Transit-Isolated*. Kampus utama PTN (seperti *UI Depok* dengan jarak stasiun 630 m dan *UNJ Kampus A Rawamangun*) terintegrasi langsung dengan koridor utama rel KRL dan halte TransJakarta. Namun, kampus vokasi/satelit di kawasan luar (seperti *IPB Dramaga* atau *UPN Veteran Limo*) terisolasi dari jaringan transportasi rel, berdampak pada **221.840 mahasiswa PTN**.
+    *   **Perguruan Tinggi Swasta (PTS — 225 Kampus / 1.783.950 Mahasiswa)**: Sektor swasta mendominasi lanskap pendidikan tinggi di wilayah Jabodetabek & Karawang dengan menampung **77.7% total mahasiswa**. Sebanyak **116 kampus PTS (51.6%)** tergolong *Transit-Isolated*, berdampak langsung pada **904.616 mahasiswa**. Hal ini didorong oleh pola ekspansi kampus swasta di wilayah penyangga (Tangerang, Bekasi, Karawang, Depok) sepanjang jalan arteri yang jauh dari jaringan rel, memicu ketergantungan tinggi pada kendaraan pribadi.
 
 ### 5. Implementasi WebGIS Dashboard (Streamlit + Folium)
 Platform dikembangkan menggunakan **Streamlit** (Python web framework) dan pustaka kartografi **Folium (Leaflet.js)**. Kode aplikasi dapat dilihat pada berkas `app.py`.
 
-#### Fitur Utama Dashboard:
-1.  **Filter Interaktif**: Pengguna dapat menyaring sebaran kampus berdasarkan Status (Semua, PTN saja, PTS saja) dan Kategori Aksesibilitas.
-2.  **Layer Control Toggles**: Mengontrol tampilan visual layer Batas Kecamatan, Stasiun, Halte TransJakarta, dan visualisasi radius buffer stasiun.
-3.  **Informasi Pop-up Detil**: Mengklik titik kampus akan menampilkan tabel properti berisi Nama Kampus, Status PTN/PTS, Akreditasi, Jumlah Mahasiswa, Kategori Akses, serta jarak presisi dalam meter ke stasiun dan halte TransJakarta terdekat.
-4.  **Skema Warna Kartografi**:
-    *   *Kampus Transit-Oriented*: Titik Hijau.
-    *   *Kampus Transit-Isolated*: Titik Merah.
-    *   *Stasiun*: Titik Biru.
-    *   *Halte TransJakarta*: Titik Ungu.
+#### Fitur Utama & Mesin Analisis Dapur Dashboard:
+1.  **Filter Interaktif Multi-Kriteria**: Pengguna dapat menyaring sebaran kampus berdasarkan Status (Semua, PTN saja, PTS saja) dan Kategori Aksesibilitas (Transit-Oriented, Transit-Isolated).
+2.  **Mesin Kartu Analisis Dinamis 4-Tier (*4-Tier Dynamic Analysis Engine*)**:
+    *   *Tier 1 (Pencarian Kampus Spesifik)*: Saat pengguna memilih kampus tertentu (misal: *Universitas Mercu Buana – Kampus Meruya* vs *Menteng*), sistem menghasilkan diagnosa spasial mikro berisi status PTN/PTS, akreditasi, populasi mahasiswa, jarak presisi ke stasiun & halte TransJakarta, serta rekomendasi kebijakan feeder lokal.
+    *   *Tier 2 (Filter Kelembagaan PTN/PTS)*: Menyajikan sintesis statistik segmentasi kelembagaan dan dampak beban mobilitas mahasiswa per kelompok.
+    *   *Tier 3 (Filter Kategori Akses)*: Menyajikan evaluasi kelompok Transit-Oriented vs Transit-Isolated.
+    *   *Tier 4 (Tampilan Netral Default)*: Menyajikan ringkasan netral lanskap 266 kampus tanpa prasangka kategori tertentu.
+3.  **Layer Control Toggles & High-Contrast Boundary**: Mengontrol tampilan visual layer Batas Kecamatan (reprojected EPSG:4326 dengan efek hover glow `#1D4ED8`), Stasiun Kereta, Halte TransJakarta, dan visualisasi radius buffer stasiun.
+4.  **Informasi Pop-up Detil**: Mengklik titik kampus akan menampilkan tabel properti berisi Nama Kampus, Status PTN/PTS, Akreditasi, Jumlah Mahasiswa, Kategori Akses, serta jarak presisi dalam meter.
 5.  **Hosting Publik**: Tautan aktif WebGIS: [https://uas-gis-e504.streamlit.app/](https://uas-gis-e504.streamlit.app/)
 6.  **Repositori GitHub**: Seluruh berkas kode sumber WebGIS, data Shapefile, dan script pemrosesan di-host secara privat di: [https://github.com/tgr-wjya/uas-gis-e504](https://github.com/tgr-wjya/uas-gis-e504)
 
-#### Screenshot Tampilan Peta Interaktif (WebGIS):
-*   **Visual 1: Tampilan Penuh WebGIS Dashboard**
-    ![Screenshot 1: Tampilan Penuh WebGIS Dashboard](screenshot/screencapture-uas-gis-e504-jgvdz7rzslwkmhm6dlugek-streamlit-app-2026-07-20-18_44_17.png)
-    *Gambar 1.1: Tampilan Peta Interaktif WebGIS Aksesibilitas Perguruan Tinggi Jabodetabek*
+#### Screenshot & Diagnosa Tampilan Peta Interaktif (WebGIS):
 
-*   **Visual 2: Peta Cetak Aksesibilitas Multimoda**
-    ![Screenshot 2: Peta Cetak Aksesibilitas Multimoda](screenshot/Peta Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek.png)
-    *Gambar 1.2: Peta Hasil Cetak Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek*
+*   **Visual 1: Tampilan Utama Netral WebGIS Dashboard**
+    ![Visual 1: Tampilan Utama Netral WebGIS Dashboard](screenshot/web/Default.png)
+    *Gambar 1.1: Tampilan Netral Default WebGIS Menyajikan Overview 266 Perguruan Tinggi Jabodetabek & Karawang*
+
+*   **Visual 2: Filter Segmentasi Perguruan Tinggi Negeri (PTN Only)**
+    ![Visual 2: Filter Segmentasi Perguruan Tinggi Negeri (PTN Only)](screenshot/web/PTN_Only.png)
+    *Gambar 1.2: Hasil Query Segmentasi PTN Menunjukkan 19 Kampus Transit-Oriented vs 22 Kampus Transit-Isolated*
+
+*   **Visual 3: Filter Segmentasi Perguruan Tinggi Swasta (PTS Only)**
+    ![Visual 3: Filter Segmentasi Perguruan Tinggi Swasta (PTS Only)](screenshot/web/PTS_Only.png)
+    *Gambar 1.3: Hasil Query Segmentasi PTS Menunjukkan Dominasi 116 Kampus Transit-Isolated (904.616 Mahasiswa Terdampak)*
+
+*   **Visual 4: Filter Sebaran Kampus Transit-Isolated**
+    ![Visual 4: Filter Sebaran Kampus Transit-Isolated](screenshot/web/Transit-Isolated_Only.png)
+    *Gambar 1.4: Pemetaan 138 Kampus Transit-Isolated yang Membutuhkan Intervensi Angkutan Feeder Regional*
+
+*   **Visual 5: Diagnosa Spasial Kampus Universitas Mercu Buana – Kampus Meruya (A)**
+    ![Visual 5: Diagnosa Spasial Kampus Universitas Mercu Buana Meruya](screenshot/web/Mercu-Buana-Meruya_Only.png)
+    *Gambar 1.5: Diagnosa Spasial Kampus Meruya (Transit-Isolated, Jarak Stasiun 5.475 m, Halte TJ 610 m, 25.000 Mahasiswa)*
+
+*   **Visual 6: Diagnosa Spasial Kampus Universitas Mercu Buana – Kampus Menteng (B)**
+    ![Visual 6: Diagnosa Spasial Kampus Universitas Mercu Buana Menteng](screenshot/web/Mercu-Buana-Menteng_Only.png)
+    *Gambar 1.6: Diagnosa Spasial Kampus Menteng (Transit-Oriented, Terintegrasi Koridor Transit Jakarta Pusat)*
+
+*   **Visual 7: Peta Hasil Cetak (QGIS Print Layout)**
+    ![Visual 7: Peta Hasil Cetak (QGIS Print Layout)](screenshot/Peta Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek.png)
+    *Gambar 1.7: Peta Hasil Cetak Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek (QGIS Layout)*
 
 ---
 
@@ -87,7 +111,7 @@ Sebelum melatih model Random Forest, data atribut poligon kecamatan diperkaya de
     *   *Solusi*: Menambahkan fungsi `QgsCoordinateTransform` (atau `pyproj.Transformer`) pada script pemrosesan untuk mentransformasi seluruh geometri overlay (titik kampus, garis tol, dan centroid industri) ke dalam sistem koordinat proyeksi kecamatan (EPSG:32748) sebelum melakukan analisis spasial (`contains`, `intersects`, `distance`). Hal ini mengembalikan fungsi fitur `camp_dens` (4.09%) dan `toll_pct` (17.29%) sehingga berkontribusi aktif dalam klasifikasi model.
 
 #### Bukti Eksekusi Prosedur Feature Engineering di QGIS Console:
-![Bukti Eksekusi Prosedur Feature Engineering di QGIS Console](screenshot/Screenshot from 2026-07-19 17-55-34.png)
+![Bukti Eksekusi Prosedur Feature Engineering di QGIS Console](screenshot/QGIS/Screenshot from 2026-07-19 17-55-34.png)
 *Gambar 2.1: Bukti Eksekusi Script Pemrosesan Variabel Spasial di QGIS Python Console*
 
 ---
@@ -176,7 +200,7 @@ else:
     Hal ini menjawab hipotesis awal bahwa keberadaan pasokan calon mahasiswa (input demografis) di suatu kecamatan dinilai lebih kritis oleh model dibandingkan hanya kedekatan dengan kawasan industri mitra, meskipun keduanya merupakan komponen dominan (total kontribusi > 68%).
 
 #### Bukti Eksekusi QGIS Python Console:
-![Bukti Eksekusi QGIS Python Console](screenshot/Screenshot from 2026-07-19 17-52-26.png)
+![Bukti Eksekusi QGIS Python Console](screenshot/QGIS/Screenshot from 2026-07-19 17-52-26.png)
 *Gambar 2.2: Bukti Eksekusi Pemodelan Spasial Random Forest pada QGIS Python Console*
 
 ---
