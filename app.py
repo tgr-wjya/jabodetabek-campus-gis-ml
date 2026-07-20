@@ -1,7 +1,7 @@
 import json
 import streamlit as st
 import folium
-from streamlit_folium import folium_static
+from streamlit_folium import st_folium, folium_static
 from branca.element import MacroElement
 from jinja2 import Template
 import pandas as pd
@@ -149,7 +149,7 @@ campus_names    = ["-- Semua --"] + sorted(filtered_df["name"].tolist())
 selected_campus = st.sidebar.selectbox("Pilih Kampus", campus_names)
 
 # Resolve map center and zoom based on campus search selection
-DEFAULT_CENTER = [-6.2088, 106.8456]
+DEFAULT_CENTER = [-6.25, 106.84]
 DEFAULT_ZOOM   = 11
 map_center     = DEFAULT_CENTER
 map_zoom       = DEFAULT_ZOOM
@@ -399,7 +399,7 @@ class _LegendOverlay(MacroElement):
 m.get_root().add_child(_LegendOverlay())
 
 # F4: Full-width map render (no column split)
-folium_static(m, width=1100, height=620)
+st_folium(m, use_container_width=True, height=620, returned_objects=[])
 
 # Analysis text below map (moved from right column)
 st.markdown(f"""
