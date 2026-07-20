@@ -24,3 +24,6 @@ logs-*.txt
 
 # Office Lock files
 .~lock.*
+
+# Non-code artifacts (reports, maps, exam documents)
+docs/
