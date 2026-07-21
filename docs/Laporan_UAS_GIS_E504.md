@@ -299,3 +299,14 @@ Untuk menampilkan hasil klasifikasi rekomendasi dari model Random Forest ke dala
 #### Peta Hasil Cetak (QGIS Print Layout):
 ![Peta Cetak Layout QGIS](screenshot/Peta Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek.png)
 *Gambar 2.3: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*
+
+#### 2. Integrasi WebGIS Dashboard Interaktif & Optimalisasi Latensi (Streamlit Tab 2)
+
+Selain pemetaan desktop QGIS, seluruh sistem inferensi Random Forest dan visualisasi spasial rekomendasi diintegrasikan secara luas ke dalam **Streamlit WebGIS Dashboard (Tab 2)** untuk memudahkan aksesibilitas pengambil kebijakan secara online:
+
+1. **Peta Koroplet Interaktif Multi-Layer**: Menampilkan 299 kecamatan yang diwarnai secara dinamis berdasarkan nilai `Pred_Reko` (**Hijau** = Sangat Direkomendasikan, **Kuning** = Cukup Direkomendasikan, **Merah** = Tidak Direkomendasikan). Dilengkapi *tooltip* dan *pop-up* yang menyajikan rincian `dist_ind`, `toll_pct`, `sma_grad`, `camp_dens`, dan `area_km2` secara presisi saat poligon diklik.
+2. **Filter Interaktif Wilayah & Rekomendasi**: Pengguna dapat menyaring peta berdasarkan Kabupaten/Kota spesifik dan Tingkat Rekomendasi tertentu melalui kontrol sidebar.
+3. **Grafik Feature Importance Interaktif**: Grafik batang horizontal menyajikan kontribusi variabel model ML (*Lulusan SMA 36.99%*, *Jarak Industri 31.10%*, *Akses Tol 17.29%*, *Luas Wilayah 10.52%*, *Kepadatan Kampus 4.09%*).
+4. **Simulator Prediksi ML Real-Time**: Panel simulator interaktif memungkinkan pengguna menggeser *slider* variabel spasial hipotetis untuk menjalankan inferensi `RandomForestClassifier.predict()` secara langsung di browser dan melihat hasil zonasi kelayakan beserta probabilitas keyakinan model secara real-time.
+5. **Optimalisasi Geometri & Benchmarking Latensi**: Berkas GeoJSON poligon kecamatan disederhanakan melalui skrip `simplify_data.py` (Douglas-Peucker `tolerance=0.0004` & pembulatan koordinat 5 desimal) sehingga ukurannya berkurang dari **17.44 MB menjadi 0.88 MB** (efisiensi **94.98%**). Hasil pengujian latensi lokal (`test_latency.py`) mencatat percepatan pemuatan hingga **25.38x lebih cepat** (dari 352.94 ms menjadi 13.91 ms per render server), dengan ketersediaan badge status latensi pada footer aplikasi.
+
