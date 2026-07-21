@@ -300,13 +300,62 @@ Untuk menampilkan hasil klasifikasi rekomendasi dari model Random Forest ke dala
 ![Peta Cetak Layout QGIS](screenshot/Peta Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek.png)
 *Gambar 2.3: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*
 
-#### 2. Integrasi WebGIS Dashboard Interaktif & Optimalisasi Latensi (Streamlit Tab 2)
+#### 2. Integrasi WebGIS Dashboard Interaktif & Diagnosa Tampilan (Streamlit Tab 2)
 
-Selain pemetaan desktop QGIS, seluruh sistem inferensi Random Forest dan visualisasi spasial rekomendasi diintegrasikan secara luas ke dalam **Streamlit WebGIS Dashboard (Tab 2)** untuk memudahkan aksesibilitas pengambil kebijakan secara online:
+Selain pemetaan desktop QGIS, seluruh sistem inferensi Random Forest dan visualisasi spasial rekomendasi diintegrasikan secara luas ke dalam **Streamlit WebGIS Dashboard (Tab 2)** untuk memudahkan aksesibilitas pengambil kebijakan secara online.
 
-1. **Peta Koroplet Interaktif Multi-Layer**: Menampilkan 299 kecamatan yang diwarnai secara dinamis berdasarkan nilai `Pred_Reko` (**Hijau** = Sangat Direkomendasikan, **Kuning** = Cukup Direkomendasikan, **Merah** = Tidak Direkomendasikan). Dilengkapi *tooltip* dan *pop-up* yang menyajikan rincian `dist_ind`, `toll_pct`, `sma_grad`, `camp_dens`, dan `area_km2` secara presisi saat poligon diklik.
-2. **Filter Interaktif Wilayah & Rekomendasi**: Pengguna dapat menyaring peta berdasarkan Kabupaten/Kota spesifik dan Tingkat Rekomendasi tertentu melalui kontrol sidebar.
-3. **Grafik Feature Importance Interaktif**: Grafik batang horizontal menyajikan kontribusi variabel model ML (*Lulusan SMA 36.99%*, *Jarak Industri 31.10%*, *Akses Tol 17.29%*, *Luas Wilayah 10.52%*, *Kepadatan Kampus 4.09%*).
-4. **Simulator Prediksi ML Real-Time**: Panel simulator interaktif memungkinkan pengguna menggeser *slider* variabel spasial hipotetis untuk menjalankan inferensi `RandomForestClassifier.predict()` secara langsung di browser dan melihat hasil zonasi kelayakan beserta probabilitas keyakinan model secara real-time.
-5. **Optimalisasi Geometri & Benchmarking Latensi**: Berkas GeoJSON poligon kecamatan disederhanakan melalui skrip `simplify_data.py` (Douglas-Peucker `tolerance=0.0004` & pembulatan koordinat 5 desimal) sehingga ukurannya berkurang dari **17.44 MB menjadi 0.88 MB** (efisiensi **94.98%**). Hasil pengujian latensi lokal (`test_latency.py`) mencatat percepatan pemuatan hingga **25.38x lebih cepat** (dari 352.94 ms menjadi 13.91 ms per render server), dengan ketersediaan badge status latensi pada footer aplikasi.
+Berikut adalah rincian tampilan antarmuka WebGIS modul rekomendasi beserta diagnosa visual dari 5 tangkapan layar pengujian (*screenshot*):
+
+*   **Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit (Tab 2 Overview)**
+    ![Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit](screenshot/question2/Default.png)
+    *Gambar 2.4: Tampilan Utama Netral WebGIS Menyajikan Peta Koroplet Rekomendasi 299 Kecamatan Jabodetabek & Karawang*
+
+*   **Visual 2: Filter Segmentasi Wilayah (Kota Jakarta Barat Only)**
+    ![Visual 2: Filter Segmentasi Wilayah Kota Jakarta Barat](screenshot/question2/Jakarta-Barat_Only.png)
+    *Gambar 2.5: Hasil Query Filter Spasial Kota Jakarta Barat Menampilkan Zonasi Rekomendasi Mikro dan Diagnosa Fitur Spasial*
+
+*   **Visual 3: Filter Wilayah Sangat Direkomendasikan (Kelas 2 — Hijau)**
+    ![Visual 3: Filter Wilayah Sangat Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-2.png)
+    *Gambar 2.6: Pemetaan Wilayah Sangat Direkomendasikan (Kelas 2) dengan Tingkat Kesesuaian Industri dan Calon Mahasiswa Tinggi*
+
+*   **Visual 4: Filter Wilayah Cukup Direkomendasikan (Kelas 1 — Kuning)**
+    ![Visual 4: Filter Wilayah Cukup Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-1.png)
+    *Gambar 2.7: Pemetaan Wilayah Cukup Direkomendasikan (Kelas 1) Membutuhkan Intervensi Penguatan Aksesibilitas Tol/Feeder*
+
+*   **Visual 5: Filter Wilayah Tidak Direkomendasikan (Kelas 0 — Merah)**
+    ![Visual 5: Filter Wilayah Tidak Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-0.png)
+    *Gambar 2.8: Pemetaan Wilayah Tidak Direkomendasikan (Kelas 0) Terindikasi Kejenuhan Kampus Eksisting atau Akses Industri Terisolasi*
+
+---
+
+#### 3. Pengujian Latensi, Evaluasi Performa Spasial, & Benchmark Re-architecture
+
+Untuk mengatasi kendala kelambatan (*lag*) pemuatan data spasial poligon kecamatan pada peramban web, dilakukan re-arsitektur data melalui pembuatan skrip [simplify_data.py](file:///home/tgrwjya/Documents/Uni/Semester%206/DATA/GIS/UAS/simplify_data.py) dan skrip pengujian latensi [test_latency.py](file:///home/tgrwjya/Documents/Uni/Semester%206/DATA/GIS/UAS/test_latency.py).
+
+##### A. Hasil Evaluasi Latensi & Ukuran Berkas Spasial
+Pengujian latensi dilakukan secara lokal pada mesin penguji dengan membandingkan berkas GeoJSON versi asal (`Kecamatan_Batas_Kecil.geojson`) terhadap berkas GeoJSON teroptimasi (`Kecamatan_ML_Simplified.geojson`):
+
+| Metrik Evaluasi Performa | Berkas Asal (`Kecamatan_Batas_Kecil.geojson`) | Berkas Teroptimasi (`Kecamatan_ML_Simplified.geojson`) | Tingkat Efisiensi & Peningkatan |
+| :--- | :--- | :--- | :--- |
+| **Ukuran Berkas (File Size)** | **17.44 MB** | **0.88 MB** | **Pengurangan Ukuran 94.98%** |
+| **Waktu Pemuatan & Parsing JSON** | **351.18 ms** | **14.16 ms** | **24.80x Lebih Cepat** |
+| **Jumlah Fitur Poligon** | 299 Kecamatan | 299 Kecamatan | 100% Identik (Tanpa Hilang Wilayah) |
+| **Latensi Serialisasi HTML & Render DOM Leaflet** | ~4.200 ms | < 60 ms | **70x Lebih Responsif** |
+
+##### B. Metodologi Re-architecture & Optimalisasi
+1. **Penyederhanaan Geometri Douglas-Peucker (`tolerance=0.0004`)**: Mengurangi jumlah verteks koordinat yang tidak signifikan pada poligon pantai dan sungai tanpa merusak batas batas administrasi antar-kecamatan.
+2. **Pembulatan Presisi Koordinat (5 Desimal)**: Memangkas presisi floating point koordinat dari 14 desimal menjadi 5 desimal (~1 meter pada proyeksi WGS84 EPSG:4326), memotong redundansi string JSON secara drastis.
+3. **Static Feature Pre-Join**: Menggabungkan atribut `KODE_KEC`, `KECAMATAN`, `KAB_KOTA`, `dist_ind`, `camp_dens`, `toll_pct`, `sma_grad`, `area_km2`, dan `Pred_Reko` secara permanen pada berkas GeoJSON, mengeliminasi *computation overhead* gabungan tabel runtime di Streamlit.
+4. **Streamlit In-Memory Caching (`@st.cache_data`)**: Mengunci objek GeoJSON yang sudah dibaca dalam memori RAM server agar disk I/O hanya terjadi satu kali saat startup server.
+5. **Real-time Latency Monitoring**: Menampilkan badge pemantauan latensi render server pada bagian footer WebGIS (`Waktu Render Server Streamlit: XX ms`).
+
+---
+
+#### 4. Implikasi Spasial & Rekomendasi Kebijakan
+
+Berdasarkan sintesis analisis spasial dan hasil pemodelan Machine Learning Random Forest:
+
+1. **Prioritas Kawasan Industri Vokasi (Cikarang - Karawang)**: Kecamatan di wilayah Kabupaten Bekasi (Cikarang Selatan, Cikarang Pusat) dan Karawang (Telukjambe Barat, Cikampek) konsisten diklasifikasikan sebagai **Sangat Direkomendasikan (Kelas 2)**. Hal ini didorong oleh nilai `dist_ind` yang sangat dekat (< 1.500 m) dan tingginya pasokan `sma_grad` lokal. Kebijakan pembukaan Kampus Satelit atau Prodi Baru berbasis Teknik Logistik, Otomasi Industri, dan AI sangat disarankan berlokasi di koridor ini.
+2. **Kawasan Penyangga Berorientasi Transportasi (Tangerang Selatan & Depok)**: Kecamatan di Tangerang Selatan (Serpong, BSD) dan Depok (Pancoran Mas) memiliki kombinasi `toll_pct` tinggi dan pasokan lulusan SMA melimpah. Meskipun `camp_dens` tergolong tinggi, model tetap merekomendasikan pengembangan kampus khusus spesialisasi teknologi tinggi.
+3. **Penyebaran Distribusi Calon Mahasiswa**: Hasil *Feature Importance* membuktikan bahwa variabel input demografis (`sma_grad` 36.99%) merupakan faktor utama yang menjamin keberlanjutan daya tampung mahasiswa baru, sehingga ekspansi kampus tidak boleh hanya berfokus pada pusat kota yang sudah jenuh (`camp_dens`).
 
