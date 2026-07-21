@@ -298,37 +298,55 @@ Untuk menampilkan hasil klasifikasi rekomendasi dari model Random Forest ke dala
 
 #### Peta Hasil Cetak (QGIS Print Layout):
 ![Peta Cetak Layout QGIS](screenshot/Peta Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek.png)
-*Gambar 2.3: Peta Hasil Klasifikasi Kelayakan Lokasi Kampus Satelit Baru (Output QGIS Print Layout)*
-
-#### 2. Integrasi WebGIS Dashboard Interaktif & Diagnosa Tampilan (Streamlit Tab 2)
-
-Selain pemetaan desktop QGIS, seluruh sistem inferensi Random Forest dan visualisasi spasial rekomendasi diintegrasikan secara luas ke dalam **Streamlit WebGIS Dashboard (Tab 2)** untuk memudahkan aksesibilitas pengambil kebijakan secara online.
-
-Berikut adalah rincian tampilan antarmuka WebGIS modul rekomendasi beserta diagnosa visual dari 5 tangkapan layar pengujian (*screenshot*):
-
-*   **Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit (Tab 2 Overview)**
-    ![Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit](screenshot/question2/Default.png)
-    *Gambar 2.4: Tampilan Utama Netral WebGIS Menyajikan Peta Koroplet Rekomendasi 299 Kecamatan Jabodetabek & Karawang*
-
-*   **Visual 2: Filter Segmentasi Wilayah (Kota Jakarta Barat Only)**
-    ![Visual 2: Filter Segmentasi Wilayah Kota Jakarta Barat](screenshot/question2/Jakarta-Barat_Only.png)
-    *Gambar 2.5: Hasil Query Filter Spasial Kota Jakarta Barat Menampilkan Zonasi Rekomendasi Mikro dan Diagnosa Fitur Spasial*
-
-*   **Visual 3: Filter Wilayah Sangat Direkomendasikan (Kelas 2 — Hijau)**
-    ![Visual 3: Filter Wilayah Sangat Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-2.png)
-    *Gambar 2.6: Pemetaan Wilayah Sangat Direkomendasikan (Kelas 2) dengan Tingkat Kesesuaian Industri dan Calon Mahasiswa Tinggi*
-
-*   **Visual 4: Filter Wilayah Cukup Direkomendasikan (Kelas 1 — Kuning)**
-    ![Visual 4: Filter Wilayah Cukup Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-1.png)
-    *Gambar 2.7: Pemetaan Wilayah Cukup Direkomendasikan (Kelas 1) Membutuhkan Intervensi Penguatan Aksesibilitas Tol/Feeder*
-
-*   **Visual 5: Filter Wilayah Tidak Direkomendasikan (Kelas 0 — Merah)**
-    ![Visual 5: Filter Wilayah Tidak Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-0.png)
-    *Gambar 2.8: Pemetaan Wilayah Tidak Direkomendasikan (Kelas 0) Terindikasi Kejenuhan Kampus Eksisting atau Akses Industri Terisolasi*
+*Gambar 2.3: Peta Hasil Cetak Aksesibilitas Transportasi Massal Perguruan Tinggi Jabodetabek (QGIS Layout)*
 
 ---
 
-#### 3. Pengujian Latensi, Evaluasi Performa Spasial, & Benchmark Re-architecture
+#### 2. Visualisasi Grafik Spasial & Hasil Pemodelan Machine Learning (Soal 2)
+
+Selain peta hasil cetak QGIS dan tangkapan layar WebGIS, hasil analisis Machine Learning disajikan dalam bentuk **grafik visualisasi data spasial mandiri (standalone data visualizations)** untuk memudahkan evaluasi numerik dan geospasial oleh dosen:
+
+*   **Visualisasi 1: Peta Tematik Spasial Zonasi Rekomendasi Kampus Satelit (Soal 2 ML Map)**
+    ![Peta Tematik Spasial Zonasi Rekomendasi Kampus Satelit](screenshot/visualizations/Peta_Zonasi_Rekomendasi_ML_Soal2.png)
+    *Gambar 2.4: Peta Tematik Spasial Zonasi Kelayakan Lokasi Kampus Satelit Baru (Output Pemodelan Random Forest 299 Kecamatan)*
+
+*   **Visualisasi 2: Grafik Tingkat Pengaruh Variabel Spasial (Feature Importance Chart)**
+    ![Grafik Tingkat Pengaruh Variabel Spasial](screenshot/visualizations/Grafik_Feature_Importance_RF.png)
+    *Gambar 2.5: Grafik Batang Standalone Feature Importance Model Random Forest (Variabel Lulusan SMA Mendominasi 36.99%)*
+
+*   **Visualisasi 3: Grafik Distribusi Zonasi Rekomendasi per Kabupaten/Kota**
+    ![Grafik Distribusi Zonasi Rekomendasi per Kabupaten Kota](screenshot/visualizations/Grafik_Distribusi_Zonasi_KabKota.png)
+    *Gambar 2.6: Grafik Stacked Bar Distribusi Kelayakan Lokasi Kampus Satelit per Kabupaten/Kota di Wilayah Jabodetabek & Karawang*
+
+---
+
+#### 3. Integrasi WebGIS Dashboard Interaktif & Tangkapan Layar Antarmuka (Streamlit Tab 2)
+
+Seluruh sistem inferensi Random Forest dan visualisasi spasial rekomendasi diintegrasikan secara penuh ke dalam **Streamlit WebGIS Dashboard (Tab 2)**:
+
+*   **Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit (Tab 2 Overview)**
+    ![Visual 1: Tampilan Utama Netral WebGIS Rekomendasi Kampus Satelit](screenshot/question2/Default.png)
+    *Gambar 2.7: Tampilan Utama Netral WebGIS Menyajikan Peta Koroplet Rekomendasi 299 Kecamatan Jabodetabek & Karawang*
+
+*   **Visual 2: Filter Segmentasi Wilayah (Kota Jakarta Barat Only)**
+    ![Visual 2: Filter Segmentasi Wilayah Kota Jakarta Barat](screenshot/question2/Jakarta-Barat_Only.png)
+    *Gambar 2.8: Hasil Query Filter Spasial Kota Jakarta Barat Menampilkan Zonasi Rekomendasi Mikro dan Diagnosa Fitur Spasial*
+
+*   **Visual 3: Filter Wilayah Sangat Direkomendasikan (Kelas 2 — Hijau)**
+    ![Visual 3: Filter Wilayah Sangat Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-2.png)
+    *Gambar 2.9: Pemetaan Wilayah Sangat Direkomendasikan (Kelas 2) dengan Tingkat Kesesuaian Industri dan Calon Mahasiswa Tinggi*
+
+*   **Visual 4: Filter Wilayah Cukup Direkomendasikan (Kelas 1 — Kuning)**
+    ![Visual 4: Filter Wilayah Cukup Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-1.png)
+    *Gambar 2.10: Pemetaan Wilayah Cukup Direkomendasikan (Kelas 1) Membutuhkan Intervensi Penguatan Aksesibilitas Tol/Feeder*
+
+*   **Visual 5: Filter Wilayah Tidak Direkomendasikan (Kelas 0 — Merah)**
+    ![Visual 5: Filter Wilayah Tidak Direkomendasikan](screenshot/question2/Tingkat-Rekomendasi-0.png)
+    *Gambar 2.11: Pemetaan Wilayah Tidak Direkomendasikan (Kelas 0) Terindikasi Kejenuhan Kampus Eksisting atau Akses Industri Terisolasi*
+
+---
+
+#### 4. Pengujian Latensi, Evaluasi Performa Spasial, & Benchmark Re-architecture
 
 Untuk mengatasi kendala kelambatan (*lag*) pemuatan data spasial poligon kecamatan pada peramban web, dilakukan re-arsitektur data melalui pembuatan skrip [simplify_data.py](file:///home/tgrwjya/Documents/Uni/Semester%206/DATA/GIS/UAS/simplify_data.py) dan skrip pengujian latensi [test_latency.py](file:///home/tgrwjya/Documents/Uni/Semester%206/DATA/GIS/UAS/test_latency.py).
 
@@ -351,11 +369,12 @@ Pengujian latensi dilakukan secara lokal pada mesin penguji dengan membandingkan
 
 ---
 
-#### 4. Implikasi Spasial & Rekomendasi Kebijakan
+#### 5. Implikasi Spasial & Rekomendasi Kebijakan
 
 Berdasarkan sintesis analisis spasial dan hasil pemodelan Machine Learning Random Forest:
 
 1. **Prioritas Kawasan Industri Vokasi (Cikarang - Karawang)**: Kecamatan di wilayah Kabupaten Bekasi (Cikarang Selatan, Cikarang Pusat) dan Karawang (Telukjambe Barat, Cikampek) konsisten diklasifikasikan sebagai **Sangat Direkomendasikan (Kelas 2)**. Hal ini didorong oleh nilai `dist_ind` yang sangat dekat (< 1.500 m) dan tingginya pasokan `sma_grad` lokal. Kebijakan pembukaan Kampus Satelit atau Prodi Baru berbasis Teknik Logistik, Otomasi Industri, dan AI sangat disarankan berlokasi di koridor ini.
 2. **Kawasan Penyangga Berorientasi Transportasi (Tangerang Selatan & Depok)**: Kecamatan di Tangerang Selatan (Serpong, BSD) dan Depok (Pancoran Mas) memiliki kombinasi `toll_pct` tinggi dan pasokan lulusan SMA melimpah. Meskipun `camp_dens` tergolong tinggi, model tetap merekomendasikan pengembangan kampus khusus spesialisasi teknologi tinggi.
 3. **Penyebaran Distribusi Calon Mahasiswa**: Hasil *Feature Importance* membuktikan bahwa variabel input demografis (`sma_grad` 36.99%) merupakan faktor utama yang menjamin keberlanjutan daya tampung mahasiswa baru, sehingga ekspansi kampus tidak boleh hanya berfokus pada pusat kota yang sudah jenuh (`camp_dens`).
+
 
