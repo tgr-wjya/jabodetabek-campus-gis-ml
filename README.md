@@ -1,8 +1,10 @@
+[![CI/CD Pipeline](https://github.com/tgr-wjya/jabodetabek-campus-gis-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/tgr-wjya/jabodetabek-campus-gis-ml/actions/workflows/ci.yml)
+
 # WebGIS & Random Forest Campus Suitability
 
 Streamlit WebGIS app for mapping transit accessibility of universities and recommending satellite campus locations in Jabodetabek and Karawang using a Random Forest model.
 
-Live app: [https://uas-gis-e504.streamlit.app/](https://uas-gis-e504.streamlit.app/)
+Live app: [https://jabodetabek-campus-gis-ml.streamlit.app/](https://jabodetabek-campus-gis-ml.streamlit.app/)
 
 ## Application Overview (`app.py`)
 

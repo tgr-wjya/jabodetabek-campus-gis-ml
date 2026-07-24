@@ -15,16 +15,15 @@
 # -----------------------------------------------------------------------------
 
 import random
-from qgis.core import (
-    QgsProject,
-    QgsField,
-    QgsFeature,
-    QgsGeometry,
-    QgsPointXY,
-    QgsCoordinateTransform,
-    QgsCoordinateReferenceSystem
-)
+
 from PyQt5.QtCore import QVariant
+from qgis.core import (
+    QgsCoordinateTransform,
+    QgsField,
+    QgsGeometry,
+    QgsProject,
+)
+
 
 def main():
     print("=== STARTING SPATIAL FEATURE ENGINEERING CALCULATION ===")
@@ -135,8 +134,7 @@ def main():
         min_dist = float('inf')
         for ind_c in ind_centroids:
             d = kec_centroid.distance(ind_c)
-            if d < min_dist:
-                min_dist = d
+            min_dist = min(min_dist, d)
         if min_dist == float('inf'):
             min_dist = 0.0
             

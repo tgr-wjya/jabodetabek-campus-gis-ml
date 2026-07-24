@@ -1,7 +1,8 @@
 # test_simplify_data.py
-import os
 import json
+import os
 import unittest
+
 
 class TestSimplifyData(unittest.TestCase):
     def test_simplified_geojson_exists_and_valid(self):

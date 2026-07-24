@@ -1,12 +1,15 @@
 # generate_visualizations.py
-import os
 import json
-import pandas as pd
-import numpy as np
+import os
+
 import matplotlib
+import numpy as np
+import pandas as pd
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from shapely.geometry import shape
+
 
 def create_visualizations():
     os.makedirs("screenshot/visualizations", exist_ok=True)
@@ -14,7 +17,7 @@ def create_visualizations():
     # --------------------------------------------------------------------------
     # 1. Feature Importance Chart (Grafik Feature Importance RF)
     # --------------------------------------------------------------------------
-    fig, ax = plt.subplots(figsize=(10, 5), dpi=300)
+    _, ax = plt.subplots(figsize=(10, 5), dpi=300)
     features = [
         "Jumlah Lulusan SMA (sma_grad)",
         "Jarak ke Industri Terdekat (dist_ind)",
@@ -72,7 +75,7 @@ def create_visualizations():
     grouped = grouped.sort_values("Total", ascending=True)
     grouped = grouped.drop(columns=["Total"])
     
-    fig, ax = plt.subplots(figsize=(11, 6), dpi=300)
+    _, ax = plt.subplots(figsize=(11, 6), dpi=300)
     colors_dict = {
         "Sangat Direkomendasikan": "#10B981",
         "Cukup Direkomendasikan": "#F59E0B",
@@ -101,7 +104,7 @@ def create_visualizations():
     with open("data_ready/Kecamatan_ML_Simplified.geojson", "r", encoding="utf-8") as f:
         data = json.load(f)
         
-    fig, ax = plt.subplots(figsize=(12, 10), dpi=300)
+    _, ax = plt.subplots(figsize=(12, 10), dpi=300)
     
     reko_colors = {
         2: "#10B981",  # Hijau

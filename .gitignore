@@ -27,3 +27,16 @@ logs-*.txt
 
 # Non-code artifacts (reports, maps, exam documents)
 docs/
+
+# Coverage files
+.coverage
+coverage.xml
+
+# Screenshots
+screenshot/
+
+# Zip files
+*.zip
+
+
+

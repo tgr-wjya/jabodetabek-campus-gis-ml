@@ -1,7 +1,8 @@
 # test_latency.py
 import json
-import time
 import os
+import time
+
 
 def benchmark_geojson(file_path):
     start_time = time.perf_counter()

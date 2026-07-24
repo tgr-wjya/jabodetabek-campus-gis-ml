@@ -13,13 +13,14 @@
 # -----------------------------------------------------------------------------
 
 import csv
+
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
 
 # 1. Access active layer in QGIS
-layer = iface.activeLayer()
+layer = iface.activeLayer()  # noqa: F821
 
 if not layer or layer.name() not in ["Kecamatan_Jabodetabek", "Kecamatan_Jabodetabek_Karawang"]:
     print("Warning: Please select the 'Kecamatan_Jabodetabek' layer in your Layers panel first!")
@@ -118,5 +119,5 @@ else:
                     all_preds[idx]
                 ])
         print("Success! CSV file created and ready for QGIS Join operation.")
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         print(f"Failed to write CSV: {e}")

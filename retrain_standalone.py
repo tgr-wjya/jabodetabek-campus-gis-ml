@@ -17,18 +17,17 @@ Pipeline:
 
 import csv
 import random
-import struct
 import shutil
+import struct
 from pathlib import Path
 
 import numpy as np
 import shapefile
 from pyproj import Transformer
-from shapely.geometry import shape, Point, MultiPolygon, Polygon
-from shapely.ops import unary_union
+from shapely.geometry import shape
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
 
 DATA = Path("data_ready")
 

@@ -1,15 +1,16 @@
 import json
 import os
 import time
-import pandas as pd
-import numpy as np
+
 import altair as alt
-import streamlit as st
 import folium
-from streamlit_folium import st_folium
+import numpy as np
+import pandas as pd
+import streamlit as st
 from branca.element import MacroElement
 from jinja2 import Template
 from sklearn.ensemble import RandomForestClassifier
+from streamlit_folium import st_folium
 
 # Record script execution start time for server latency measurement
 t_start = time.perf_counter()

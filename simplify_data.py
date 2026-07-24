@@ -1,8 +1,10 @@
 # simplify_data.py
 import json
 import os
+
 import pandas as pd
-from shapely.geometry import shape, mapping
+from shapely.geometry import mapping, shape
+
 
 def round_coords(coords):
     if isinstance(coords, (list, tuple)):
