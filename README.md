@@ -1,4 +1,5 @@
 [![CI/CD Pipeline](https://github.com/tgr-wjya/jabodetabek-campus-gis-ml/actions/workflows/ci.yml/badge.svg)](https://github.com/tgr-wjya/jabodetabek-campus-gis-ml/actions/workflows/ci.yml)
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=tgr-wjya_jabodetabek-campus-gis-ml&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=tgr-wjya_jabodetabek-campus-gis-ml)
 
 # WebGIS & Random Forest Campus Suitability
 
