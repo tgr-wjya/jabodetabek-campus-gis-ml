@@ -24,7 +24,18 @@ st.set_page_config(
 
 # Custom CSS for premium dark styling (Zero Emojis, 100% Bahasa Indonesia)
 st.markdown("""
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
     <style>
+    @font-face {
+        font-family: 'Outfit';
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'Inter';
+        font-display: swap;
+    }
     .main-header {
         font-family: 'Outfit', sans-serif;
         color: #2563EB;
