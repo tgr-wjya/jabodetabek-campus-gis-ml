@@ -1,0 +1,8 @@
+app.py
+.venv
+__pycache__
+.pytest_cache
+screenshot
+*.zip
+.coverage
+coverage.xml
