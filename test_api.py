@@ -5,9 +5,10 @@ from api.index import app
 client = TestClient(app)
 
 def test_api_health():
-    response = client.get("/api/health")
-    assert response.status_code == 200
-    assert response.json()["status"] == "ok"
+    for route in ["/", "/api", "/health", "/api/health"]:
+        response = client.get(route)
+        assert response.status_code == 200
+        assert response.json()["status"] == "ok"
 
 def test_api_predict():
     payload = {

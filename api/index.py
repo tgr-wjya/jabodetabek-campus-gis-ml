@@ -40,10 +40,18 @@ class PredictRequest(BaseModel):
     sma_grad: float
     area_km2: float
 
+@app.get("/")
+@app.get("/api")
+@app.get("/health")
 @app.get("/api/health")
 def health_check():
-    return {"status": "ok", "service": "Jabodetabek Campus GIS & ML API"}
+    return {
+        "status": "ok",
+        "service": "Jabodetabek Campus GIS & ML API",
+        "documentation": "FastAPI Random Forest Model Serverless Service"
+    }
 
+@app.post("/predict")
 @app.post("/api/predict")
 def predict(req: PredictRequest):
     model = get_model()
