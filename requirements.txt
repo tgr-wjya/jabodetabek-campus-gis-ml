@@ -6,3 +6,6 @@ numpy
 scikit-learn
 altair
 shapely
+pyshp
+pyproj
+

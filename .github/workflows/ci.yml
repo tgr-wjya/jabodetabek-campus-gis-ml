@@ -100,5 +100,5 @@ jobs:
         with:
           urls: |
             http://localhost:8501
-          uploadTargets: 'temporary-public-storage'
+          temporaryPublicStorage: true
           configPath: './.lighthouserc.json'
