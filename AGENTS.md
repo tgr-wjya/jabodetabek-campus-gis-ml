@@ -17,7 +17,7 @@ Project-specific guidelines for **Jabodetabek Campus GIS & Machine Learning WebA
 - **Linting**: Run `rtk .venv/bin/ruff check .` to verify zero errors before committing.
 - **Unit Testing**: Run `rtk .venv/bin/pytest --cov=. test_*.py` to verify test suite passes.
 - **SonarCloud**: Configured in `sonar-project.properties` under organization `tgr-wjya-1` and project key `tgr-wjya-1_jabodetabek-campus-gis-ml`. Exclude non-unit-testable GUI/script files (`train_qgis.py`, `calculate_spatial_features_qgis.py`, `app.py`, `build_laporan_docx.py`) from coverage calculations.
-- **Lighthouse CI**: Configured in `.lighthouserc.json`. Runs against `http://localhost:8501`. Performance threshold set to `warn`.
+- **Mandatory Local Lighthouse Audit**: Execute local Chrome DevTools Lighthouse audit (`rtk npx lighthouse http://localhost:8501 --chrome-flags="--headless"`) prior to committing UI or map changes to verify Performance, Accessibility, Best Practices, and SEO. Excluded from CI/CD pipeline to eliminate build friction.
 
 ## 4. Git & Workspace Constraints
 - **Excluded Assets**: Keep `screenshot/`, `.coverage`, `coverage.xml`, and `*.zip` in `.gitignore`. Do not commit screenshots.
