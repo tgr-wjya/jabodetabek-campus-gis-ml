@@ -24,8 +24,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ruff pytest pytest-cov pandas numpy scikit-learn altair folium streamlit
-
+          pip install -r requirements.txt ruff pytest pytest-cov httpx
       - name: Lint Code with Ruff
         run: |
           ruff check .
