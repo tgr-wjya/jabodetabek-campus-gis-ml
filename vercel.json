@@ -2,6 +2,11 @@
   "version": 2,
   "cleanUrls": true,
   "regions": ["sin1"],
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "{tests/**,**/test_*.py,screenshot/**,*.zip}"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
