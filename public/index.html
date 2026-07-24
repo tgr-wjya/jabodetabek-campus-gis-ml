@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGIS Aksesibilitas & Sistem Rekomendasi Kampus Jabodetabek</title>
+    <meta name="description" content="Platform WebGIS interaktif pemetaan aksesibilitas transportasi massal dan sistem rekomendasi lokasi kampus satelit berbasis Machine Learning Random Forest.">
+    
+    <!-- Preconnect & Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+
+    <style>
+        :root {
+            --bg-canvas: #090D16;
+            --bg-surface: #111827;
+            --bg-card: #1F2937;
+            --border-subtle: #374151;
+            --text-primary: #F9FAFB;
+            --text-secondary: #9CA3AF;
+            --text-muted: #6B7280;
+            --accent-blue: #3B82F6;
+            --accent-blue-hover: #2563EB;
+            --emerald: #10B981;
+            --amber: #F59E0B;
+            --rose: #F43F5E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            line-height: 1.5;
+            font-variant-numeric: tabular-nums;
+            padding: 20px;
+        }
+
+        .app-container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        /* Top Application Bar */
+        .app-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 16px 24px;
+            margin-bottom: 20px;
+        }
+
+        .header-title-group h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
+        }
+
+        .header-title-group p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+
+        .header-status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: var(--emerald);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--emerald);
+            border-radius: 50%;
+        }
+
+        /* Navigation Bar */
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.15s ease-in-out;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--text-muted);
+        }
+
+        .tab-btn.active {
+            background-color: var(--accent-blue);
+            color: #FFFFFF;
+            border-color: var(--accent-blue);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Layout Grid */
+        .gis-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .gis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Control Panel Sidebar */
+        .control-panel {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 20px;
+            height: fit-content;
+        }
+
+        .panel-header {
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-blue);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .field-group {
+            margin-bottom: 16px;
+        }
+
+        .field-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .custom-select, .custom-range {
+            width: 100%;
+            padding: 9px 12px;
+            border-radius: 6px;
+            background-color: var(--bg-canvas);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            outline: none;
+            transition: border-color 0.15s ease;
+        }
+
+        .custom-select:focus {
+            border-color: var(--accent-blue);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            accent-color: var(--accent-blue);
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+        }
+
+        /* KPI Cards Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .kpi-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .kpi-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .kpi-value {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-primary);
+        }
+
+        .kpi-detail {
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        /* Leaflet Map Area */
+        .map-wrapper {
+            position: relative;
+            height: 600px;
+            border-radius: 10px;
+            border: 1px solid var(--border-subtle);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #map1, #map2 {
+            height: 100%;
+            width: 100%;
+            background-color: #0B0F19;
+        }
+
+        /* Leaflet Legend Overlay */
+        .map-legend {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(17, 24, 39, 0.92);
+            border: 1px solid var(--border-subtle);
+            backdrop-filter: blur(8px);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 12px;
+        }
+
+        .legend-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            color: var(--text-secondary);
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        /* Action Button */
+        .btn-action {
+            width: 100%;
+            background-color: var(--accent-blue);
+            color: white;
+            border: none;
+            padding: 11px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 13px;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+        }
+
+        .btn-action:hover {
+            background-color: var(--accent-blue-hover);
+        }
+
+        /* Popup customization */
+        .leaflet-popup-content-wrapper {
+            background-color: var(--bg-surface) !important;
+            color: var(--text-primary) !important;
+            border: 1px solid var(--border-subtle) !important;
+            border-radius: 8px !important;
+        }
+        .leaflet-popup-tip {
+            background-color: var(--bg-surface) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Top App Bar -->
+        <header class="app-header">
+            <div class="header-title-group">
+                <h1>WebGIS Sistem Informasi Geografis Perguruan Tinggi</h1>
+                <p>Pemetaan Aksesibilitas Transportasi Massal & Sistem Rekomendasi Kampus Satelit (ML Random Forest)</p>
+            </div>
+            <div class="header-status-badge">
+                <span class="status-dot"></span> Vercel API Online
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" id="tab-btn-1" onclick="switchTab(1)">Aksesibilitas Transportasi Massal</button>
+            <button class="tab-btn" id="tab-btn-2" onclick="switchTab(2)">Zonasi Rekomendasi Kampus Satelit (ML)</button>
+        </div>
+
+        <!-- TAB 1: AKSESIBILITAS -->
+        <div id="tab1" class="tab-content active">
+            <div class="gis-grid">
+                <!-- Sidebar Controls -->
+                <aside class="control-panel">
+                    <div class="panel-header">Filter Aksesibilitas</div>
+
+                    <div class="field-group">
+                        <label for="f-status">Status Perguruan Tinggi</label>
+                        <select id="f-status" class="custom-select" onchange="applyTab1Filters()">
+                            <option value="Semua">Semua Status</option>
+                            <option value="PTN">PTN Only</option>
+                            <option value="PTS">PTS Only</option>
+                        </select>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="f-kat">Kategori Aksesibilitas</label>
+                        <select id="f-kat" class="custom-select" onchange="applyTab1Filters()">
+                            <option value="Semua">Semua Kategori</option>
+                            <option value="Transit-Oriented">Transit-Oriented</option>
+                            <option value="Transit-Isolated">Transit-Isolated</option>
+                        </select>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="f-campus">Cari Nama Kampus</label>
+                        <select id="f-campus" class="custom-select" onchange="selectCampusByName()">
+                            <option value="Semua">-- Semua Kampus --</option>
+                        </select>
+                    </div>
+
+                    <div class="panel-header" style="margin-top: 24px;">Layer Overlay</div>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chk-kec" checked onchange="toggleLayers()"> Batas Kecamatan
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chk-stat" checked onchange="toggleLayers()"> Stasiun KRL/MRT/LRT
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chk-tj" checked onchange="toggleLayers()"> Halte TransJakarta
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="chk-buf" onchange="toggleLayers()"> Radius Buffer (Transit)
+                    </label>
+                </aside>
+
+                <!-- Main Content Panel -->
+                <main>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-label">Kampus Terfilter</div>
+                            <div class="kpi-value" id="m1-total">266</div>
+                            <div class="kpi-detail" style="color: var(--text-secondary)">Wilayah Jabodetabek</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Transit-Oriented</div>
+                            <div class="kpi-value" style="color: var(--emerald)" id="m1-oriented-pct">54.1%</div>
+                            <div class="kpi-detail" style="color: var(--emerald)" id="m1-oriented-cnt">144 Kampus</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Transit-Isolated</div>
+                            <div class="kpi-value" style="color: var(--rose)" id="m1-isolated-pct">45.9%</div>
+                            <div class="kpi-detail" style="color: var(--rose)" id="m1-isolated-cnt">122 Kampus</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Mahasiswa Terdampak</div>
+                            <div class="kpi-value" style="color: var(--amber)" id="m1-students">418,290</div>
+                            <div class="kpi-detail" style="color: var(--text-secondary)">Kategori Transit-Isolated</div>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <div id="map1"></div>
+                        <div class="map-legend">
+                            <div class="legend-title">Legenda Aksesibilitas</div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: var(--emerald);"></span>
+                                Transit-Oriented (<= 1.000m)
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color" style="background-color: var(--rose);"></span>
+                                Transit-Isolated (> 1.000m)
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- TAB 2: REKOMENDASI ML -->
+        <div id="tab2" class="tab-content">
+            <div class="gis-grid">
+                <!-- Sidebar Controls -->
+                <aside class="control-panel">
+                    <div class="panel-header">Simulator ML Random Forest</div>
+
+                    <div class="field-group">
+                        <label>Lulusan SMA: <span id="v-sma">1,500</span> orang</label>
+                        <input type="range" id="inp-sma" class="custom-range" min="100" max="8000" value="1500" oninput="updateVal('v-sma', this.value)">
+                    </div>
+
+                    <div class="field-group">
+                        <label>Jarak Industri: <span id="v-ind">3,500</span> m</label>
+                        <input type="range" id="inp-ind" class="custom-range" min="500" max="25000" value="3500" oninput="updateVal('v-ind', this.value)">
+                    </div>
+
+                    <div class="field-group">
+                        <label>Kepadatan Kampus: <span id="v-dens">0.05</span> unit/km2</label>
+                        <input type="range" id="inp-dens" class="custom-range" min="0" max="0.5" step="0.01" value="0.05" oninput="updateVal('v-dens', this.value)">
+                    </div>
+
+                    <div class="field-group">
+                        <label>Akses Tol: <span id="v-toll">5.0</span> m/km2</label>
+                        <input type="range" id="inp-toll" class="custom-range" min="0" max="30" step="0.5" value="5.0" oninput="updateVal('v-toll', this.value)">
+                    </div>
+
+                    <div class="field-group">
+                        <label>Luas Wilayah: <span id="v-area">25.0</span> km2</label>
+                        <input type="range" id="inp-area" class="custom-range" min="5" max="150" value="25.0" oninput="updateVal('v-area', this.value)">
+                    </div>
+
+                    <button class="btn-action" onclick="runPredict()">Simulasi Prediksi ML</button>
+
+                    <div style="margin-top: 16px; padding: 12px; background: var(--bg-canvas); border: 1px solid var(--border-subtle); border-radius: 6px; text-align: center;">
+                        <div style="font-size: 11px; color: var(--text-secondary);">Hasil Model API</div>
+                        <div id="result-badge" style="display: inline-block; margin-top: 6px; padding: 4px 10px; border-radius: 12px; font-weight: 700; font-size: 12px; background: var(--amber); color: #000;">Klik tombol simulasi</div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Panel -->
+                <main>
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-label">Total Kecamatan</div>
+                            <div class="kpi-value">299</div>
+                            <div class="kpi-detail" style="color: var(--text-secondary)">Wilayah Studi</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Sangat Direkomendasikan</div>
+                            <div class="kpi-value" style="color: var(--emerald)">45 Kec.</div>
+                            <div class="kpi-detail" style="color: var(--emerald)">Kelas 2</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Cukup Direkomendasikan</div>
+                            <div class="kpi-value" style="color: var(--amber)">112 Kec.</div>
+                            <div class="kpi-detail" style="color: var(--amber)">Kelas 1</div>
+                        </div>
+                        <div class="kpi-card">
+                            <div class="kpi-label">Tidak Direkomendasikan</div>
+                            <div class="kpi-value" style="color: var(--rose)">142 Kec.</div>
+                            <div class="kpi-detail" style="color: var(--rose)">Kelas 0</div>
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <div id="map2"></div>
+                        <div class="map-legend">
+                            <div class="legend-title">Zona Rekomendasi ML</div>
+                            <div class="legend-item"><span class="legend-color" style="background-color: var(--emerald);"></span> Sangat Direkomendasikan</div>
+                            <div class="legend-item"><span class="legend-color" style="background-color: var(--amber);"></span> Cukup Direkomendasikan</div>
+                            <div class="legend-item"><span class="legend-color" style="background-color: var(--rose);"></span> Tidak Direkomendasikan</div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+        let map1, map2;
+        let campusDataRaw = [];
+        let campusLayerGroup;
+
+        function switchTab(tabNum) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+            document.getElementById(`tab-btn-${tabNum}`).classList.add('active');
+            document.getElementById(`tab${tabNum}`).classList.add('active');
+
+            updateURLParams('tab', tabNum);
+
+            if (tabNum === 1 && map1) setTimeout(() => map1.invalidateSize(), 100);
+            if (tabNum === 2 && map2) setTimeout(() => map2.invalidateSize(), 100);
+        }
+
+        function updateVal(id, val) {
+            document.getElementById(id).innerText = Number(val).toLocaleString();
+        }
+
+        function updateURLParams(key, val) {
+            const url = new URL(window.location);
+            url.searchParams.set(key, val);
+            window.history.replaceState({}, '', url);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const initialTab = urlParams.get('tab') || '1';
+
+            map1 = L.map('map1').setView([-6.25, 106.84], 11);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO'
+            }).addTo(map1);
+
+            map2 = L.map('map2').setView([-6.25, 106.84], 10);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO'
+            }).addTo(map2);
+
+            campusLayerGroup = L.layerGroup().addTo(map1);
+
+            fetch('/data_ready/Campuses_WebGIS.geojson')
+                .then(res => res.json())
+                .then(data => {
+                    campusDataRaw = data.features;
+                    populateCampusDropdown(campusDataRaw);
+                    renderCampusMarkers(campusDataRaw);
+                })
+                .catch(e => console.log("GeoJSON deferred load"));
+
+            if (initialTab === '2') switchTab(2);
+        });
+
+        function populateCampusDropdown(features) {
+            const sel = document.getElementById('f-campus');
+            const names = features.map(f => f.properties.name).sort();
+            names.forEach(name => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.innerText = name;
+                sel.appendChild(opt);
+            });
+        }
+
+        function renderCampusMarkers(features) {
+            campusLayerGroup.clearLayers();
+            features.forEach(f => {
+                const props = f.properties;
+                const coords = f.geometry.coordinates;
+                const isOriented = props.kategori === 'Transit-Oriented';
+
+                const marker = L.circleMarker([coords[1], coords[0]], {
+                    radius: 6.5,
+                    fillColor: isOriented ? '#10B981' : '#F43F5E',
+                    color: isOriented ? '#059669' : '#E11D48',
+                    weight: 1.5,
+                    fillOpacity: 0.9
+                });
+
+                marker.bindPopup(`
+                    <div style="font-family: sans-serif; font-size: 12px; min-width: 200px;">
+                        <h4 style="margin: 0 0 4px 0; color: #3B82F6;">${props.name}</h4>
+                        <hr style="margin: 4px 0; border: 0; border-top: 1px solid #374151;">
+                        <strong>Status:</strong> ${props.status} | <strong>Akreditasi:</strong> ${props.akreditasi}<br>
+                        <strong>Mahasiswa:</strong> ${Number(props.mahasiswa).toLocaleString()} Orang<br>
+                        <strong>Kategori:</strong> <span style="color:${isOriented ? '#10B981':'#F43F5E'}; font-weight:bold;">${props.kategori}</span>
+                    </div>
+                `);
+                campusLayerGroup.addLayer(marker);
+            });
+        }
+
+        function applyTab1Filters() {
+            const status = document.getElementById('f-status').value;
+            const kat = document.getElementById('f-kat').value;
+
+            updateURLParams('status', status);
+            updateURLParams('kategori', kat);
+
+            let filtered = campusDataRaw.filter(f => {
+                const p = f.properties;
+                const matchStatus = (status === 'Semua' || p.status === status);
+                const matchKat = (kat === 'Semua' || p.kategori === kat);
+                return matchStatus && matchKat;
+            });
+
+            renderCampusMarkers(filtered);
+
+            const total = filtered.length;
+            const oriented = filtered.filter(f => f.properties.kategori === 'Transit-Oriented').length;
+            const isolated = filtered.filter(f => f.properties.kategori === 'Transit-Isolated').length;
+            const orientedPct = total > 0 ? (oriented / total * 100).toFixed(1) : '0';
+            const isolatedPct = total > 0 ? (isolated / total * 100).toFixed(1) : '0';
+            const isoStudents = filtered.filter(f => f.properties.kategori === 'Transit-Isolated')
+                                       .reduce((sum, f) => sum + (f.properties.mahasiswa || 0), 0);
+
+            document.getElementById('m1-total').innerText = total;
+            document.getElementById('m1-oriented-pct').innerText = `${orientedPct}%`;
+            document.getElementById('m1-oriented-cnt').innerText = `${oriented} Kampus`;
+            document.getElementById('m1-isolated-pct').innerText = `${isolatedPct}%`;
+            document.getElementById('m1-isolated-cnt').innerText = `${isolated} Kampus`;
+            document.getElementById('m1-students').innerText = isoStudents.toLocaleString();
+        }
+
+        function selectCampusByName() {
+            const name = document.getElementById('f-campus').value;
+            if (name === 'Semua') return;
+
+            updateURLParams('campus', name);
+
+            const match = campusDataRaw.find(f => f.properties.name === name);
+            if (match) {
+                const coords = match.geometry.coordinates;
+                map1.setView([coords[1], coords[0]], 14);
+            }
+        }
+
+        function toggleLayers() {}
+
+        async function runPredict() {
+            const payload = {
+                sma_grad: parseFloat(document.getElementById('inp-sma').value),
+                dist_ind: parseFloat(document.getElementById('inp-ind').value),
+                camp_dens: parseFloat(document.getElementById('inp-dens').value),
+                toll_pct: parseFloat(document.getElementById('inp-toll').value),
+                area_km2: parseFloat(document.getElementById('inp-area').value)
+            };
+
+            const badge = document.getElementById('result-badge');
+            badge.innerText = "Memproses...";
+
+            try {
+                const res = await fetch('/api/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                
+                if (data.prediction === 2) {
+                    badge.innerText = "Sangat Direkomendasikan (Kelas 2)";
+                    badge.style.backgroundColor = "var(--emerald)";
+                    badge.style.color = "#FFFFFF";
+                } else if (data.prediction === 1) {
+                    badge.innerText = "Cukup Direkomendasikan (Kelas 1)";
+                    badge.style.backgroundColor = "var(--amber)";
+                    badge.style.color = "#000000";
+                } else {
+                    badge.innerText = "Tidak Direkomendasikan (Kelas 0)";
+                    badge.style.backgroundColor = "var(--rose)";
+                    badge.style.color = "#FFFFFF";
+                }
+            } catch (err) {
+                badge.innerText = "Error API";
+                badge.style.backgroundColor = "var(--rose)";
+            }
+        }
+    </script>
+</body>
+</html>
